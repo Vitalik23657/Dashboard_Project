@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Forest Stocks Dashboard</title>
 </head>
 <body>
-    <h1>FOREST STOCKS</h1>
+    <div class="dashboard-container">
+        <div class="header-panel">
+            <div class="header-top">
+                <h2>Forest Stocks</h2>
+                <div class="header-controls">
+                    
+                    <div class="growth-badge-container">
+                        <div id="growth-badge" class="growth-badge neutral">
+                            Calculating...
+                        </div>
+                        <div id="growth-dropdown" class="growth-dropdown"></div>
+                    </div>
+                    
+                    <div>
+                        <label for="estadillo-filter" style="font-weight: 600; margin-right: 8px;">Filter by Plot (Estadillo):</label>
+                        <select id="estadillo-filter">
+                            <option value="ALL">All Plots Combined</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="legend" id="species-legend"></div>
+            
+            <div class="legend" id="nfi-legend" style="border-top: none; padding-top: 4px;">
+                <div class="legend-item">
+                    <div class="nfi-legend-box nfi2-pattern"></div> NFI 2
+                </div>
+                <div class="legend-item">
+                    <div class="nfi-legend-box nfi3-pattern"></div> NFI 3
+                </div>
+                <div class="legend-item">
+                    <div class="nfi-legend-box nfi4-pattern"></div> NFI 4
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3 class="chart-title">Density (N)</h3>
+                <div class="chart-container" id="chart-density"></div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Basal Area (BA)</h3>
+                <div class="chart-container" id="chart-basal"></div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Volume (V)</h3>
+                <div class="chart-container" id="chart-volume"></div>
+            </div>
+        </div>
+    </div>
+    <div id="tooltip"></div>
+    <script src="script.js"></script>
 </body>
 </html>
