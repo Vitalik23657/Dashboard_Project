@@ -42,7 +42,8 @@ async function loadData() {
         parseRawData(csvText);
         assignSpeciesColors();
         populateDropdown();
-        updateDashboard("ALL"); 
+        const firstPlot = Array.from(uniqueEstadillos)[0];
+        updateDashboard(firstPlot);
         
         document.getElementById('estadillo-filter').addEventListener('change', (e) => {
             updateDashboard(e.target.value);
@@ -213,9 +214,7 @@ function updateGrowthStats(data) {
 }
 
 function updateDashboard(selectedPlot) {
-    const filteredRows = selectedPlot === "ALL" 
-        ? globalRawData 
-        : globalRawData.filter(row => row.estadillo === selectedPlot);
+    const filteredRows = globalRawData.filter(row => row.estadillo === selectedPlot);
 
     const activeSpecies = new Set();
     const dataMap = {}; 
