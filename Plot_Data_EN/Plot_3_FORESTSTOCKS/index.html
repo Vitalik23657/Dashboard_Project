@@ -45,18 +45,39 @@
 
         <div class="charts-grid">
             <div class="chart-card">
-                <h3 class="chart-title">Density (N)</h3>
-                <div class="chart-container" id="chart-density"></div>
-            </div>
-            <div class="chart-card">
-                <h3 class="chart-title">Basal Area (BA)</h3>
-                <div class="chart-container" id="chart-basal"></div>
-            </div>
-            <div class="chart-card">
-                <h3 class="chart-title">Volume (V)</h3>
-                <div class="chart-container" id="chart-volume"></div>
-            </div>
-        </div>
+             <div class="card-header">
+                   <h3 class="chart-title">Density (N)</h3>
+                   <button class="toggle-btn" onclick="toggleView('density')">View Table</button>
+             </div>
+             <div id="view-density-chart" class="view-container active">
+               <div class="chart-container" id="chart-density"></div>
+             </div>
+              <div id="view-density-table" class="view-container table-scroll"></div>
+          </div>
+
+         <div class="chart-card">
+             <div class="card-header">
+                 <h3 class="chart-title">Basal Area (BA)</h3>
+                <button class="toggle-btn" onclick="toggleView('basal')">View Table</button>
+             </div>
+              <div id="view-basal-chart" class="view-container active">
+                  <div class="chart-container" id="chart-basal"></div>
+          </div>
+             <div id="view-basal-table" class="view-container table-scroll"></div>
+         </div>
+
+         <div class="chart-card">
+              <div class="card-header">
+                  <h3 class="chart-title">Volume (V)</h3>
+                    <button class="toggle-btn" onclick="toggleView('volume')">View Table</button>
+             </div>
+            <div id="view-volume-chart" class="view-container active">
+               <div class="chart-container" id="chart-volume"></div>
+             </div>
+             <div id="view-volume-table" class="view-container table-scroll"></div>
+         </div>
+    </div>
+
     </div>
     <div id="tooltip"></div>
     <script src="script.js"></script>

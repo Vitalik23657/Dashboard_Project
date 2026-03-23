@@ -264,6 +264,10 @@ function updateDashboard(selectedPlot) {
     renderStackedChart(finalData, 'chart-density', 'n', 'Stems/ha');
     renderStackedChart(finalData, 'chart-basal', 'ba', 'm²/ha');
     renderStackedChart(finalData, 'chart-volume', 'v', 'm³/ha');
+
+    renderTable(finalData, 'view-density-table', 'n', 'Stems/ha');
+    renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
+    renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
 }
 
 function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
@@ -335,6 +339,51 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
 
         container.appendChild(group);
     });
+}
+
+function toggleView(type) {
+    const chartView = document.getElementById(`view-${type}-chart`);
+    const tableView = document.getElementById(`view-${type}-table`);
+    const btn = event.target;
+
+    if (chartView.classList.contains('active')) {
+        chartView.classList.remove('active');
+        tableView.classList.add('active');
+        btn.textContent = 'View Chart';
+    } else {
+        chartView.classList.add('active');
+        tableView.classList.remove('active');
+        btn.textContent = 'View Table';
+    }
+}
+
+function renderTable(data, containerId, metric, unit) {
+    const container = document.getElementById(containerId);
+    if (data.length === 0) { container.innerHTML = "No data"; return; }
+
+    let html = `<table>
+        <thead>
+            <tr>
+                <th>DC (cm)</th>
+                <th>NFI 2 (${unit})</th>
+                <th>NFI 3 (${unit})</th>
+                <th>NFI 4 (${unit})</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    data.forEach(row => {
+        html += `
+            <tr>
+                <td>${row.dc}</td>
+                <td>${row[`total_${metric}2`].toFixed(2)}</td>
+                <td>${row[`total_${metric}3`].toFixed(2)}</td>
+                <td>${row[`total_${metric}4`].toFixed(2)}</td>
+            </tr>`;
+    });
+
+    html += `</tbody></table>`;
+    container.innerHTML = html;
 }
 
 loadData();
