@@ -81,19 +81,17 @@
             <h2>Forest Damage Analysis</h2>
         </div>
         
-        <div class="charts-grid" style="margin-bottom: 40px;">
-            
+        <div class="charts-grid">
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 2</h3>
+                    <h3 class="chart-title">NFI 2 Status</h3>
                 </div>
-                <div id="damage-nfi2" class="damage-status-container">
-                    </div>
+                <div id="damage-nfi2" class="damage-status-container"></div>
             </div>
 
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 3</h3>
+                    <h3 class="chart-title">NFI 3 Agents</h3>
                     <button class="toggle-btn" onclick="toggleView('damage-nfi3', this)">View Table</button>
                 </div>
                 <div id="view-damage-nfi3-chart" class="view-container active">
@@ -104,7 +102,7 @@
 
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 4</h3>
+                    <h3 class="chart-title">NFI 4 Agents</h3>
                     <button class="toggle-btn" onclick="toggleView('damage-nfi4', this)">View Table</button>
                 </div>
                 <div id="view-damage-nfi4-chart" class="view-container active">
@@ -114,8 +112,28 @@
             </div>
         </div>
 
+        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
+            <div class="header-top">
+                <h2>Wood Quality Assessment</h2>
+                <div class="legend" id="quality-legend" style="border: none; padding: 0;">
+                    </div>
+            </div>
+        </div>
+
+        <div class="charts-grid" style="margin-bottom: 40px;">
+            <div class="chart-card" style="grid-column: 1 / -1;"> <div class="card-header">
+                    <h3 class="chart-title">Quality Classes Evolution (% of Total Volume)</h3>
+                    <button class="toggle-btn" onclick="toggleView('quality', this)">View Table</button>
+                </div>
+                <div id="view-quality-chart" class="view-container active">
+                    <div class="chart-container" id="chart-quality" style="height: 300px; padding-bottom: 30px;"></div>
+                </div>
+                <div id="view-quality-table" class="view-container table-scroll"></div>
+            </div>
+        </div>
+
     </div>
     <div id="tooltip"></div>
-    <script src="script.js"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

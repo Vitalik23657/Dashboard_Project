@@ -269,7 +269,7 @@ select {
      margin-right: 6px;
 }
 
-/* Нові стилі для перемикання та таблиць */
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -321,7 +321,7 @@ th {
 
 td:first-child { text-align: left; font-weight: bold; background: #fdfdfd; }
 
-/* --- NEW: Forest Damage Styles --- */
+
 .damage-status-container {
     display: flex;
     justify-content: center;

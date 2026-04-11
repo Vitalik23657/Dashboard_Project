@@ -3,11 +3,8 @@ let globalRawData = [];
 let uniqueEstadillos = new Set(); 
 let uniqueSpecies = new Set();
 
-let damageData = {
-    nfi2: {},
-    nfi3: {},
-    nfi4: {}
-};
+let damageData = { nfi2: {}, nfi3: {}, nfi4: {} };
+let qualityData = {};
 
 const speciesColors = [
     '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
@@ -15,6 +12,16 @@ const speciesColors = [
     '#F44336', '#3F51B5', '#009688', '#CDDC39', '#FF5722'
 ];
 const speciesColorMap = {};
+
+const qualityColors = {
+    '1': '#1b5e20',
+    '2': '#4caf50',
+    '3': '#8bc34a',
+    '4': '#ffc107',
+    '5': '#ff9800',
+    '6': '#d32f2f',
+    'NA': '#9e9e9e'
+};
 
 function getDamageColor(damageType) {
     const d = damageType.toLowerCase();
@@ -50,25 +57,29 @@ function hideTooltip() { tooltip.style.opacity = '0'; }
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4] = await Promise.all([
+        const [resVol, resD2, resD3, resD4, resQual] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv') 
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv')
         ]);
         
         const csvVol = await resVol.text();
         const csvD2 = await resD2.text();
         const csvD3 = await resD3.text();
         const csvD4 = await resD4.text();
+        const csvQual = await resQual.text();
         
         parseRawData(csvVol);
         parseDamageNFI2(csvD2);
         parseDamageNFI34(csvD3, 'nfi3');
         parseDamageNFI34(csvD4, 'nfi4');
+        parseQualityData(csvQual);
         
         assignSpeciesColors();
         populateDropdown();
+        renderQualityLegend();
         
         const firstPlot = Array.from(uniqueEstadillos)[0];
         document.getElementById('estadillo-filter').value = firstPlot;
@@ -141,6 +152,27 @@ function parseDamageNFI34(csvText, nfiKey) {
     }
 }
 
+function parseQualityData(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 13) continue;
+
+        const estadillo = row[0].trim();
+        const qClass = row[3].replace(/"/g, '').trim();
+        
+        if (!qualityData[estadillo]) qualityData[estadillo] = {};
+        
+        const parseNum = (val) => val === 'NA' ? 0 : parseFloat(val) || 0;
+
+        qualityData[estadillo][qClass] = {
+            v2: parseNum(row[4]), p2: parseNum(row[6]),
+            v3: parseNum(row[7]), p3: parseNum(row[9]),
+            v4: parseNum(row[10]), p4: parseNum(row[12])
+        };
+    }
+}
+
 function assignSpeciesColors() {
     let colorIndex = 0;
     Array.from(uniqueSpecies).sort().forEach(species => {
@@ -180,10 +212,18 @@ function updateLegend(activeSpecies) {
     });
 }
 
+function renderQualityLegend() {
+    const legendContainer = document.getElementById('quality-legend');
+    for (let i = 1; i <= 6; i++) {
+        const item = document.createElement('div');
+        item.className = 'legend-item';
+        item.innerHTML = `<div class="legend-color" style="background: ${qualityColors[i]};"></div> Class ${i}`;
+        legendContainer.appendChild(item);
+    }
+}
+
 function updateGrowthStats(data) {
-    let totalV2 = 0;
-    let totalV3 = 0; 
-    let totalV4 = 0;
+    let totalV2 = 0, totalV3 = 0, totalV4 = 0;
     let speciesGrowth = {};
     let dcShift = { young: 0, medium: 0, mature: 0 }; 
 
@@ -305,7 +345,7 @@ function renderDamageStatus(selectedPlot) {
             let totalTreesOverall = 0;
             for (let plot in damageData[nfiKey]) {
                 let r = damageData[nfiKey][plot];
-                if(r.length > 0) {
+                if(r && r.length > 0) {
                     totalTreesOverall += r[0].totalTrees;
                     r.forEach(rec => {
                         if(!agg[rec.damage]) agg[rec.damage] = 0;
@@ -315,7 +355,7 @@ function renderDamageStatus(selectedPlot) {
             }
             for (let dmg in agg) {
                 let pct = totalTreesOverall > 0 ? (agg[dmg] / totalTreesOverall) * 100 : 0;
-                records.push({ damage: dmg, treesDamaged: agg[dmg], pct: pct }); // Added treesDamaged to ALL object
+                records.push({ damage: dmg, treesDamaged: agg[dmg], pct: pct }); 
             }
         } else {
             records = damageData[nfiKey][selectedPlot] || [];
@@ -323,7 +363,6 @@ function renderDamageStatus(selectedPlot) {
 
         records.sort((a, b) => b.pct - a.pct);
 
-        // Render the Progress Bars
         if (records.length === 0) {
             chartContainer.innerHTML = `<div class="damage-empty-state">No damage data available</div>`;
         } else {
@@ -345,7 +384,6 @@ function renderDamageStatus(selectedPlot) {
             });
         }
         
-        // Render the Data Table
         renderDamageTable(records, tableContainerId);
     };
 
@@ -353,7 +391,6 @@ function renderDamageStatus(selectedPlot) {
     processBarsAndTable('nfi4', 'damage-nfi4', 'view-damage-nfi4-table');
 }
 
-// NEW: Function to render the tabular view for Damage
 function renderDamageTable(records, containerId) {
     const container = document.getElementById(containerId);
     if (records.length === 0) {
@@ -383,6 +420,128 @@ function renderDamageTable(records, containerId) {
 
     html += `</tbody></table>`;
     container.innerHTML = html;
+}
+
+function renderQualityChartAndTable(selectedPlot) {
+    const chartContainer = document.getElementById('chart-quality');
+    const tableContainer = document.getElementById('view-quality-table');
+    
+    chartContainer.innerHTML = '<div class="y-axis-label">% of Total Volume</div>';
+    
+    let qData = {};
+    
+    if (selectedPlot === "ALL") {
+        let totals = { v2: 0, v3: 0, v4: 0 };
+        for (let plot in qualityData) {
+            for (let qc in qualityData[plot]) {
+                if (!qData[qc]) qData[qc] = { v2: 0, v3: 0, v4: 0 };
+                let d = qualityData[plot][qc];
+                qData[qc].v2 += d.v2;
+                qData[qc].v3 += d.v3;
+                qData[qc].v4 += d.v4;
+                totals.v2 += d.v2;
+                totals.v3 += d.v3;
+                totals.v4 += d.v4;
+            }
+        }
+        for (let qc in qData) {
+            qData[qc].p2 = totals.v2 > 0 ? (qData[qc].v2 / totals.v2) * 100 : 0;
+            qData[qc].p3 = totals.v3 > 0 ? (qData[qc].v3 / totals.v3) * 100 : 0;
+            qData[qc].p4 = totals.v4 > 0 ? (qData[qc].v4 / totals.v4) * 100 : 0;
+        }
+    } else {
+        qData = qualityData[selectedPlot] || {};
+    }
+
+    if (Object.keys(qData).length === 0) {
+        chartContainer.innerHTML += `<div class="damage-empty-state">No quality data available</div>`;
+        tableContainer.innerHTML = `<div class="damage-empty-state">No quality data available</div>`;
+        return;
+    }
+
+    const nfisArray = [
+        { key: '2', label: 'NFI 2' },
+        { key: '3', label: 'NFI 3' },
+        { key: '4', label: 'NFI 4' }
+    ];
+
+    nfisArray.forEach(nfi => {
+        const group = document.createElement('div');
+        group.className = 'bar-group';
+        group.style.margin = '0 10%';
+
+        const barContainer = document.createElement('div');
+        barContainer.className = 'stacked-bar-container';
+        barContainer.style.width = '40%';
+        barContainer.style.height = '100%'; 
+        
+        let segments = [];
+        for (let qc in qData) {
+            let pct = qData[qc][`p${nfi.key}`];
+            let vol = qData[qc][`v${nfi.key}`];
+            if (pct > 0) segments.push({ class: qc, pct: pct, vol: vol });
+        }
+
+        segments.sort((a, b) => parseInt(a.class) - parseInt(b.class));
+
+        let tooltipHtml = `<div style="margin-bottom:6px; border-bottom:1px solid #555; padding-bottom:4px;">
+            <strong>${nfi.label} Quality Breakdown</strong>
+        </div>`;
+
+        segments.forEach(seg => {
+            const segmentDiv = document.createElement('div');
+            segmentDiv.className = 'bar-segment';
+            segmentDiv.style.height = `${seg.pct}%`;
+            segmentDiv.style.backgroundColor = qualityColors[seg.class] || '#999';
+            
+            barContainer.appendChild(segmentDiv);
+            
+            tooltipHtml += `<div><span class="tooltip-color-box" style="background:${qualityColors[seg.class] || '#999'}"></span>Class ${seg.class}: ${seg.pct.toFixed(1)}% (${seg.vol.toFixed(1)} m³/ha)</div>`;
+        });
+
+        barContainer.addEventListener('mousemove', (e) => showTooltip(e, tooltipHtml));
+        barContainer.addEventListener('mouseleave', hideTooltip);
+
+        group.appendChild(barContainer);
+
+        const label = document.createElement('div');
+        label.className = 'x-axis-label';
+        label.innerText = nfi.label;
+        label.style.bottom = '-25px';
+        group.appendChild(label);
+
+        chartContainer.appendChild(group);
+    });
+
+    let html = `<table>
+        <thead>
+            <tr>
+                <th>Quality Class</th>
+                <th>NFI 2 (%)</th>
+                <th>NFI 2 (m³)</th>
+                <th>NFI 3 (%)</th>
+                <th>NFI 3 (m³)</th>
+                <th>NFI 4 (%)</th>
+                <th>NFI 4 (m³)</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    Object.keys(qData).sort().forEach(qc => {
+        html += `
+            <tr>
+                <td>Class ${qc}</td>
+                <td>${qData[qc].p2.toFixed(1)}%</td>
+                <td style="color:#777">${qData[qc].v2.toFixed(2)}</td>
+                <td>${qData[qc].p3.toFixed(1)}%</td>
+                <td style="color:#777">${qData[qc].v3.toFixed(2)}</td>
+                <td>${qData[qc].p4.toFixed(1)}%</td>
+                <td style="color:#777">${qData[qc].v4.toFixed(2)}</td>
+            </tr>`;
+    });
+
+    html += `</tbody></table>`;
+    tableContainer.innerHTML = html;
 }
 
 function updateDashboard(selectedPlot) {
@@ -444,6 +603,7 @@ function updateDashboard(selectedPlot) {
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
     
     renderDamageStatus(selectedPlot);
+    renderQualityChartAndTable(selectedPlot);
 }
 
 function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
