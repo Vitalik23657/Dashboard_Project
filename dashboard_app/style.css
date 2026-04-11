@@ -320,3 +320,69 @@ th {
 }
 
 td:first-child { text-align: left; font-weight: bold; background: #fdfdfd; }
+
+/* --- NEW: Forest Damage Styles --- */
+.damage-status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+}
+
+.damage-badge {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #f0f0f0;
+    color: #444;
+    border: 1px solid #ddd;
+}
+
+.damage-badge.healthy { background: #e8f5e9; color: #2e7d32; border-color: #c8e6c9; }
+.damage-badge.minor { background: #fff3e0; color: #e65100; border-color: #ffe0b2; }
+.damage-badge.severe { background: #ffebee; color: #c62828; border-color: #ffcdd2; }
+
+.damage-bars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    min-height: 150px;
+}
+
+.damage-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.damage-label {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.damage-bar-bg {
+    width: 100%;
+    height: 12px;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.damage-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.4s ease;
+}
+
+.damage-empty-state {
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+}

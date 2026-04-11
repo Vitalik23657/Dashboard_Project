@@ -1,8 +1,13 @@
-
 const tooltip = document.getElementById('tooltip');
 let globalRawData = []; 
 let uniqueEstadillos = new Set(); 
 let uniqueSpecies = new Set();
+
+let damageData = {
+    nfi2: {},
+    nfi3: {},
+    nfi4: {}
+};
 
 const speciesColors = [
     '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
@@ -10,6 +15,15 @@ const speciesColors = [
     '#F44336', '#3F51B5', '#009688', '#CDDC39', '#FF5722'
 ];
 const speciesColorMap = {};
+
+function getDamageColor(damageType) {
+    const d = damageType.toLowerCase();
+    if (d.includes('no damage')) return '#4CAF50'; 
+    if (d.includes('competition')) return '#FF9800'; 
+    if (d.includes('fire')) return '#D84315'; 
+    if (d.includes('insects') || d.includes('fungi') || d.includes('biotic')) return '#d32f2f'; 
+    return '#78909c'; 
+}
 
 const badgeElement = document.getElementById('growth-badge');
 const dropdownElement = document.getElementById('growth-dropdown');
@@ -36,13 +50,28 @@ function hideTooltip() { tooltip.style.opacity = '0'; }
 
 async function loadData() {
     try {
-        const response = await fetch('PlotForestStocks_EN.csv');
-        const csvText = await response.text();
+        const [resVol, resD2, resD3, resD4] = await Promise.all([
+            fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv') 
+        ]);
         
-        parseRawData(csvText);
+        const csvVol = await resVol.text();
+        const csvD2 = await resD2.text();
+        const csvD3 = await resD3.text();
+        const csvD4 = await resD4.text();
+        
+        parseRawData(csvVol);
+        parseDamageNFI2(csvD2);
+        parseDamageNFI34(csvD3, 'nfi3');
+        parseDamageNFI34(csvD4, 'nfi4');
+        
         assignSpeciesColors();
         populateDropdown();
+        
         const firstPlot = Array.from(uniqueEstadillos)[0];
+        document.getElementById('estadillo-filter').value = firstPlot;
         updateDashboard(firstPlot);
         
         document.getElementById('estadillo-filter').addEventListener('change', (e) => {
@@ -50,7 +79,7 @@ async function loadData() {
         });
 
     } catch (error) {
-        console.error("Error loading CSV.", error);
+        console.error("Error loading CSV files.", error);
     }
 }
 
@@ -73,6 +102,41 @@ function parseRawData(csvText) {
             n2: parseFloat(row[6]) || 0, n3: parseFloat(row[9]) || 0, n4: parseFloat(row[12]) || 0,
             ba2: parseFloat(row[7]) || 0, ba3: parseFloat(row[10]) || 0, ba4: parseFloat(row[13]) || 0,
             v2: parseFloat(row[8]) || 0, v3: parseFloat(row[11]) || 0, v4: parseFloat(row[14]) || 0
+        });
+    }
+}
+
+function parseDamageNFI2(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 4) continue;
+        const estadillo = row[0].trim();
+        const damageString = row[3].replace(/"/g, '').trim();
+        damageData.nfi2[estadillo] = damageString;
+    }
+}
+
+function parseDamageNFI34(csvText, nfiKey) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 8) continue;
+        
+        const estadillo = row[0].trim();
+        const damageName = row[4].replace(/"/g, '').trim();
+        const treesDamaged = parseFloat(row[5]) || 0;
+        const totalTrees = parseFloat(row[6]) || 0;
+        const percentage = parseFloat(row[7]) || 0;
+
+        if (!damageData[nfiKey][estadillo]) {
+            damageData[nfiKey][estadillo] = [];
+        }
+        damageData[nfiKey][estadillo].push({
+            damage: damageName,
+            treesDamaged: treesDamaged,
+            totalTrees: totalTrees,
+            pct: percentage
         });
     }
 }
@@ -118,12 +182,14 @@ function updateLegend(activeSpecies) {
 
 function updateGrowthStats(data) {
     let totalV2 = 0;
+    let totalV3 = 0; 
     let totalV4 = 0;
     let speciesGrowth = {};
     let dcShift = { young: 0, medium: 0, mature: 0 }; 
 
     data.forEach(item => {
         totalV2 += item.total_v2;
+        totalV3 += item.total_v3; 
         totalV4 += item.total_v4;
 
         let netDCVol = item.total_v4 - item.total_v2;
@@ -191,6 +257,7 @@ function updateGrowthStats(data) {
         <div style="margin-bottom: 6px;">
             <strong>1. Absolute Volume:</strong><br>
             <span style="color:#aaa;">NFI 2:</span> ${totalV2.toFixed(1)} m³/ha<br>
+            <span style="color:#aaa;">NFI 3:</span> ${totalV3.toFixed(1)} m³/ha<br>
             <span style="color:#aaa;">NFI 4:</span> ${totalV4.toFixed(1)} m³/ha<br>
             <span style="color:${netChange >= 0 ? '#81c784' : '#e57373'};">Net Change: ${netChange > 0 ? '+' : ''}${netChange.toFixed(1)} m³/ha</span>
         </div>
@@ -213,8 +280,115 @@ function updateGrowthStats(data) {
     `;
 }
 
+function renderDamageStatus(selectedPlot) {
+    const nfi2Container = document.getElementById('damage-nfi2');
+    if (selectedPlot === "ALL") {
+        nfi2Container.innerHTML = `<div class="damage-empty-state">Select a specific plot to see NFI 2 historical status.</div>`;
+    } else {
+        const d2 = damageData.nfi2[selectedPlot] || "No data recorded";
+        let badgeClass = "damage-badge";
+        if (d2.toLowerCase().includes("no damage")) badgeClass += " healthy";
+        else if (d2.toLowerCase().includes("severe")) badgeClass += " severe";
+        else if (d2 !== "No data recorded") badgeClass += " minor";
+        
+        nfi2Container.innerHTML = `<div class="${badgeClass}">${d2}</div>`;
+    }
+
+    const processBarsAndTable = (nfiKey, chartContainerId, tableContainerId) => {
+        const chartContainer = document.getElementById(chartContainerId);
+        chartContainer.innerHTML = '';
+        
+        let records = [];
+        
+        if (selectedPlot === "ALL") {
+            let agg = {};
+            let totalTreesOverall = 0;
+            for (let plot in damageData[nfiKey]) {
+                let r = damageData[nfiKey][plot];
+                if(r.length > 0) {
+                    totalTreesOverall += r[0].totalTrees;
+                    r.forEach(rec => {
+                        if(!agg[rec.damage]) agg[rec.damage] = 0;
+                        agg[rec.damage] += rec.treesDamaged;
+                    });
+                }
+            }
+            for (let dmg in agg) {
+                let pct = totalTreesOverall > 0 ? (agg[dmg] / totalTreesOverall) * 100 : 0;
+                records.push({ damage: dmg, treesDamaged: agg[dmg], pct: pct }); // Added treesDamaged to ALL object
+            }
+        } else {
+            records = damageData[nfiKey][selectedPlot] || [];
+        }
+
+        records.sort((a, b) => b.pct - a.pct);
+
+        // Render the Progress Bars
+        if (records.length === 0) {
+            chartContainer.innerHTML = `<div class="damage-empty-state">No damage data available</div>`;
+        } else {
+            records.forEach(rec => {
+                const row = document.createElement('div');
+                row.className = 'damage-row';
+                const color = getDamageColor(rec.damage);
+                
+                row.innerHTML = `
+                    <div class="damage-label">
+                        <span>${rec.damage}</span>
+                        <span>${rec.pct.toFixed(1)}%</span>
+                    </div>
+                    <div class="damage-bar-bg">
+                        <div class="damage-bar-fill" style="width: ${rec.pct}%; background-color: ${color};"></div>
+                    </div>
+                `;
+                chartContainer.appendChild(row);
+            });
+        }
+        
+        // Render the Data Table
+        renderDamageTable(records, tableContainerId);
+    };
+
+    processBarsAndTable('nfi3', 'damage-nfi3', 'view-damage-nfi3-table');
+    processBarsAndTable('nfi4', 'damage-nfi4', 'view-damage-nfi4-table');
+}
+
+// NEW: Function to render the tabular view for Damage
+function renderDamageTable(records, containerId) {
+    const container = document.getElementById(containerId);
+    if (records.length === 0) {
+        container.innerHTML = `<div class="damage-empty-state" style="margin-top: 20px;">No damage data available</div>`;
+        return;
+    }
+
+    let html = `<table>
+        <thead>
+            <tr>
+                <th>Damage Agent</th>
+                <th>Trees Affected</th>
+                <th>% of Total Plot</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    records.forEach(rec => {
+        const trees = rec.treesDamaged !== undefined ? rec.treesDamaged.toFixed(1) : '-';
+        html += `
+            <tr>
+                <td>${rec.damage}</td>
+                <td>${trees}</td>
+                <td>${rec.pct.toFixed(2)}%</td>
+            </tr>`;
+    });
+
+    html += `</tbody></table>`;
+    container.innerHTML = html;
+}
+
 function updateDashboard(selectedPlot) {
-    const filteredRows = globalRawData.filter(row => row.estadillo === selectedPlot);
+    const filteredRows = selectedPlot === "ALL" 
+        ? globalRawData 
+        : globalRawData.filter(row => row.estadillo === selectedPlot);
 
     const activeSpecies = new Set();
     const dataMap = {}; 
@@ -268,6 +442,8 @@ function updateDashboard(selectedPlot) {
     renderTable(finalData, 'view-density-table', 'n', 'Stems/ha');
     renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
+    
+    renderDamageStatus(selectedPlot);
 }
 
 function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
@@ -341,15 +517,14 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
     });
 }
 
-function toggleView(type) {
+function toggleView(type, btn) {
     const chartView = document.getElementById(`view-${type}-chart`);
     const tableView = document.getElementById(`view-${type}-table`);
-    const btn = event.target;
 
     if (chartView.classList.contains('active')) {
         chartView.classList.remove('active');
         tableView.classList.add('active');
-        btn.textContent = 'View Chart';
+        btn.textContent = 'View Visuals';
     } else {
         chartView.classList.add('active');
         tableView.classList.remove('active');
