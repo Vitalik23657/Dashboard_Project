@@ -4,7 +4,8 @@ let uniqueEstadillos = new Set();
 let uniqueSpecies = new Set();
 
 let damageData = { nfi2: {}, nfi3: {}, nfi4: {} };
-let qualityData = {};
+let qualityData = {}; 
+let carbonData = {};
 
 const speciesColors = [
     '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
@@ -14,13 +15,8 @@ const speciesColors = [
 const speciesColorMap = {};
 
 const qualityColors = {
-    '1': '#1b5e20',
-    '2': '#4caf50',
-    '3': '#8bc34a',
-    '4': '#ffc107',
-    '5': '#ff9800',
-    '6': '#d32f2f',
-    'NA': '#9e9e9e'
+    '1': '#1b5e20', '2': '#4caf50', '3': '#8bc34a', 
+    '4': '#ffc107', '5': '#ff9800', '6': '#d32f2f', 'NA': '#9e9e9e' 
 };
 
 function getDamageColor(damageType) {
@@ -57,12 +53,13 @@ function hideTooltip() { tooltip.style.opacity = '0'; }
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4, resQual] = await Promise.all([
+        const [resVol, resD2, resD3, resD4, resQual, resCarb] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv')
+            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_6_CARBON/PlotCarbon_EN.csv')
         ]);
         
         const csvVol = await resVol.text();
@@ -70,16 +67,18 @@ async function loadData() {
         const csvD3 = await resD3.text();
         const csvD4 = await resD4.text();
         const csvQual = await resQual.text();
+        const csvCarb = await resCarb.text();
         
         parseRawData(csvVol);
         parseDamageNFI2(csvD2);
         parseDamageNFI34(csvD3, 'nfi3');
         parseDamageNFI34(csvD4, 'nfi4');
         parseQualityData(csvQual);
+        parseCarbonData(csvCarb);
         
         assignSpeciesColors();
         populateDropdown();
-        renderQualityLegend();
+        renderQualityLegend(); 
         
         const firstPlot = Array.from(uniqueEstadillos)[0];
         document.getElementById('estadillo-filter').value = firstPlot;
@@ -169,6 +168,35 @@ function parseQualityData(csvText) {
             v2: parseNum(row[4]), p2: parseNum(row[6]),
             v3: parseNum(row[7]), p3: parseNum(row[9]),
             v4: parseNum(row[10]), p4: parseNum(row[12])
+        };
+    }
+}
+
+function parseCarbonData(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 21) continue;
+
+        const estadillo = row[0].trim();
+        const parseNum = (val) => parseFloat(val) || 0;
+
+        carbonData[estadillo] = {
+            nfi2: {
+                stem: parseNum(row[3]), branches_large: parseNum(row[4]),
+                branches_small: parseNum(row[5]), leaves: parseNum(row[6]),
+                roots: parseNum(row[7]), total: parseNum(row[8])
+            },
+            nfi3: {
+                stem: parseNum(row[9]), branches_large: parseNum(row[10]),
+                branches_small: parseNum(row[11]), leaves: parseNum(row[12]),
+                roots: parseNum(row[13]), total: parseNum(row[14])
+            },
+            nfi4: {
+                stem: parseNum(row[15]), branches_large: parseNum(row[16]),
+                branches_small: parseNum(row[17]), leaves: parseNum(row[18]),
+                roots: parseNum(row[19]), total: parseNum(row[20])
+            }
         };
     }
 }
@@ -459,20 +487,16 @@ function renderQualityChartAndTable(selectedPlot) {
         return;
     }
 
-    const nfisArray = [
-        { key: '2', label: 'NFI 2' },
-        { key: '3', label: 'NFI 3' },
-        { key: '4', label: 'NFI 4' }
-    ];
+    const nfisArray = [{ key: '2', label: 'NFI 2' }, { key: '3', label: 'NFI 3' }, { key: '4', label: 'NFI 4' }];
 
     nfisArray.forEach(nfi => {
         const group = document.createElement('div');
         group.className = 'bar-group';
-        group.style.margin = '0 10%';
+        group.style.margin = '0 10%'; 
 
         const barContainer = document.createElement('div');
         barContainer.className = 'stacked-bar-container';
-        barContainer.style.width = '40%';
+        barContainer.style.width = '40%'; 
         barContainer.style.height = '100%'; 
         
         let segments = [];
@@ -507,7 +531,7 @@ function renderQualityChartAndTable(selectedPlot) {
         const label = document.createElement('div');
         label.className = 'x-axis-label';
         label.innerText = nfi.label;
-        label.style.bottom = '-25px';
+        label.style.bottom = '-25px'; 
         group.appendChild(label);
 
         chartContainer.appendChild(group);
@@ -541,6 +565,128 @@ function renderQualityChartAndTable(selectedPlot) {
     });
 
     html += `</tbody></table>`;
+    tableContainer.innerHTML = html;
+}
+
+function renderCarbonData(selectedPlot) {
+    const chartContainer = document.getElementById('chart-carbon');
+    const tableContainer = document.getElementById('table-carbon');
+    
+    let cData = {};
+
+    if (selectedPlot === "ALL") {
+        cData = { nfi2: { stem:0, branches_large:0, branches_small:0, leaves:0, roots:0, total:0 },
+                  nfi3: { stem:0, branches_large:0, branches_small:0, leaves:0, roots:0, total:0 },
+                  nfi4: { stem:0, branches_large:0, branches_small:0, leaves:0, roots:0, total:0 } };
+        
+        for (let plot in carbonData) {
+            ['nfi2', 'nfi3', 'nfi4'].forEach(nfi => {
+                for (let part in carbonData[plot][nfi]) {
+                    cData[nfi][part] += carbonData[plot][nfi][part];
+                }
+            });
+        }
+    } else {
+        cData = carbonData[selectedPlot];
+    }
+
+    if (!cData || cData.nfi2.total === 0) {
+        chartContainer.innerHTML = `<div class="damage-empty-state">No carbon data available</div>`;
+        tableContainer.innerHTML = `<div class="damage-empty-state">No carbon data available</div>`;
+        return;
+    }
+
+    const maxVal = Math.max(cData.nfi2.total, cData.nfi3.total, cData.nfi4.total);
+    const yPad = 40;
+    const w = 400, h = 250; 
+    
+    const getY = (val) => h - yPad - ((val / maxVal) * (h - yPad * 2));
+    
+    const x2 = 50, x3 = 200, x4 = 350;
+    const y2 = getY(cData.nfi2.total);
+    const y3 = getY(cData.nfi3.total);
+    const y4 = getY(cData.nfi4.total);
+
+    chartContainer.innerHTML = `
+        <svg width="100%" height="100%" viewBox="0 0 ${w} ${h}">
+            <defs>
+                <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#4CAF50"/>
+                    <stop offset="100%" stop-color="#2196F3"/>
+                </linearGradient>
+            </defs>
+            
+            <line x1="40" y1="${getY(maxVal)}" x2="380" y2="${getY(maxVal)}" stroke="#eee" stroke-dasharray="4"/>
+            <line x1="40" y1="${getY(maxVal/2)}" x2="380" y2="${getY(maxVal/2)}" stroke="#eee" stroke-dasharray="4"/>
+            <line x1="40" y1="${getY(0)}" x2="380" y2="${getY(0)}" stroke="#888"/>
+            
+            <path d="M${x2},${y2} L${x3},${y3} L${x4},${y4}" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <circle cx="${x2}" cy="${y2}" r="6" fill="white" stroke="#4CAF50" stroke-width="3"/>
+            <circle cx="${x3}" cy="${y3}" r="6" fill="white" stroke="#388E3C" stroke-width="3"/>
+            <circle cx="${x4}" cy="${y4}" r="6" fill="white" stroke="#2196F3" stroke-width="3"/>
+            
+            <text x="${x2}" y="${y2 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi2.total.toFixed(1)} t</text>
+            <text x="${x3}" y="${y3 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi3.total.toFixed(1)} t</text>
+            <text x="${x4}" y="${y4 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi4.total.toFixed(1)} t</text>
+            
+            <text x="${x2}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 2</text>
+            <text x="${x3}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 3</text>
+            <text x="${x4}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 4</text>
+        </svg>
+    `;
+
+    let html = `<table>
+        <thead>
+            <tr>
+                <th>Biomass Component</th>
+                <th>NFI 2 (t/ha)</th>
+                <th>NFI 3 (t/ha)</th>
+                <th>NFI 4 (t/ha)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stem</td>
+                <td>${cData.nfi2.stem.toFixed(2)}</td>
+                <td>${cData.nfi3.stem.toFixed(2)}</td>
+                <td>${cData.nfi4.stem.toFixed(2)}</td>
+            </tr>
+            <tr>
+                <td>Branches > 7cm</td>
+                <td>${cData.nfi2.branches_large.toFixed(2)}</td>
+                <td>${cData.nfi3.branches_large.toFixed(2)}</td>
+                <td>${cData.nfi4.branches_large.toFixed(2)}</td>
+            </tr>
+            <tr>
+                <td>Branches 2-7cm</td>
+                <td>${cData.nfi2.branches_small.toFixed(2)}</td>
+                <td>${cData.nfi3.branches_small.toFixed(2)}</td>
+                <td>${cData.nfi4.branches_small.toFixed(2)}</td>
+            </tr>
+            <tr>
+                <td>Leaves & Fine Branches</td>
+                <td>${cData.nfi2.leaves.toFixed(2)}</td>
+                <td>${cData.nfi3.leaves.toFixed(2)}</td>
+                <td>${cData.nfi4.leaves.toFixed(2)}</td>
+            </tr>
+            <tr>
+                <td>Roots</td>
+                <td>${cData.nfi2.roots.toFixed(2)}</td>
+                <td>${cData.nfi3.roots.toFixed(2)}</td>
+                <td>${cData.nfi4.roots.toFixed(2)}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #f0f0f0; font-weight: bold;">
+                <td>TOTAL CARBON</td>
+                <td>${cData.nfi2.total.toFixed(2)}</td>
+                <td>${cData.nfi3.total.toFixed(2)}</td>
+                <td>${cData.nfi4.total.toFixed(2)}</td>
+            </tr>
+        </tfoot>
+    </table>`;
+    
     tableContainer.innerHTML = html;
 }
 
@@ -604,6 +750,7 @@ function updateDashboard(selectedPlot) {
     
     renderDamageStatus(selectedPlot);
     renderQualityChartAndTable(selectedPlot);
+    renderCarbonData(selectedPlot);
 }
 
 function renderStackedChart(data, containerId, metricPrefix, yLabelText) {

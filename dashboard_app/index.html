@@ -115,13 +115,13 @@
         <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
             <div class="header-top">
                 <h2>Wood Quality Assessment</h2>
-                <div class="legend" id="quality-legend" style="border: none; padding: 0;">
-                    </div>
+                <div class="legend" id="quality-legend" style="border: none; padding: 0;"></div>
             </div>
         </div>
 
-        <div class="charts-grid" style="margin-bottom: 40px;">
-            <div class="chart-card" style="grid-column: 1 / -1;"> <div class="card-header">
+        <div class="charts-grid">
+            <div class="chart-card" style="grid-column: 1 / -1;">
+                <div class="card-header">
                     <h3 class="chart-title">Quality Classes Evolution (% of Total Volume)</h3>
                     <button class="toggle-btn" onclick="toggleView('quality', this)">View Table</button>
                 </div>
@@ -132,8 +132,24 @@
             </div>
         </div>
 
+        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
+            <h2>Carbon Stocks (Tonnes/ha)</h2>
+        </div>
+
+        <div class="charts-grid" style="margin-bottom: 40px;">
+            <div class="chart-card">
+                <h3 class="chart-title">Total Carbon Evolution</h3>
+                <div class="chart-container" id="chart-carbon" style="height: 250px; border:none; padding:0; justify-content: center; align-items: center; display: flex;"></div>
+            </div>
+
+            <div class="chart-card" style="grid-column: span 2;">
+                <h3 class="chart-title">Carbon Biomass Breakdown</h3>
+                <div id="table-carbon" class="table-scroll" style="max-height: 250px;"></div>
+            </div>
+        </div>
+
     </div>
     <div id="tooltip"></div>
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=6"></script>
 </body>
 </html>
