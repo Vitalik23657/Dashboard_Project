@@ -7,11 +7,12 @@ let damageData = { nfi2: {}, nfi3: {}, nfi4: {} };
 let qualityData = {}; 
 let carbonData = {};
 
-const speciesColors = [
-    '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
-    '#00BCD4', '#FF9800', '#795548', '#607D8B', '#8BC34A',
-    '#F44336', '#3F51B5', '#009688', '#CDDC39', '#FF5722'
-];
+const nfiColors = {
+    '2': '#4A90A4',
+    '3': '#5BA85A', 
+    '4': '#2E6B3E' 
+};
+
 const speciesColorMap = {};
 
 const qualityColors = {
@@ -51,6 +52,24 @@ function showTooltip(e, htmlContent) {
 
 function hideTooltip() { tooltip.style.opacity = '0'; }
 
+const STORAGE_KEY = 'forestDashboard_selectedPlot';
+
+function saveSelectedPlot(plot) {
+    try {
+        localStorage.setItem(STORAGE_KEY, plot);
+    } catch (e) {
+        // localStorage unavailable (e.g. private mode), fail silently
+    }
+}
+
+function loadSelectedPlot() {
+    try {
+        return localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+        return null;
+    }
+}
+
 async function loadData() {
     try {
         const [resVol, resD2, resD3, resD4, resQual, resCarb] = await Promise.all([
@@ -79,12 +98,18 @@ async function loadData() {
         assignSpeciesColors();
         populateDropdown();
         renderQualityLegend(); 
+
+        // Restore last selected plot, or fall back to the first available
+        const savedPlot = loadSelectedPlot();
+        const sortedPlots = Array.from(uniqueEstadillos).sort((a, b) => parseInt(a) - parseInt(b));
+        const plotToSelect = (savedPlot && uniqueEstadillos.has(savedPlot)) ? savedPlot : sortedPlots[0];
+
+        const select = document.getElementById('estadillo-filter');
+        select.value = plotToSelect;
+        updateDashboard(plotToSelect);
         
-        const firstPlot = Array.from(uniqueEstadillos)[0];
-        document.getElementById('estadillo-filter').value = firstPlot;
-        updateDashboard(firstPlot);
-        
-        document.getElementById('estadillo-filter').addEventListener('change', (e) => {
+        select.addEventListener('change', (e) => {
+            saveSelectedPlot(e.target.value);
             updateDashboard(e.target.value);
         });
 
@@ -202,10 +227,8 @@ function parseCarbonData(csvText) {
 }
 
 function assignSpeciesColors() {
-    let colorIndex = 0;
     Array.from(uniqueSpecies).sort().forEach(species => {
-        speciesColorMap[species] = speciesColors[colorIndex % speciesColors.length];
-        colorIndex++;
+        speciesColorMap[species] = '#4A90A4';
     });
 }
 
@@ -223,19 +246,12 @@ function populateDropdown() {
 
 function updateLegend(activeSpecies) {
     const legendContainer = document.getElementById('species-legend');
-    legendContainer.innerHTML = ''; 
+    legendContainer.innerHTML = '';
 
-    const speciesToDisplay = Array.from(uniqueSpecies).filter(s => activeSpecies.has(s)).sort();
-
-    if(speciesToDisplay.length === 0) {
-        legendContainer.innerHTML = '<span>No species data available</span>';
-        return;
-    }
-
-    speciesToDisplay.forEach(species => {
+    [['2', 'NFI 2'], ['3', 'NFI 3'], ['4', 'NFI 4']].forEach(([num, label]) => {
         const item = document.createElement('div');
         item.className = 'legend-item';
-        item.innerHTML = `<div class="legend-color" style="background: ${speciesColorMap[species]};"></div> ${species}`;
+        item.innerHTML = `<div class="legend-color" style="background: ${nfiColors[num]};"></div> ${label}`;
         legendContainer.appendChild(item);
     });
 }
@@ -740,11 +756,11 @@ function updateDashboard(selectedPlot) {
 
     updateGrowthStats(finalData);
 
-    renderStackedChart(finalData, 'chart-density', 'n', 'Stems/ha');
+    renderStackedChart(finalData, 'chart-density', 'n', 'Trees/ha');
     renderStackedChart(finalData, 'chart-basal', 'ba', 'm²/ha');
     renderStackedChart(finalData, 'chart-volume', 'v', 'm³/ha');
 
-    renderTable(finalData, 'view-density-table', 'n', 'Stems/ha');
+    renderTable(finalData, 'view-density-table', 'n', 'Trees/ha');
     renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
     
@@ -780,7 +796,10 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
             
             const containerHeightPercent = (totalVal / maxTotal) * 100;
             barContainer.style.height = `${containerHeightPercent}%`;
-            if(containerHeightPercent === 0) barContainer.style.minHeight = '1px';
+            if (containerHeightPercent === 0) barContainer.style.minHeight = '1px';
+
+            const nfiNum = nfiKey.slice(-1);
+            const barColor = nfiColors[nfiNum];
 
             let tooltipHtml = `<div style="margin-bottom:6px; border-bottom:1px solid #555; padding-bottom:4px;">
                 <strong>DC ${item.dc} - ${labelName}</strong><br>
@@ -793,10 +812,9 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
                     const segment = document.createElement('div');
                     segment.className = `bar-segment ${patternClass}`;
                     segment.style.height = `${(val / totalVal) * 100}%`;
-                    segment.style.backgroundColor = speciesColorMap[sp];
+                    segment.style.backgroundColor = barColor;
                     barContainer.appendChild(segment);
-
-                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${speciesColorMap[sp]}"></span>${sp}: ${val.toFixed(2)}</div>`;
+                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${barColor}"></span>${sp}: ${val.toFixed(2)}</div>`;
                 }
             }
 
@@ -867,5 +885,29 @@ function renderTable(data, containerId, metric, unit) {
     html += `</tbody></table>`;
     container.innerHTML = html;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            navLinks.forEach(l => l.classList.remove('active'));
+            
+            this.classList.add('active');
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
 
 loadData();

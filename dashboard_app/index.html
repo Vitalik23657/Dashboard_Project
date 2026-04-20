@@ -7,9 +7,20 @@
     <title>Forest Stocks Dashboard</title>
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="nav-logo">Dashboard</div>
+            <div class="nav-links">
+                <a href="#stocks-section" class="active">Forest Stocks</a>
+                <a href="#damage-section">Damage Analysis</a>
+                <a href="#quality-section">Wood Quality</a>
+                <a href="#carbon-section">Carbon Stocks</a>
+            </div>
+        </div>
+    </nav>
     <div class="dashboard-container">
         <div class="header-panel">
-            <div class="header-top">
+            <div class="header-top" id="stocks-section">
                 <h2>Forest Stocks</h2>
                 <div class="header-controls">
                     <div class="growth-badge-container">
@@ -78,7 +89,7 @@
         </div>
 
         <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
-            <h2>Forest Damage</h2>
+            <h2>Forest Damage Analysis</h2>
         </div>
         
         <div class="charts-grid">
@@ -114,7 +125,7 @@
 
         <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
             <div class="header-top">
-                <h2>Wood Quality</h2>
+                <h2>Wood Quality Assessment</h2>
                 <div class="legend" id="quality-legend" style="border: none; padding: 0;"></div>
             </div>
         </div>
@@ -131,9 +142,8 @@
                 <div id="view-quality-table" class="view-container table-scroll"></div>
             </div>
         </div>
-
         <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
-            <h2>Aboveground Biomass Carbon</h2>
+            <h2>Carbon Stocks (Tonnes/ha)</h2>
         </div>
 
         <div class="charts-grid" style="margin-bottom: 40px;">
