@@ -226,9 +226,11 @@ function parseCarbonData(csvText) {
     }
 }
 
+const speciesPalette = ['#E53935', '#F9A825', '#43A047'];
+
 function assignSpeciesColors() {
-    Array.from(uniqueSpecies).sort().forEach(species => {
-        speciesColorMap[species] = '#4A90A4';
+    Array.from(uniqueSpecies).sort().forEach((species, i) => {
+        speciesColorMap[species] = speciesPalette[i % speciesPalette.length];
     });
 }
 
@@ -248,10 +250,14 @@ function updateLegend(activeSpecies) {
     const legendContainer = document.getElementById('species-legend');
     legendContainer.innerHTML = '';
 
-    [['2', 'NFI 2'], ['3', 'NFI 3'], ['4', 'NFI 4']].forEach(([num, label]) => {
+    Array.from(activeSpecies).sort().forEach(species => {
+        const color = speciesColorMap[species] || '#999';
         const item = document.createElement('div');
         item.className = 'legend-item';
-        item.innerHTML = `<div class="legend-color" style="background: ${nfiColors[num]};"></div> ${label}`;
+        item.innerHTML = `
+            <div class="legend-color" style="background: ${color};"></div>
+            <i>${species}</i>
+        `;
         legendContainer.appendChild(item);
     });
 }
@@ -812,9 +818,9 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
                     const segment = document.createElement('div');
                     segment.className = `bar-segment ${patternClass}`;
                     segment.style.height = `${(val / totalVal) * 100}%`;
-                    segment.style.backgroundColor = barColor;
+                    segment.style.backgroundColor = speciesColorMap[sp] || barColor;
                     barContainer.appendChild(segment);
-                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${barColor}"></span>${sp}: ${val.toFixed(2)}</div>`;
+                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${speciesColorMap[sp] || barColor}"></span>${sp}: ${val.toFixed(2)}</div>`;
                 }
             }
 
