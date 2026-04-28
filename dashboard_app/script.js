@@ -3,19 +3,18 @@ let globalRawData = [];
 let uniqueEstadillos = new Set(); 
 let uniqueSpecies = new Set();
 
-// NEW: Keep track of which species the user has untoggled
 let disabledSpecies = new Set();
 
 let damageData = { nfi2: {}, nfi3: {}, nfi4: {} };
 let qualityData = {}; 
 let carbonData = {};
+let qualityDescriptions = {};
 
-// Expanded palette to prevent color repeating
 const speciesPalette = [
-    '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
+    '#EF9A9A', '#B71C1C', '#D500F9', '#76FF03', '#69F0AE', 
     '#00BCD4', '#FF9800', '#795548', '#607D8B', '#8BC34A',
-    '#F44336', '#3F51B5', '#009688', '#CDDC39', '#FF5722',
-    '#5D4037', '#00796B', '#FBC02D'
+    '#FFFF00', '#3F51B5', '#009688', '#827717', '#FF5722',
+    '#3E2723', '#FF4081', '#263238'
 ];
 const speciesColorMap = {};
 
@@ -58,13 +57,14 @@ function hideTooltip() { tooltip.style.opacity = '0'; }
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4, resQual, resCarb] = await Promise.all([
+        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
-            fetch('DamageNFI2_EN.csv'),
-            fetch('DamageNFI3_EN.csv'),
-            fetch('DamageNFI4_EN.csv'),
-            fetch('PlotQuality_EN.csv'),
-            fetch('PlotCarbon_EN.csv')
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_6_CARBON/PlotCarbon_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/WoodQualityDescription.csv')
         ]);
         
         const csvVol = await resVol.text();
@@ -73,6 +73,7 @@ async function loadData() {
         const csvD4 = await resD4.text();
         const csvQual = await resQual.text();
         const csvCarb = await resCarb.text();
+        const csvQualDesc = await resQualDesc.text();
         
         parseRawData(csvVol);
         parseDamageNFI2(csvD2);
@@ -80,17 +81,19 @@ async function loadData() {
         parseDamageNFI34(csvD4, 'nfi4');
         parseQualityData(csvQual);
         parseCarbonData(csvCarb); 
+        parseQualityDescriptions(csvQualDesc);
         
         assignSpeciesColors();
         populateDropdown();
         renderQualityLegend(); 
+        renderQualityDefinitions();
         
         const firstPlot = Array.from(uniqueEstadillos)[0];
         document.getElementById('estadillo-filter').value = firstPlot;
         updateDashboard(firstPlot);
         
         document.getElementById('estadillo-filter').addEventListener('change', (e) => {
-            disabledSpecies.clear();
+            disabledSpecies.clear(); 
             updateDashboard(e.target.value);
         });
 
@@ -207,6 +210,19 @@ function parseCarbonData(csvText) {
     }
 }
 
+function parseQualityDescriptions(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        
+        const match = line.match(/^(\d+),\s*"([^"]+)"/);
+        if (match) {
+            qualityDescriptions[match[1]] = match[2];
+        }
+    }
+}
+
 function assignSpeciesColors() {
     Array.from(uniqueSpecies).sort().forEach((species, i) => {
         speciesColorMap[species] = speciesPalette[i % speciesPalette.length];
@@ -225,7 +241,6 @@ function populateDropdown() {
     });
 }
 
-// NEW: Interactive Legend Logic
 function updateLegend(activeSpecies) {
     const legendContainer = document.getElementById('species-legend');
     legendContainer.innerHTML = ''; 
@@ -239,10 +254,8 @@ function updateLegend(activeSpecies) {
 
     speciesToDisplay.forEach(species => {
         const item = document.createElement('div');
-        // Apply disabled class if it's currently turned off
         item.className = 'legend-item interactive-legend' + (disabledSpecies.has(species) ? ' disabled' : '');
         
-        // Add a checkbox for UI clarity
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.checked = !disabledSpecies.has(species);
@@ -258,15 +271,12 @@ function updateLegend(activeSpecies) {
         item.appendChild(colorBox);
         item.appendChild(label);
 
-        // Click Event to toggle species on/off
         item.addEventListener('click', (e) => {
             if (disabledSpecies.has(species)) {
-                disabledSpecies.delete(species); // Enable it
+                disabledSpecies.delete(species); 
             } else {
-                disabledSpecies.add(species); // Disable it
+                disabledSpecies.add(species); 
             }
-            
-            // Re-render the dashboard to apply the filter
             const currentPlot = document.getElementById('estadillo-filter').value;
             updateDashboard(currentPlot);
         });
@@ -277,11 +287,52 @@ function updateLegend(activeSpecies) {
 
 function renderQualityLegend() {
     const legendContainer = document.getElementById('quality-legend');
+    legendContainer.innerHTML = '';
+    
     for (let i = 1; i <= 6; i++) {
         const item = document.createElement('div');
         item.className = 'legend-item';
+        
+        item.style.cursor = 'help'; 
         item.innerHTML = `<div class="legend-color" style="background: ${qualityColors[i]};"></div> Class ${i}`;
+        
+        if (qualityDescriptions[i]) {
+            const tooltipHtml = `<div style="max-width: 250px; white-space: normal; line-height: 1.4;">
+                <strong>Quality Class ${i}</strong><br>
+                <span style="color: #ddd; font-size: 0.8rem; display: inline-block; margin-top: 4px;">${qualityDescriptions[i]}</span>
+            </div>`;
+            item.addEventListener('mousemove', (e) => showTooltip(e, tooltipHtml));
+            item.addEventListener('mouseleave', hideTooltip);
+        }
+        
         legendContainer.appendChild(item);
+    }
+}
+
+function renderQualityDefinitions() {
+    const container = document.getElementById('quality-definitions-list');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    for (let i = 1; i <= 6; i++) {
+        if (qualityDescriptions[i]) {
+            const row = document.createElement('div');
+            row.style.display = 'flex';
+            row.style.gap = '12px';
+            row.style.alignItems = 'flex-start';
+            
+            row.innerHTML = `
+                <div style="flex-shrink: 0; display: flex; align-items: center; gap: 6px; width: 85px; font-weight: bold; color: #333;">
+                    <div class="legend-color" style="background: ${qualityColors[i]};"></div>
+                    Class ${i}
+                </div>
+                <div style="color: #555; line-height: 1.4;">
+                    ${qualityDescriptions[i]}
+                </div>
+            `;
+            container.appendChild(row);
+        }
     }
 }
 
@@ -720,7 +771,6 @@ function renderCarbonData(selectedPlot) {
     tableContainer.innerHTML = html;
 }
 
-// NEW: Refactored Update Dashboard logic to skip disabled species
 function updateDashboard(selectedPlot) {
     const filteredRows = selectedPlot === "ALL" 
         ? globalRawData 
@@ -728,7 +778,6 @@ function updateDashboard(selectedPlot) {
 
     const activeSpecies = new Set();
     
-    // Pass 1: Find all species present in this plot (regardless of filter)
     filteredRows.forEach(row => {
         const sp = row.species;
         if (row.n2 > 0 || row.n3 > 0 || row.n4 > 0 || row.ba2 > 0 || row.ba3 > 0 || row.ba4 > 0 || row.v2 > 0 || row.v3 > 0 || row.v4 > 0) {
@@ -736,16 +785,13 @@ function updateDashboard(selectedPlot) {
         }
     });
 
-    // Update Legend UI to show all present species
     updateLegend(activeSpecies);
 
     const dataMap = {}; 
 
-    // Pass 2: Calculate math for charts and tables, skipping disabled species
     filteredRows.forEach(row => {
         const sp = row.species;
         
-        // Skip this row if the user unchecked this species!
         if (disabledSpecies.has(sp)) return;
 
         if (!dataMap[row.dc]) {
@@ -780,7 +826,6 @@ function updateDashboard(selectedPlot) {
         .map(dc => ({ dc: parseInt(dc), ...dataMap[dc] }))
         .sort((a, b) => a.dc - b.dc);
 
-    // Because finalData ignores the disabled species, the Growth Badge automatically updates too!
     updateGrowthStats(finalData);
 
     renderStackedChart(finalData, 'chart-density', 'n', 'Stems/ha');
@@ -791,7 +836,6 @@ function updateDashboard(selectedPlot) {
     renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
     
-    // Damage, Quality, and Carbon don't have species breakdowns, so they render normally
     renderDamageStatus(selectedPlot);
     renderQualityChartAndTable(selectedPlot);
     renderCarbonData(selectedPlot);

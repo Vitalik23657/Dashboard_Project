@@ -7,19 +7,8 @@
     <title>Forest Stocks Dashboard</title>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="nav-content">
-            <div class="nav-logo">Dashboard</div>
-            <div class="nav-links">
-                <a href="#stocks-section" class="active">Forest Stocks</a>
-                <a href="#damage-section">Damage Analysis</a>
-                <a href="#quality-section">Wood Quality</a>
-                <a href="#carbon-section">Carbon Stocks</a>
-            </div>
-        </div>
-    </nav>
     <div class="dashboard-container">
-        <div class="header-panel" id="stocks-section">
+        <div class="header-panel">
             <div class="header-top">
                 <h2>Forest Stocks</h2>
                 <div class="header-controls">
@@ -88,21 +77,21 @@
             </div>
         </div>
 
-        <div class="header-panel" id="damage-section" style="margin-top: 24px; padding-bottom: 12px;">
+        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
             <h2>Forest Damage Analysis</h2>
         </div>
         
         <div class="charts-grid">
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 2</h3>
+                    <h3 class="chart-title">NFI 2 Status</h3>
                 </div>
                 <div id="damage-nfi2" class="damage-status-container"></div>
             </div>
 
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 3</h3>
+                    <h3 class="chart-title">NFI 3 Agents</h3>
                     <button class="toggle-btn" onclick="toggleView('damage-nfi3', this)">View Table</button>
                 </div>
                 <div id="view-damage-nfi3-chart" class="view-container active">
@@ -113,7 +102,7 @@
 
             <div class="chart-card">
                 <div class="card-header">
-                    <h3 class="chart-title">NFI 4</h3>
+                    <h3 class="chart-title">NFI 4 Agents</h3>
                     <button class="toggle-btn" onclick="toggleView('damage-nfi4', this)">View Table</button>
                 </div>
                 <div id="view-damage-nfi4-chart" class="view-container active">
@@ -123,7 +112,7 @@
             </div>
         </div>
 
-        <div class="header-panel" id="quality-section" style="margin-top: 24px; padding-bottom: 12px;">
+        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
             <div class="header-top">
                 <h2>Wood Quality Assessment</h2>
                 <div class="legend" id="quality-legend" style="border: none; padding: 0;"></div>
@@ -136,13 +125,21 @@
                     <h3 class="chart-title">Quality Classes Evolution (% of Total Volume)</h3>
                     <button class="toggle-btn" onclick="toggleView('quality', this)">View Table</button>
                 </div>
+
+                <details style="margin-bottom: 20px; font-size: 0.9rem; border: 1px solid #eee; border-radius: 8px; padding: 12px 16px; background: #fafafa;">
+                    <summary style="cursor: pointer; font-weight: 600; color: #546e7a; outline: none;">View Quality Class Definitions</summary>
+                    <div id="quality-definitions-list" style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
+                        </div>
+                </details>
+
                 <div id="view-quality-chart" class="view-container active">
                     <div class="chart-container" id="chart-quality" style="height: 300px; padding-bottom: 30px;"></div>
                 </div>
                 <div id="view-quality-table" class="view-container table-scroll"></div>
             </div>
         </div>
-        <div class="header-panel" id="carbon-section" style="margin-top: 24px; padding-bottom: 12px;">
+
+        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
             <h2>Carbon Stocks (Tonnes/ha)</h2>
         </div>
 
@@ -160,6 +157,6 @@
 
     </div>
     <div id="tooltip"></div>
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
 </body>
 </html>
