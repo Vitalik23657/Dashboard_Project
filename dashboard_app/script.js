@@ -3,16 +3,20 @@ let globalRawData = [];
 let uniqueEstadillos = new Set(); 
 let uniqueSpecies = new Set();
 
+// NEW: Keep track of which species the user has untoggled
+let disabledSpecies = new Set();
+
 let damageData = { nfi2: {}, nfi3: {}, nfi4: {} };
 let qualityData = {}; 
 let carbonData = {};
 
-const nfiColors = {
-    '2': '#4A90A4',
-    '3': '#5BA85A', 
-    '4': '#2E6B3E' 
-};
-
+// Expanded palette to prevent color repeating
+const speciesPalette = [
+    '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', 
+    '#00BCD4', '#FF9800', '#795548', '#607D8B', '#8BC34A',
+    '#F44336', '#3F51B5', '#009688', '#CDDC39', '#FF5722',
+    '#5D4037', '#00796B', '#FBC02D'
+];
 const speciesColorMap = {};
 
 const qualityColors = {
@@ -52,33 +56,15 @@ function showTooltip(e, htmlContent) {
 
 function hideTooltip() { tooltip.style.opacity = '0'; }
 
-const STORAGE_KEY = 'forestDashboard_selectedPlot';
-
-function saveSelectedPlot(plot) {
-    try {
-        localStorage.setItem(STORAGE_KEY, plot);
-    } catch (e) {
-        // localStorage unavailable (e.g. private mode), fail silently
-    }
-}
-
-function loadSelectedPlot() {
-    try {
-        return localStorage.getItem(STORAGE_KEY);
-    } catch (e) {
-        return null;
-    }
-}
-
 async function loadData() {
     try {
         const [resVol, resD2, resD3, resD4, resQual, resCarb] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_6_CARBON/PlotCarbon_EN.csv')
+            fetch('DamageNFI2_EN.csv'),
+            fetch('DamageNFI3_EN.csv'),
+            fetch('DamageNFI4_EN.csv'),
+            fetch('PlotQuality_EN.csv'),
+            fetch('PlotCarbon_EN.csv')
         ]);
         
         const csvVol = await resVol.text();
@@ -93,23 +79,18 @@ async function loadData() {
         parseDamageNFI34(csvD3, 'nfi3');
         parseDamageNFI34(csvD4, 'nfi4');
         parseQualityData(csvQual);
-        parseCarbonData(csvCarb);
+        parseCarbonData(csvCarb); 
         
         assignSpeciesColors();
         populateDropdown();
         renderQualityLegend(); 
-
-        // Restore last selected plot, or fall back to the first available
-        const savedPlot = loadSelectedPlot();
-        const sortedPlots = Array.from(uniqueEstadillos).sort((a, b) => parseInt(a) - parseInt(b));
-        const plotToSelect = (savedPlot && uniqueEstadillos.has(savedPlot)) ? savedPlot : sortedPlots[0];
-
-        const select = document.getElementById('estadillo-filter');
-        select.value = plotToSelect;
-        updateDashboard(plotToSelect);
         
-        select.addEventListener('change', (e) => {
-            saveSelectedPlot(e.target.value);
+        const firstPlot = Array.from(uniqueEstadillos)[0];
+        document.getElementById('estadillo-filter').value = firstPlot;
+        updateDashboard(firstPlot);
+        
+        document.getElementById('estadillo-filter').addEventListener('change', (e) => {
+            disabledSpecies.clear();
             updateDashboard(e.target.value);
         });
 
@@ -226,8 +207,6 @@ function parseCarbonData(csvText) {
     }
 }
 
-const speciesPalette = ['#E53935', '#F9A825', '#43A047'];
-
 function assignSpeciesColors() {
     Array.from(uniqueSpecies).sort().forEach((species, i) => {
         speciesColorMap[species] = speciesPalette[i % speciesPalette.length];
@@ -246,18 +225,52 @@ function populateDropdown() {
     });
 }
 
+// NEW: Interactive Legend Logic
 function updateLegend(activeSpecies) {
     const legendContainer = document.getElementById('species-legend');
-    legendContainer.innerHTML = '';
+    legendContainer.innerHTML = ''; 
 
-    Array.from(activeSpecies).sort().forEach(species => {
-        const color = speciesColorMap[species] || '#999';
+    const speciesToDisplay = Array.from(uniqueSpecies).filter(s => activeSpecies.has(s)).sort();
+
+    if(speciesToDisplay.length === 0) {
+        legendContainer.innerHTML = '<span>No species data available</span>';
+        return;
+    }
+
+    speciesToDisplay.forEach(species => {
         const item = document.createElement('div');
-        item.className = 'legend-item';
-        item.innerHTML = `
-            <div class="legend-color" style="background: ${color};"></div>
-            <i>${species}</i>
-        `;
+        // Apply disabled class if it's currently turned off
+        item.className = 'legend-item interactive-legend' + (disabledSpecies.has(species) ? ' disabled' : '');
+        
+        // Add a checkbox for UI clarity
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = !disabledSpecies.has(species);
+
+        const colorBox = document.createElement('div');
+        colorBox.className = 'legend-color';
+        colorBox.style.background = speciesColorMap[species];
+
+        const label = document.createElement('span');
+        label.innerText = species;
+
+        item.appendChild(checkbox);
+        item.appendChild(colorBox);
+        item.appendChild(label);
+
+        // Click Event to toggle species on/off
+        item.addEventListener('click', (e) => {
+            if (disabledSpecies.has(species)) {
+                disabledSpecies.delete(species); // Enable it
+            } else {
+                disabledSpecies.add(species); // Disable it
+            }
+            
+            // Re-render the dashboard to apply the filter
+            const currentPlot = document.getElementById('estadillo-filter').value;
+            updateDashboard(currentPlot);
+        });
+
         legendContainer.appendChild(item);
     });
 }
@@ -303,7 +316,7 @@ function updateGrowthStats(data) {
     if (totalV2 === 0 && totalV4 === 0) {
         badge.className = 'growth-badge neutral';
         badge.innerHTML = `NFI 2 → 4 Volume Growth: 0%`;
-        dropdown.innerHTML = 'No data available to compare.';
+        dropdown.innerHTML = 'No data available or all species filtered out.';
         return;
     }
 
@@ -619,7 +632,7 @@ function renderCarbonData(selectedPlot) {
     }
 
     const maxVal = Math.max(cData.nfi2.total, cData.nfi3.total, cData.nfi4.total);
-    const yPad = 40;
+    const yPad = 40; 
     const w = 400, h = 250; 
     
     const getY = (val) => h - yPad - ((val / maxVal) * (h - yPad * 2));
@@ -637,21 +650,16 @@ function renderCarbonData(selectedPlot) {
                     <stop offset="100%" stop-color="#2196F3"/>
                 </linearGradient>
             </defs>
-            
             <line x1="40" y1="${getY(maxVal)}" x2="380" y2="${getY(maxVal)}" stroke="#eee" stroke-dasharray="4"/>
             <line x1="40" y1="${getY(maxVal/2)}" x2="380" y2="${getY(maxVal/2)}" stroke="#eee" stroke-dasharray="4"/>
             <line x1="40" y1="${getY(0)}" x2="380" y2="${getY(0)}" stroke="#888"/>
-            
             <path d="M${x2},${y2} L${x3},${y3} L${x4},${y4}" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            
             <circle cx="${x2}" cy="${y2}" r="6" fill="white" stroke="#4CAF50" stroke-width="3"/>
             <circle cx="${x3}" cy="${y3}" r="6" fill="white" stroke="#388E3C" stroke-width="3"/>
             <circle cx="${x4}" cy="${y4}" r="6" fill="white" stroke="#2196F3" stroke-width="3"/>
-            
             <text x="${x2}" y="${y2 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi2.total.toFixed(1)} t</text>
             <text x="${x3}" y="${y3 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi3.total.toFixed(1)} t</text>
             <text x="${x4}" y="${y4 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi4.total.toFixed(1)} t</text>
-            
             <text x="${x2}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 2</text>
             <text x="${x3}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 3</text>
             <text x="${x4}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 4</text>
@@ -712,15 +720,34 @@ function renderCarbonData(selectedPlot) {
     tableContainer.innerHTML = html;
 }
 
+// NEW: Refactored Update Dashboard logic to skip disabled species
 function updateDashboard(selectedPlot) {
     const filteredRows = selectedPlot === "ALL" 
         ? globalRawData 
         : globalRawData.filter(row => row.estadillo === selectedPlot);
 
     const activeSpecies = new Set();
+    
+    // Pass 1: Find all species present in this plot (regardless of filter)
+    filteredRows.forEach(row => {
+        const sp = row.species;
+        if (row.n2 > 0 || row.n3 > 0 || row.n4 > 0 || row.ba2 > 0 || row.ba3 > 0 || row.ba4 > 0 || row.v2 > 0 || row.v3 > 0 || row.v4 > 0) {
+            activeSpecies.add(sp);
+        }
+    });
+
+    // Update Legend UI to show all present species
+    updateLegend(activeSpecies);
+
     const dataMap = {}; 
 
+    // Pass 2: Calculate math for charts and tables, skipping disabled species
     filteredRows.forEach(row => {
+        const sp = row.species;
+        
+        // Skip this row if the user unchecked this species!
+        if (disabledSpecies.has(sp)) return;
+
         if (!dataMap[row.dc]) {
             dataMap[row.dc] = { 
                 n2: {}, n3: {}, n4: {}, 
@@ -733,11 +760,6 @@ function updateDashboard(selectedPlot) {
         }
 
         const dcMap = dataMap[row.dc];
-        const sp = row.species;
-
-        if (row.n2 > 0 || row.n3 > 0 || row.n4 > 0 || row.ba2 > 0 || row.ba3 > 0 || row.ba4 > 0 || row.v2 > 0 || row.v3 > 0 || row.v4 > 0) {
-            activeSpecies.add(sp);
-        }
 
         const initSp = (metric) => { if(!dcMap[metric][sp]) dcMap[metric][sp] = 0; }
         
@@ -754,22 +776,22 @@ function updateDashboard(selectedPlot) {
         dcMap.total_v2 += row.v2; dcMap.total_v3 += row.v3; dcMap.total_v4 += row.v4;
     });
 
-    updateLegend(activeSpecies);
-
     const finalData = Object.keys(dataMap)
         .map(dc => ({ dc: parseInt(dc), ...dataMap[dc] }))
         .sort((a, b) => a.dc - b.dc);
 
+    // Because finalData ignores the disabled species, the Growth Badge automatically updates too!
     updateGrowthStats(finalData);
 
-    renderStackedChart(finalData, 'chart-density', 'n', 'Trees/ha');
+    renderStackedChart(finalData, 'chart-density', 'n', 'Stems/ha');
     renderStackedChart(finalData, 'chart-basal', 'ba', 'm²/ha');
     renderStackedChart(finalData, 'chart-volume', 'v', 'm³/ha');
 
-    renderTable(finalData, 'view-density-table', 'n', 'Trees/ha');
+    renderTable(finalData, 'view-density-table', 'n', 'Stems/ha');
     renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
     
+    // Damage, Quality, and Carbon don't have species breakdowns, so they render normally
     renderDamageStatus(selectedPlot);
     renderQualityChartAndTable(selectedPlot);
     renderCarbonData(selectedPlot);
@@ -780,7 +802,7 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
     container.innerHTML = `<div class="y-axis-label">${yLabelText}</div>`;
 
     if (data.length === 0) {
-        container.innerHTML += `<div style="margin: auto; color: #888;">No data for this plot</div>`;
+        container.innerHTML += `<div style="margin: auto; color: #888;">No data for selected filters</div>`;
         return;
     }
 
@@ -802,10 +824,7 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
             
             const containerHeightPercent = (totalVal / maxTotal) * 100;
             barContainer.style.height = `${containerHeightPercent}%`;
-            if (containerHeightPercent === 0) barContainer.style.minHeight = '1px';
-
-            const nfiNum = nfiKey.slice(-1);
-            const barColor = nfiColors[nfiNum];
+            if(containerHeightPercent === 0) barContainer.style.minHeight = '1px';
 
             let tooltipHtml = `<div style="margin-bottom:6px; border-bottom:1px solid #555; padding-bottom:4px;">
                 <strong>DC ${item.dc} - ${labelName}</strong><br>
@@ -818,9 +837,10 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
                     const segment = document.createElement('div');
                     segment.className = `bar-segment ${patternClass}`;
                     segment.style.height = `${(val / totalVal) * 100}%`;
-                    segment.style.backgroundColor = speciesColorMap[sp] || barColor;
+                    segment.style.backgroundColor = speciesColorMap[sp];
                     barContainer.appendChild(segment);
-                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${speciesColorMap[sp] || barColor}"></span>${sp}: ${val.toFixed(2)}</div>`;
+
+                    tooltipHtml += `<div><span class="tooltip-color-box" style="background:${speciesColorMap[sp]}"></span>${sp}: ${val.toFixed(2)}</div>`;
                 }
             }
 
@@ -865,7 +885,7 @@ function toggleView(type, btn) {
 
 function renderTable(data, containerId, metric, unit) {
     const container = document.getElementById(containerId);
-    if (data.length === 0) { container.innerHTML = "No data"; return; }
+    if (data.length === 0) { container.innerHTML = `<div style="padding: 20px; color: #888;">No data for selected filters</div>`; return; }
 
     let html = `<table>
         <thead>
@@ -891,29 +911,5 @@ function renderTable(data, containerId, metric, unit) {
     html += `</tbody></table>`;
     container.innerHTML = html;
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-links a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            navLinks.forEach(l => l.classList.remove('active'));
-            
-            this.classList.add('active');
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-});
 
 loadData();
