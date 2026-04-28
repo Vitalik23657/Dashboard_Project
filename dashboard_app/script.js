@@ -13,7 +13,7 @@ let qualityDescriptions = {};
 const speciesPalette = [
     '#EF9A9A', '#B71C1C', '#D500F9', '#76FF03', '#69F0AE', 
     '#00BCD4', '#FF9800', '#795548', '#607D8B', '#8BC34A',
-    '#FFFF00', '#3F51B5', '#009688', '#827717', '#FF5722',
+    '#FFEA00', '#3F51B5', '#009688', '#827717', '#FF5722',
     '#3E2723', '#FF4081', '#263238'
 ];
 const speciesColorMap = {};
@@ -384,13 +384,13 @@ function updateGrowthStats(data) {
     if (Math.abs(dcShift.medium) > Math.abs(maxShiftVal)) { dominantShiftDC = "Medium (20-35cm)"; maxShiftVal = dcShift.medium; }
     if (Math.abs(dcShift.mature) > Math.abs(maxShiftVal)) { dominantShiftDC = "Mature (> 35cm)"; maxShiftVal = dcShift.mature; }
 
-    let mai = netChange / 20;
+    let mai = netChange / 30;
     let pctChange = totalV2 === 0 ? 100 : (netChange / totalV2) * 100;
     
     let contextMsg = "";
-    if (pctChange < -20) contextMsg = "Severe loss. Likely indicates planned harvesting (clearcutting) or a major natural disturbance.";
+    if (pctChange < -30) contextMsg = "Severe loss. Likely indicates planned harvesting (clearcutting) or a major natural disturbance.";
     else if (pctChange < 0) contextMsg = "Slight loss due to natural mortality or light thinning.";
-    else if (pctChange < 30) contextMsg = "Steady positive growth, typical of an undisturbed, maturing stand.";
+    else if (pctChange < 70) contextMsg = "Steady positive growth, typical of an undisturbed, maturing stand.";
     else contextMsg = "Rapid accumulation stage, forest density is increasing significantly.";
 
     if (pctChange > 0) {
@@ -426,7 +426,7 @@ function updateGrowthStats(data) {
         </div>
         <div style="margin-bottom: 6px;">
             <strong>4. Est. Annual Growth (MAI):</strong><br>
-            ~${mai.toFixed(2)} m³/ha per year
+            ~${mai.toFixed(2)} m³/ha per year (take into account that we should consider mortality and ingrowth (new trees), but we don't have this data right now)
         </div>
         <div style="margin-top: 10px; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; font-size: 0.8rem; line-height: 1.3;">
             ${contextMsg}
@@ -708,9 +708,9 @@ function renderCarbonData(selectedPlot) {
             <circle cx="${x2}" cy="${y2}" r="6" fill="white" stroke="#4CAF50" stroke-width="3"/>
             <circle cx="${x3}" cy="${y3}" r="6" fill="white" stroke="#388E3C" stroke-width="3"/>
             <circle cx="${x4}" cy="${y4}" r="6" fill="white" stroke="#2196F3" stroke-width="3"/>
-            <text x="${x2}" y="${y2 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi2.total.toFixed(1)} t</text>
-            <text x="${x3}" y="${y3 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi3.total.toFixed(1)} t</text>
-            <text x="${x4}" y="${y4 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi4.total.toFixed(1)} t</text>
+            <text x="${x2}" y="${y2 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi2.total.toFixed(1)} t/ha</text>
+            <text x="${x3}" y="${y3 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi3.total.toFixed(1)} t/ha</text>
+            <text x="${x4}" y="${y4 - 15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi4.total.toFixed(1)} t/ha</text>
             <text x="${x2}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 2</text>
             <text x="${x3}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 3</text>
             <text x="${x4}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">NFI 4</text>
@@ -828,11 +828,11 @@ function updateDashboard(selectedPlot) {
 
     updateGrowthStats(finalData);
 
-    renderStackedChart(finalData, 'chart-density', 'n', 'Stems/ha');
+    renderStackedChart(finalData, 'chart-density', 'n', 'Trees/ha');
     renderStackedChart(finalData, 'chart-basal', 'ba', 'm²/ha');
     renderStackedChart(finalData, 'chart-volume', 'v', 'm³/ha');
 
-    renderTable(finalData, 'view-density-table', 'n', 'Stems/ha');
+    renderTable(finalData, 'view-density-table', 'n', 'Trees/ha');
     renderTable(finalData, 'view-basal-table', 'ba', 'm²/ha');
     renderTable(finalData, 'view-volume-table', 'v', 'm³/ha');
     
