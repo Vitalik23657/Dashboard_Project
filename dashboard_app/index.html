@@ -7,8 +7,20 @@
     <title>Forest Stocks Dashboard</title>
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="nav-logo">Dashboard</div>
+            <div class="nav-links">
+                <a href="#stocks-section" class="active">Forest Stocks</a>
+                <a href="#damage-section">Damage Analysis</a>
+                <a href="#quality-section">Wood Quality</a>
+                <a href="#carbon-section">Carbon Stocks</a>
+                <a href="#status-section">Forest Status</a> 
+            </div>
+        </div>
+    </nav>
     <div class="dashboard-container">
-        <div class="header-panel">
+        <div class="header-panel" id="stocks-section">
             <div class="header-top">
                 <h2>Forest Stocks</h2>
                 <div class="header-controls">
@@ -77,7 +89,7 @@
             </div>
         </div>
 
-        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
+        <div class="header-panel" id="damage-section" style="margin-top: 24px; padding-bottom: 12px;">
             <h2>Forest Damage Analysis</h2>
         </div>
         
@@ -112,7 +124,7 @@
             </div>
         </div>
 
-        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
+        <div class="header-panel" id="quality-section" style="margin-top: 24px; padding-bottom: 12px;">
             <div class="header-top">
                 <h2>Wood Quality Assessment</h2>
                 <div class="legend" id="quality-legend" style="border: none; padding: 0;"></div>
@@ -139,11 +151,11 @@
             </div>
         </div>
 
-        <div class="header-panel" style="margin-top: 24px; padding-bottom: 12px;">
+        <div class="header-panel" id="carbon-section" style="margin-top: 24px; padding-bottom: 12px;">
             <h2>Carbon Stocks (Tonnes/ha)</h2>
         </div>
 
-        <div class="charts-grid" style="margin-bottom: 40px;">
+        <div class="charts-grid">
             <div class="chart-card">
                 <h3 class="chart-title">Total Carbon Evolution</h3>
                 <div class="chart-container" id="chart-carbon" style="height: 250px; border:none; padding:0; justify-content: center; align-items: center; display: flex;"></div>
@@ -155,8 +167,29 @@
             </div>
         </div>
 
+        <div class="header-panel" id="status-section" style="margin-top: 24px; padding-bottom: 12px;">
+            <h2>Forest Status</h2>
+        </div>
+
+        <div class="charts-grid" style="margin-bottom: 40px;">
+            <div class="chart-card" style="grid-column: 1 / -1;">
+                <h3 class="chart-title">General Status</h3>
+                <div id="table-general-status" class="table-scroll" style="max-height: none;"></div>
+            </div>
+
+            <div class="chart-card" style="grid-column: 1 / -1;">
+                <h3 class="chart-title">Tree Layer</h3>
+                <div id="table-tree-layer" class="table-scroll" style="max-height: none;"></div>
+            </div>
+
+            <div class="chart-card" style="grid-column: 1 / -1;">
+                <h3 class="chart-title">Shrub Layer</h3>
+                <div id="table-shrub-layer" class="table-scroll" style="max-height: none;"></div>
+            </div>
+        </div>
+
     </div>
     <div id="tooltip"></div>
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>

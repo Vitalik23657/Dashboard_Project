@@ -10,6 +10,10 @@ let qualityData = {};
 let carbonData = {};
 let qualityDescriptions = {};
 
+let statusData = {};
+let treeLayerData = {};
+let shrubLayerData = {};
+
 const speciesPalette = [
     '#EF9A9A', '#B71C1C', '#D500F9', '#76FF03', '#69F0AE', 
     '#00BCD4', '#FF9800', '#795548', '#607D8B', '#8BC34A',
@@ -57,14 +61,17 @@ function hideTooltip() { tooltip.style.opacity = '0'; }
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc] = await Promise.all([
+        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI4_EN.csv'),
             fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/PlotQuality_EN.csv'),
             fetch('../Plot_Data_EN/Plot_6_CARBON/PlotCarbon_EN.csv'),
-            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/WoodQualityDescription.csv')
+            fetch('../Plot_Data_EN/Plot_5_WOODQUALITY/WoodQualityDescription.csv'),
+            fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/Plot_ForestEstatus_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/PlotTreeLayer_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/PlotShrubLayer_EN.csv')
         ]);
         
         const csvVol = await resVol.text();
@@ -73,7 +80,10 @@ async function loadData() {
         const csvD4 = await resD4.text();
         const csvQual = await resQual.text();
         const csvCarb = await resCarb.text();
-        const csvQualDesc = await resQualDesc.text();
+        const csvQualDesc = await resQualDesc.text(); 
+        const csvStatus = await resStatus.text(); 
+        const csvTree = await resTree.text(); 
+        const csvShrub = await resShrub.text(); 
         
         parseRawData(csvVol);
         parseDamageNFI2(csvD2);
@@ -81,12 +91,16 @@ async function loadData() {
         parseDamageNFI34(csvD4, 'nfi4');
         parseQualityData(csvQual);
         parseCarbonData(csvCarb); 
-        parseQualityDescriptions(csvQualDesc);
+        parseQualityDescriptions(csvQualDesc); 
+        
+        parseStatusData(csvStatus);
+        parseTreeLayerData(csvTree);
+        parseShrubLayerData(csvShrub);
         
         assignSpeciesColors();
         populateDropdown();
         renderQualityLegend(); 
-        renderQualityDefinitions();
+        renderQualityDefinitions(); 
         
         const firstPlot = Array.from(uniqueEstadillos)[0];
         document.getElementById('estadillo-filter').value = firstPlot;
@@ -110,14 +124,11 @@ function parseRawData(csvText) {
 
         const estadillo = row[0].trim();
         const speciesName = row[4].replace(/"/g, '').trim(); 
-        
         uniqueEstadillos.add(estadillo);
         if (speciesName) uniqueSpecies.add(speciesName);
 
         globalRawData.push({
-            estadillo: estadillo,
-            species: speciesName,
-            dc: parseInt(row[5].trim()),
+            estadillo: estadillo, species: speciesName, dc: parseInt(row[5].trim()),
             n2: parseFloat(row[6]) || 0, n3: parseFloat(row[9]) || 0, n4: parseFloat(row[12]) || 0,
             ba2: parseFloat(row[7]) || 0, ba3: parseFloat(row[10]) || 0, ba4: parseFloat(row[13]) || 0,
             v2: parseFloat(row[8]) || 0, v3: parseFloat(row[11]) || 0, v4: parseFloat(row[14]) || 0
@@ -130,9 +141,7 @@ function parseDamageNFI2(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
         if (!row || row.length < 4) continue;
-        const estadillo = row[0].trim();
-        const damageString = row[3].replace(/"/g, '').trim();
-        damageData.nfi2[estadillo] = damageString;
+        damageData.nfi2[row[0].trim()] = row[3].replace(/"/g, '').trim();
     }
 }
 
@@ -141,21 +150,13 @@ function parseDamageNFI34(csvText, nfiKey) {
     for (let i = 1; i < lines.length; i++) {
         const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
         if (!row || row.length < 8) continue;
-        
         const estadillo = row[0].trim();
-        const damageName = row[4].replace(/"/g, '').trim();
-        const treesDamaged = parseFloat(row[5]) || 0;
-        const totalTrees = parseFloat(row[6]) || 0;
-        const percentage = parseFloat(row[7]) || 0;
-
-        if (!damageData[nfiKey][estadillo]) {
-            damageData[nfiKey][estadillo] = [];
-        }
+        if (!damageData[nfiKey][estadillo]) damageData[nfiKey][estadillo] = [];
         damageData[nfiKey][estadillo].push({
-            damage: damageName,
-            treesDamaged: treesDamaged,
-            totalTrees: totalTrees,
-            pct: percentage
+            damage: row[4].replace(/"/g, '').trim(),
+            treesDamaged: parseFloat(row[5]) || 0,
+            totalTrees: parseFloat(row[6]) || 0,
+            pct: parseFloat(row[7]) || 0
         });
     }
 }
@@ -165,14 +166,10 @@ function parseQualityData(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
         if (!row || row.length < 13) continue;
-
         const estadillo = row[0].trim();
         const qClass = row[3].replace(/"/g, '').trim();
-        
         if (!qualityData[estadillo]) qualityData[estadillo] = {};
-        
         const parseNum = (val) => val === 'NA' ? 0 : parseFloat(val) || 0;
-
         qualityData[estadillo][qClass] = {
             v2: parseNum(row[4]), p2: parseNum(row[6]),
             v3: parseNum(row[7]), p3: parseNum(row[9]),
@@ -186,26 +183,12 @@ function parseCarbonData(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
         if (!row || row.length < 21) continue;
-
         const estadillo = row[0].trim();
-        const parseNum = (val) => parseFloat(val) || 0;
-
+        const p = (val) => parseFloat(val) || 0;
         carbonData[estadillo] = {
-            nfi2: {
-                stem: parseNum(row[3]), branches_large: parseNum(row[4]),
-                branches_small: parseNum(row[5]), leaves: parseNum(row[6]),
-                roots: parseNum(row[7]), total: parseNum(row[8])
-            },
-            nfi3: {
-                stem: parseNum(row[9]), branches_large: parseNum(row[10]),
-                branches_small: parseNum(row[11]), leaves: parseNum(row[12]),
-                roots: parseNum(row[13]), total: parseNum(row[14])
-            },
-            nfi4: {
-                stem: parseNum(row[15]), branches_large: parseNum(row[16]),
-                branches_small: parseNum(row[17]), leaves: parseNum(row[18]),
-                roots: parseNum(row[19]), total: parseNum(row[20])
-            }
+            nfi2: { stem: p(row[3]), branches_large: p(row[4]), branches_small: p(row[5]), leaves: p(row[6]), roots: p(row[7]), total: p(row[8]) },
+            nfi3: { stem: p(row[9]), branches_large: p(row[10]), branches_small: p(row[11]), leaves: p(row[12]), roots: p(row[13]), total: p(row[14]) },
+            nfi4: { stem: p(row[15]), branches_large: p(row[16]), branches_small: p(row[17]), leaves: p(row[18]), roots: p(row[19]), total: p(row[20]) }
         };
     }
 }
@@ -215,11 +198,46 @@ function parseQualityDescriptions(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
         if (!line) continue;
-        
         const match = line.match(/^(\d+),\s*"([^"]+)"/);
-        if (match) {
-            qualityDescriptions[match[1]] = match[2];
-        }
+        if (match) qualityDescriptions[match[1]] = match[2];
+    }
+}
+
+
+const cleanVal = (val) => {
+    if (!val || val === 'NA' || val === '"NA"') return '-';
+    return val.replace(/"/g, '').trim();
+};
+
+function parseStatusData(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 45) continue;
+        const estadillo = row[0].trim();
+        statusData[estadillo] = row.map(cleanVal);
+    }
+}
+
+function parseTreeLayerData(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 31) continue;
+        const estadillo = row[0].trim();
+        if (!treeLayerData[estadillo]) treeLayerData[estadillo] = [];
+        treeLayerData[estadillo].push(row.map(cleanVal));
+    }
+}
+
+function parseShrubLayerData(csvText) {
+    const lines = csvText.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) {
+        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+        if (!row || row.length < 9) continue;
+        const estadillo = row[0].trim();
+        if (!shrubLayerData[estadillo]) shrubLayerData[estadillo] = [];
+        shrubLayerData[estadillo].push(row.map(cleanVal));
     }
 }
 
@@ -246,7 +264,6 @@ function updateLegend(activeSpecies) {
     legendContainer.innerHTML = ''; 
 
     const speciesToDisplay = Array.from(uniqueSpecies).filter(s => activeSpecies.has(s)).sort();
-
     if(speciesToDisplay.length === 0) {
         legendContainer.innerHTML = '<span>No species data available</span>';
         return;
@@ -272,11 +289,8 @@ function updateLegend(activeSpecies) {
         item.appendChild(label);
 
         item.addEventListener('click', (e) => {
-            if (disabledSpecies.has(species)) {
-                disabledSpecies.delete(species); 
-            } else {
-                disabledSpecies.add(species); 
-            }
+            if (disabledSpecies.has(species)) disabledSpecies.delete(species); 
+            else disabledSpecies.add(species); 
             const currentPlot = document.getElementById('estadillo-filter').value;
             updateDashboard(currentPlot);
         });
@@ -292,7 +306,6 @@ function renderQualityLegend() {
     for (let i = 1; i <= 6; i++) {
         const item = document.createElement('div');
         item.className = 'legend-item';
-        
         item.style.cursor = 'help'; 
         item.innerHTML = `<div class="legend-color" style="background: ${qualityColors[i]};"></div> Class ${i}`;
         
@@ -304,7 +317,6 @@ function renderQualityLegend() {
             item.addEventListener('mousemove', (e) => showTooltip(e, tooltipHtml));
             item.addEventListener('mouseleave', hideTooltip);
         }
-        
         legendContainer.appendChild(item);
     }
 }
@@ -312,7 +324,6 @@ function renderQualityLegend() {
 function renderQualityDefinitions() {
     const container = document.getElementById('quality-definitions-list');
     if (!container) return;
-    
     container.innerHTML = '';
     
     for (let i = 1; i <= 6; i++) {
@@ -324,12 +335,9 @@ function renderQualityDefinitions() {
             
             row.innerHTML = `
                 <div style="flex-shrink: 0; display: flex; align-items: center; gap: 6px; width: 85px; font-weight: bold; color: #333;">
-                    <div class="legend-color" style="background: ${qualityColors[i]};"></div>
-                    Class ${i}
+                    <div class="legend-color" style="background: ${qualityColors[i]};"></div> Class ${i}
                 </div>
-                <div style="color: #555; line-height: 1.4;">
-                    ${qualityDescriptions[i]}
-                </div>
+                <div style="color: #555; line-height: 1.4;">${qualityDescriptions[i]}</div>
             `;
             container.appendChild(row);
         }
@@ -389,9 +397,9 @@ function updateGrowthStats(data) {
     
     let contextMsg = "";
     if (pctChange < -30) contextMsg = "Severe loss. Likely indicates planned harvesting (clearcutting) or a major natural disturbance.";
-    else if (pctChange < 0) contextMsg = "Slight loss due to natural mortality or light thinning.";
-    else if (pctChange < 70) contextMsg = "Steady positive growth, typical of an undisturbed, maturing stand.";
-    else contextMsg = "Rapid accumulation stage, forest density is increasing significantly.";
+    else if (pctChange < 0) contextMsg = "Slight to moderate loss, typical of natural mortality or standard selective thinning.";
+    else if (pctChange < 70) contextMsg = "Steady positive growth, typical of an undisturbed, maturing stand over this timeframe.";
+    else contextMsg = "Rapid accumulation stage. Exceptionally fast-growing or dense regenerating forest.";
 
     if (pctChange > 0) {
         badge.className = 'growth-badge positive';
@@ -426,7 +434,7 @@ function updateGrowthStats(data) {
         </div>
         <div style="margin-bottom: 6px;">
             <strong>4. Est. Annual Growth (MAI):</strong><br>
-            ~${mai.toFixed(2)} m³/ha per year (take into account that we should consider mortality and ingrowth (new trees), but we don't have this data right now)
+            ~${mai.toFixed(2)} m³/ha per year (NOTE: we should consider mortality and ingrowth - new trees (the data we don't have for now))
         </div>
         <div style="margin-top: 10px; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; font-size: 0.8rem; line-height: 1.3;">
             ${contextMsg}
@@ -628,11 +636,11 @@ function renderQualityChartAndTable(selectedPlot) {
             <tr>
                 <th>Quality Class</th>
                 <th>NFI 2 (%)</th>
-                <th>NFI 2 (m³)</th>
+                <th>NFI 2 (m³/ha)</th>
                 <th>NFI 3 (%)</th>
-                <th>NFI 3 (m³)</th>
+                <th>NFI 3 (m³/ha)</th>
                 <th>NFI 4 (%)</th>
-                <th>NFI 4 (m³)</th>
+                <th>NFI 4 (m³/ha)</th>
             </tr>
         </thead>
         <tbody>`;
@@ -771,6 +779,127 @@ function renderCarbonData(selectedPlot) {
     tableContainer.innerHTML = html;
 }
 
+function renderForestStatus(selectedPlot) {
+    const tableGen = document.getElementById('table-general-status');
+    const tableTree = document.getElementById('table-tree-layer');
+    const tableShrub = document.getElementById('table-shrub-layer');
+    const noDataMsg = `<div class="damage-empty-state">Please select a specific plot to view detailed Forest Status attributes.</div>`;
+
+    if (selectedPlot === "ALL") {
+        tableGen.innerHTML = noDataMsg;
+        tableTree.innerHTML = noDataMsg;
+        tableShrub.innerHTML = noDataMsg;
+        return;
+    }
+
+    const fmt = (val) => {
+        if (!val || val === '-') return '-';
+        const num = parseFloat(val);
+        return isNaN(num) ? val : num.toFixed(2);
+    };
+
+    const stData = statusData[selectedPlot];
+    if (!stData) {
+        tableGen.innerHTML = `<div class="damage-empty-state">No status data for this plot.</div>`;
+    } else {
+        const metrics = [
+            { label: 'Canopy (%)', i2: 6, i3: 7, i4: 8 },
+            { label: 'Density (trees/ha)', i2: 9, i3: 10, i4: 11 },
+            { label: 'Dominant Height Ho (m)', i2: 12, i3: 13, i4: 14 },
+            { label: 'Mean Height Hm (m)', i2: 15, i3: 16, i4: 17 },
+            { label: 'Quad. Mean Diameter Dg (cm)', i2: 18, i3: 19, i4: 20 },
+            { label: 'Mean Diameter Dm (cm)', i2: 21, i3: 22, i4: 23 },
+            { label: 'Dead Trees', i2: 24, i3: 25, i4: 26 },
+            { label: 'Composition', i2: 27, i3: 28, i4: 29 },
+            { label: 'Structure', i2: 30, i3: 31, i4: 32 },
+            { label: 'Shannon Index', i2: 33, i3: 34, i4: 35 },
+            { label: 'Slenderness', i2: 36, i3: 37, i4: 38 },
+            { label: 'SDIR', i2: 39, i3: 40, i4: 41 },
+            { label: 'Hart Index', i2: 42, i3: 43, i4: 44 }
+        ];
+
+        let htmlGen = `<table>
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th class="text-center">NFI 2</th>
+                    <th class="text-center">NFI 3</th>
+                    <th class="text-center">NFI 4</th>
+                </tr>
+            </thead>
+            <tbody>`;
+        
+        metrics.forEach(m => {
+            htmlGen += `<tr>
+                <td>${m.label}</td>
+                <td class="text-center">${fmt(stData[m.i2])}</td>
+                <td class="text-center">${fmt(stData[m.i3])}</td>
+                <td class="text-center">${fmt(stData[m.i4])}</td>
+            </tr>`;
+        });
+        htmlGen += `</tbody></table>`;
+        tableGen.innerHTML = htmlGen;
+    }
+
+    const trData = treeLayerData[selectedPlot];
+    if (!trData || trData.length === 0) {
+        tableTree.innerHTML = `<div class="damage-empty-state">No tree layer data for this plot.</div>`;
+    } else {
+        let htmlTr = `<table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Species</th>
+                    <th colspan="2" class="text-center">Age</th>
+                    <th colspan="3" class="text-center">Development Stage</th>
+                    <th colspan="2" class="text-center">Origin</th>
+                    <th colspan="3" class="text-center">Cover (%)</th>
+                    <th colspan="3" class="text-center">Regeneration</th>
+                </tr>
+                <tr>
+                    <th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                    <th class="text-center">NFI 2</th><th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                    <th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                    <th class="text-center">NFI 2</th><th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                    <th class="text-center">NFI 2</th><th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                </tr>
+            </thead>
+            <tbody>`;
+        
+        trData.forEach(row => {
+            htmlTr += `<tr>
+                <td>${row[2]}</td> <td class="text-center">${fmt(row[6])}</td><td class="text-center">${fmt(row[7])}</td> <td class="text-center">${row[9]}</td><td class="text-center">${row[11]}</td><td class="text-center">${row[13]}</td> <td class="text-center">${row[15]}</td><td class="text-center">${row[19]}</td> <td class="text-center">${fmt(row[22])}</td><td class="text-center">${fmt(row[23])}</td><td class="text-center">${fmt(row[24])}</td> <td class="text-center">${row[26]}</td><td class="text-center">${row[28]}</td><td class="text-center">${row[30]}</td> </tr>`;
+        });
+        htmlTr += `</tbody></table>`;
+        tableTree.innerHTML = htmlTr;
+    }
+
+    const shData = shrubLayerData[selectedPlot];
+    if (!shData || shData.length === 0) {
+        tableShrub.innerHTML = `<div class="damage-empty-state">No shrub layer data for this plot.</div>`;
+    } else {
+        let htmlSh = `<table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Species</th>
+                    <th colspan="3" class="text-center">Canopy (%)</th>
+                    <th colspan="3" class="text-center">Hm (dm)</th>
+                </tr>
+                <tr>
+                    <th class="text-center">NFI 2</th><th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                    <th class="text-center">NFI 2</th><th class="text-center">NFI 3</th><th class="text-center">NFI 4</th>
+                </tr>
+            </thead>
+            <tbody>`;
+        
+        shData.forEach(row => {
+            htmlSh += `<tr>
+                <td>${row[2]}</td> <td class="text-center">${fmt(row[3])}</td><td class="text-center">${fmt(row[4])}</td><td class="text-center">${fmt(row[5])}</td> <td class="text-center">${fmt(row[6])}</td><td class="text-center">${fmt(row[7])}</td><td class="text-center">${fmt(row[8])}</td> </tr>`;
+        });
+        htmlSh += `</tbody></table>`;
+        tableShrub.innerHTML = htmlSh;
+    }
+}
+
 function updateDashboard(selectedPlot) {
     const filteredRows = selectedPlot === "ALL" 
         ? globalRawData 
@@ -839,6 +968,8 @@ function updateDashboard(selectedPlot) {
     renderDamageStatus(selectedPlot);
     renderQualityChartAndTable(selectedPlot);
     renderCarbonData(selectedPlot);
+    
+    renderForestStatus(selectedPlot); 
 }
 
 function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
@@ -955,5 +1086,24 @@ function renderTable(data, containerId, metric, unit) {
     html += `</tbody></table>`;
     container.innerHTML = html;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
 
 loadData();
