@@ -13,6 +13,7 @@ let qualityDescriptions = {};
 let statusData = {};
 let treeLayerData = {};
 let shrubLayerData = {};
+let disabledNFIs = new Set();
 
 const speciesPalette = [
     '#EF9A9A', '#B71C1C', '#D500F9', '#76FF03', '#69F0AE', 
@@ -47,6 +48,83 @@ function toggleSpeciesDropdown() {
     arrow.textContent = isOpen ? '▾' : '▴';
 }
 
+
+function toggleNFIDropdown() {
+    const dd = document.getElementById('nfi-dropdown');
+    const arrow = document.getElementById('nfi-filter-arrow');
+    const isOpen = dd.style.display === 'block';
+    dd.style.display = isOpen ? 'none' : 'block';
+    arrow.textContent = isOpen ? '▾' : '▴';
+}
+
+function selectAllNFI() {
+    disabledNFIs.clear();
+    renderNFILegend();
+    updateDashboard(document.getElementById('estadillo-filter').value);
+}
+
+function deselectAllNFI() {
+    disabledNFIs.add('nfi2');
+    disabledNFIs.add('nfi3');
+    disabledNFIs.add('nfi4');
+    renderNFILegend();
+    updateDashboard(document.getElementById('estadillo-filter').value);
+}
+
+function renderNFILegend() {
+    const container = document.getElementById('nfi-legend');
+    container.innerHTML = '';
+
+    const nfis = [
+        { key: 'nfi2', label: 'NFI 2', patternClass: 'nfi2-pattern' },
+        { key: 'nfi3', label: 'NFI 3', patternClass: 'nfi3-pattern' },
+        { key: 'nfi4', label: 'NFI 4', patternClass: 'nfi4-pattern' }
+    ];
+
+    nfis.forEach(({ key, label, patternClass }) => {
+        const item = document.createElement('div');
+        item.style.cssText = 'display:flex; align-items:center; gap:10px; padding:7px 14px; cursor:pointer; transition:background 0.15s;';
+        item.onmouseenter = () => item.style.background = '#f5f5f5';
+        item.onmouseleave = () => item.style.background = '';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = !disabledNFIs.has(key);
+        checkbox.style.cssText = 'width:15px; height:15px; cursor:pointer; flex-shrink:0;';
+
+        const patternBox = document.createElement('div');
+        patternBox.className = `nfi-legend-box ${patternClass}`;
+        patternBox.style.flexShrink = '0';
+
+        const labelEl = document.createElement('span');
+        labelEl.innerText = label;
+        labelEl.style.cssText = 'font-size:13px; white-space:nowrap; color:' +
+            (disabledNFIs.has(key) ? '#aaa' : '#222') + ';' +
+            (disabledNFIs.has(key) ? 'text-decoration:line-through;' : '');
+
+        item.appendChild(checkbox);
+        item.appendChild(patternBox);
+        item.appendChild(labelEl);
+
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (disabledNFIs.has(key)) disabledNFIs.delete(key);
+            else disabledNFIs.add(key);
+            renderNFILegend();
+            updateDashboard(document.getElementById('estadillo-filter').value);
+        });
+
+        container.appendChild(item);
+    });
+
+    // update badge count
+    const active = 3 - disabledNFIs.size;
+    const badge = document.getElementById('nfi-filter-count');
+    badge.textContent = (active === 3) ? 'All 3' : `${active}/3`;
+    badge.style.background = (active === 3) ? '#e8f5e9' : '#fff3e0';
+    badge.style.color = (active === 3) ? '#2e7d32' : '#e65100';
+}
+
 function selectAllSpecies() {
     disabledSpecies.clear();
     updateDashboard(document.getElementById('estadillo-filter').value);
@@ -67,11 +145,16 @@ badgeElement.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-    // close growth dropdown
     if (!dropdownElement.contains(e.target) && e.target !== badgeElement) {
         dropdownElement.classList.remove('show');
     }
-    // close species dropdown
+    const nfiWrapper = document.getElementById('nfi-filter-wrapper');
+    if (nfiWrapper && !nfiWrapper.contains(e.target)) {
+        const dd = document.getElementById('nfi-dropdown');
+        const arrow = document.getElementById('nfi-filter-arrow');
+        if (dd) dd.style.display = 'none';
+        if (arrow) arrow.textContent = '▾';
+    }
     const wrapper = document.getElementById('species-filter-wrapper');
     if (wrapper && !wrapper.contains(e.target)) {
         const dd = document.getElementById('species-dropdown');
@@ -123,13 +206,14 @@ async function loadData() {
         parseCarbonData(await resCarb.text());
         parseQualityDescriptions(await resQualDesc.text());
         parseStatusData(await resStatus.text());
-        parseTreeLayerData(await resTree.text());
+        parseTreeLayerData(await resTree.text());   
         parseShrubLayerData(await resShrub.text());
 
         assignSpeciesColors();
         populateDropdown();
         renderQualityLegend();
         renderQualityDefinitions();
+        renderNFILegend();
 
         const urlPlot = getPlotFromURL();
         const sortedPlots = Array.from(uniqueEstadillos).sort((a, b) => parseInt(a) - parseInt(b));
@@ -806,9 +890,9 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
             return barContainer;
         };
 
-        group.appendChild(createStackedBar(`${metricPrefix}2`, 'NFI 2', 'nfi2-pattern'));
-        group.appendChild(createStackedBar(`${metricPrefix}3`, 'NFI 3', 'nfi3-pattern'));
-        group.appendChild(createStackedBar(`${metricPrefix}4`, 'NFI 4', 'nfi4-pattern'));
+        if (!disabledNFIs.has('nfi2')) group.appendChild(createStackedBar(`${metricPrefix}2`, 'NFI 2', 'nfi2-pattern'));
+        if (!disabledNFIs.has('nfi3')) group.appendChild(createStackedBar(`${metricPrefix}3`, 'NFI 3', 'nfi3-pattern'));
+        if (!disabledNFIs.has('nfi4')) group.appendChild(createStackedBar(`${metricPrefix}4`, 'NFI 4', 'nfi4-pattern'));
 
         const label = document.createElement('div');
         label.className = 'x-axis-label';
@@ -817,7 +901,10 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
 
         const subLabels = document.createElement('div');
         subLabels.className = 'sub-labels';
-        subLabels.innerHTML = '<span>2</span><span>3</span><span>4</span>';
+        subLabels.innerHTML = ['nfi2','nfi3','nfi4']
+            .filter(k => !disabledNFIs.has(k))
+            .map(k => `<span>${k.replace('nfi','')}</span>`)
+            .join('');
         group.appendChild(subLabels);
 
         container.appendChild(group);
