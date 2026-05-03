@@ -10,6 +10,12 @@
     <nav class="top-nav">
         <div class="nav-content">
             <div class="nav-logo">Dashboard</div>
+            <div class="lang-switcher">
+                <button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <span style="color:#aaa;">|</span>
+                <button id="lang-es" class="lang-btn" onclick="setLanguage('es')">ES</button>
+            </div>
+            
             <div class="nav-links">
                 <a href="#stocks-section" class="active">Forest Stocks</a>
                 <a href="#damage-section">Damage Analysis</a>
@@ -189,7 +195,7 @@
         <div class="charts-grid">
             <div class="chart-card" style="grid-column: 1 / -1;">
                 <div class="card-header">
-                    <h3 class="chart-title">Quality Classes Evolution (% of Total Volume)</h3>
+                    <h3 class="chart-title" data-i18n="quality_chart_title">Quality Classes Evolution (% of Total Volume)</h3>
                     <button class="toggle-btn" onclick="toggleView('quality', this)">View Table</button>
                 </div>
 
@@ -212,12 +218,12 @@
 
         <div class="charts-grid">
             <div class="chart-card">
-                <h3 class="chart-title">Total Carbon Evolution</h3>
+                <h3 class="chart-title" data-i18n="carbon_chart_title">Total Carbon Evolution</h3>
                 <div class="chart-container" id="chart-carbon" style="height: 250px; border:none; padding:0; justify-content: center; align-items: center; display: flex;"></div>
             </div>
 
             <div class="chart-card" style="grid-column: span 2;">
-                <h3 class="chart-title">Carbon Biomass Breakdown</h3>
+                <h3 class="chart-title" data-i18n="carbon_table_title">Carbon Biomass Breakdown</h3>
                 <div id="table-carbon" class="table-scroll" style="max-height: 250px;"></div>
             </div>
         </div>
@@ -228,23 +234,30 @@
 
         <div class="charts-grid" style="margin-bottom: 40px;">
             <div class="chart-card" style="grid-column: 1 / -1;">
-                <h3 class="chart-title">General Status</h3>
+                <h3 class="chart-title" data-i18n="status_general">General Status</h3>
                 <div id="table-general-status" class="table-scroll" style="max-height: none;"></div>
             </div>
 
             <div class="chart-card" style="grid-column: 1 / -1;">
-                <h3 class="chart-title">Tree Layer</h3>
+                <h3 class="chart-title" data-i18n="status_tree">Tree Layer</h3>
                 <div id="table-tree-layer" class="table-scroll" style="max-height: none;"></div>
             </div>
 
             <div class="chart-card" style="grid-column: 1 / -1;">
-                <h3 class="chart-title">Shrub Layer</h3>
+                <h3 class="chart-title" data-i18n="status_shrub">Shrub Layer</h3>
                 <div id="table-shrub-layer" class="table-scroll" style="max-height: none;"></div>
             </div>
         </div>
 
     </div>
     <div id="tooltip"></div>
-    <script src="script.js?v=8"></script>
+
+    <script src="config.js"></script>
+    <script src="translations.js"></script>
+    <script src="parsers.js"></script>
+    <script src="renderers.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
