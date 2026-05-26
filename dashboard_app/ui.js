@@ -1,13 +1,20 @@
 let currentLang = 'en';
 
 function getPlotFromURL() {
-    const match = window.location.hash.match(/^#plot(.+)$/);
-    return match ? match[1] : null;
+    const params = new URLSearchParams(window.location.search);
+    return params.get('plot');
 }
 
 function setPlotInURL(plotId) {
-    const newHash = plotId === 'ALL' ? '' : `#plot${plotId}`;
-    history.pushState(null, '', newHash || window.location.pathname);
+    const url = new URL(window.location);
+    
+    if (plotId === 'ALL') {
+        url.searchParams.delete('plot');
+    } else {
+        url.searchParams.set('plot', plotId);
+    }
+    
+    history.pushState(null, '', url.toString());
 }
 
 function setLanguage(lang) {
@@ -213,9 +220,9 @@ function renderNFILegend() {
     container.innerHTML = '';
 
     const nfis = [
-        { key: 'nfi2', label: 'NFI 2', patternClass: 'nfi2-pattern' },
-        { key: 'nfi3', label: 'NFI 3', patternClass: 'nfi3-pattern' },
-        { key: 'nfi4', label: 'NFI 4', patternClass: 'nfi4-pattern' },
+        { key: 'nfi2', label: t('nfi_2'), patternClass: 'nfi2-pattern' },
+        { key: 'nfi3', label: t('nfi_3'), patternClass: 'nfi3-pattern' },
+        { key: 'nfi4', label: t('nfi_4'), patternClass: 'nfi4-pattern' },
     ];
 
     nfis.forEach(({ key, label }) => {

@@ -69,7 +69,7 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
                     barContainer.appendChild(seg);
                     tooltipHtml += `<div>
                         <span class="tooltip-color-box" style="background:${speciesColorMap[sp]}"></span>
-                        ${sp}: ${val.toFixed(2)}
+                        ${sp}</i>: ${val.toFixed(2)}
                     </div>`;
                 }
             }
@@ -79,9 +79,9 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
             return barContainer;
         };
 
-        if (!disabledNFIs.has('nfi2')) group.appendChild(createStackedBar(`${metricPrefix}2`, 'NFI 2', 'nfi2-pattern'));
-        if (!disabledNFIs.has('nfi3')) group.appendChild(createStackedBar(`${metricPrefix}3`, 'NFI 3', 'nfi3-pattern'));
-        if (!disabledNFIs.has('nfi4')) group.appendChild(createStackedBar(`${metricPrefix}4`, 'NFI 4', 'nfi4-pattern'));
+        if (!disabledNFIs.has('nfi2')) group.appendChild(createStackedBar(`${metricPrefix}2`, t('nfi_2'), 'nfi2-pattern'));
+        if (!disabledNFIs.has('nfi3')) group.appendChild(createStackedBar(`${metricPrefix}3`, t('nfi_3'), 'nfi3-pattern'));
+        if (!disabledNFIs.has('nfi4')) group.appendChild(createStackedBar(`${metricPrefix}4`, t('nfi_4'), 'nfi4-pattern'));
 
         const label = document.createElement('div');
         label.className = 'x-axis-label';
@@ -102,25 +102,36 @@ function renderStackedChart(data, containerId, metricPrefix, yLabelText) {
 
 function renderTable(data, containerId, metric, unit) {
     const container = document.getElementById(containerId);
-    if (data.length === 0) {
-        container.innerHTML = `<div style="padding:20px;color:#888;">${t('no_data_filters')}</div>`;
-        return;
+    if (data.length === 0) { 
+        container.innerHTML = `<div style="padding: 20px; color: #888;">No data for selected filters</div>`; 
+        return; 
     }
+
+    const showNFI2 = !disabledNFIs.has('nfi2');
+    const showNFI3 = !disabledNFIs.has('nfi3');
+    const showNFI4 = !disabledNFIs.has('nfi4');
+
     let html = `<table>
-        <thead><tr>
-            <th>${t('dc_col')}</th>
-            <th>NFI 2 (${unit})</th>
-            <th>NFI 3 (${unit})</th>
-            <th>NFI 4 (${unit})</th>
-        </tr></thead><tbody>`;
+        <thead>
+            <tr>
+                <th>DC (cm)</th>
+                ${showNFI2 ? `<th>${t('nfi_2')} (${unit})</th>` : ''}
+                ${showNFI3 ? `<th>${t('nfi_3')} (${unit})</th>` : ''}
+                ${showNFI4 ? `<th>${t('nfi_4')} (${unit})</th>` : ''}
+            </tr>
+        </thead>
+        <tbody>`;
+
     data.forEach(row => {
-        html += `<tr>
-            <td>${row.dc}</td>
-            <td>${row[`total_${metric}2`].toFixed(2)}</td>
-            <td>${row[`total_${metric}3`].toFixed(2)}</td>
-            <td>${row[`total_${metric}4`].toFixed(2)}</td>
-        </tr>`;
+        html += `
+            <tr>
+                <td>${row.dc}</td>
+                ${showNFI2 ? `<td>${row[`total_${metric}2`].toFixed(2)}</td>` : ''}
+                ${showNFI3 ? `<td>${row[`total_${metric}3`].toFixed(2)}</td>` : ''}
+                ${showNFI4 ? `<td>${row[`total_${metric}4`].toFixed(2)}</td>` : ''}
+            </tr>`;
     });
+
     html += `</tbody></table>`;
     container.innerHTML = html;
 }
@@ -154,8 +165,8 @@ function updateGrowthStats(data) {
 
     if (totalV2 === 0 && totalV4 === 0) {
         badge.className = 'growth-badge neutral';
-        badge.innerHTML = 'NFI 2 → 4 Volume Growth: 0%';
-        dropdown.innerHTML = t('no_data_filters');
+        badge.innerHTML = `${t('nfi_prefix')} 2 → 4 Volume Growth: 0%`;
+        dropdown.innerHTML = 'No data available or all species filtered out.';
         return;
     }
 
@@ -180,17 +191,26 @@ function updateGrowthStats(data) {
     else if (pctChange < 70)  contextMsg = t('growth_ctx_steady');
     else                      contextMsg = t('growth_ctx_rapid');
 
-    if      (pctChange > 0) { badge.className = 'growth-badge positive'; badge.innerHTML = `📈 Vol. Growth (NFI 2→4): +${pctChange.toFixed(1)}% ▾`; }
-    else if (pctChange < 0) { badge.className = 'growth-badge negative'; badge.innerHTML = `📉 Vol. Loss (NFI 2→4): ${pctChange.toFixed(1)}% ▾`; }
-    else                    { badge.className = 'growth-badge neutral';  badge.innerHTML = `Vol. Growth (NFI 2→4): 0% ▾`; }
+    if (pctChange > 0) {
+        badge.className = 'growth-badge positive';
+        badge.innerHTML = `📈 Vol. Growth (${t('nfi_prefix')} 2→4): +${pctChange.toFixed(1)}% ▾`;
+    } else if (pctChange < 0) {
+        badge.className = 'growth-badge negative';
+        badge.innerHTML = `📉 Vol. Loss (${t('nfi_prefix')} 2→4): ${pctChange.toFixed(1)}% ▾`;
+    } else {
+        badge.className = 'growth-badge neutral';
+        badge.innerHTML = `Vol. Growth (${t('nfi_prefix')} 2→4): 0% ▾`;
+    }
 
     dropdown.innerHTML = `
-        <div style="font-size:1.05rem;margin-bottom:8px;font-weight:bold;border-bottom:1px solid #555;padding-bottom:6px;">${t('growth_title')}</div>
-        <div style="margin-bottom:6px;">
-            <strong>${t('growth_volume')}</strong><br>
-            <span style="color:#aaa;">NFI 2:</span> ${totalV2.toFixed(1)} m³/ha<br>
-            <span style="color:#aaa;">NFI 3:</span> ${totalV3.toFixed(1)} m³/ha<br>
-            <span style="color:#aaa;">NFI 4:</span> ${totalV4.toFixed(1)} m³/ha<br>
+        <div style="font-size: 1.05rem; margin-bottom: 8px; font-weight: bold; border-bottom: 1px solid #555; padding-bottom: 6px;">
+            Detailed Growth Analysis (${t('nfi_prefix')} 2 → 4)
+        </div>
+        <div style="margin-bottom: 6px;">
+            <strong>1. Absolute Volume:</strong><br>
+            <span style="color:#aaa;">${t('nfi_2')}:</span> ${totalV2.toFixed(1)} m³/ha<br>
+            <span style="color:#aaa;">${t('nfi_3')}:</span> ${totalV3.toFixed(1)} m³/ha<br>
+            <span style="color:#aaa;">${t('nfi_4')}:</span> ${totalV4.toFixed(1)} m³/ha<br>
             <span style="color:${netChange >= 0 ? '#81c784' : '#e57373'};">${t('growth_net_change')} ${netChange > 0 ? '+' : ''}${netChange.toFixed(1)} m³/ha</span>
         </div>
         <div style="margin-bottom:6px;">
@@ -480,9 +500,9 @@ function renderCarbonData(selectedPlot) {
             <text x="${x2}" y="${y2-15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi2.total.toFixed(1)} t/ha</text>
             <text x="${x3}" y="${y3-15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi3.total.toFixed(1)} t/ha</text>
             <text x="${x4}" y="${y4-15}" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">${cData.nfi4.total.toFixed(1)} t/ha</text>
-            <text x="${x2}" y="${h-10}" text-anchor="middle" font-size="12" fill="#777">NFI 2</text>
-            <text x="${x3}" y="${h-10}" text-anchor="middle" font-size="12" fill="#777">NFI 3</text>
-            <text x="${x4}" y="${h-10}" text-anchor="middle" font-size="12" fill="#777">NFI 4</text>
+            <text x="${x2}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">${t('nfi_2')}</text>
+            <text x="${x3}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">${t('nfi_3')}</text>
+            <text x="${x4}" y="${h - 10}" text-anchor="middle" font-size="12" fill="#777">${t('nfi_4')}</text>
         </svg>`;
 
     tableContainer.innerHTML = `

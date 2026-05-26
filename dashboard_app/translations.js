@@ -167,6 +167,10 @@ const UI_TRANSLATIONS = {
         shrub_species:        'Species',
         shrub_canopy:         'Canopy (%)',
         shrub_hm:             'Hm (dm)',
+        nfi_2: 'NFI 2',
+        nfi_3: 'NFI 3',
+        nfi_4: 'NFI 4',
+        nfi_prefix: 'NFI',
     },
     es: {
         nav_stocks:           'Existencias Forestales',
@@ -177,7 +181,7 @@ const UI_TRANSLATIONS = {
         filter_plot:          'Filtrar por Parcela (Estadillo):',
         all_plots:            'Todas las Parcelas',
         species_filter:       'Filtro de especies',
-        nfi_filter:           'Filtro NFI',
+        nfi_filter:           'Filtro IFN',
         select_all:           'Seleccionar todo',
         deselect_all:         'Deseleccionar todo',
         density_title:        'Densidad (N)',
@@ -263,6 +267,10 @@ const UI_TRANSLATIONS = {
         shrub_species:        'Especie',
         shrub_canopy:         'Cobertura (%)',
         shrub_hm:             'Hm (dm)',
+        nfi_2: 'IFN 2',
+        nfi_3: 'IFN 3',
+        nfi_4: 'IFN 4',
+        nfi_prefix: 'IFN',
     }
 };
 
