@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Forest Stocks Dashboard</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
 </head>
 <body>
     <nav class="top-nav">
@@ -17,6 +21,7 @@
             </div>
             
             <div class="nav-links">
+                <a href="#map-section">Situation</a>
                 <a href="#stocks-section" class="active">Forest Stocks</a>
                 <a href="#damage-section">Damage Analysis</a>
                 <a href="#quality-section">Wood Quality</a>
@@ -25,7 +30,14 @@
             </div>
         </div>
     </nav>
-    <div class="dashboard-container">
+    <div class="dashboard-container" style="padding-top: 20px;">
+        <div class="header-panel" id="map-section">
+            <h2>Situation</h2>
+            <div style="height: 500px; width: 100%; border-radius: 8px; overflow: hidden;">
+                <div id="map" style="height: 100%; width: 100%;"></div>
+            </div>
+        </div>
+
         <div class="header-panel" id="stocks-section">
             <div class="header-top">
                 <h2>Forest Stocks</h2>
@@ -258,6 +270,7 @@
     <script src="renderers.js"></script>
     <script src="ui.js"></script>
     <script src="script.js"></script>
+    <script src="map.js"></script>
     
 </body>
 </html>

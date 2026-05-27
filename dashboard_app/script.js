@@ -82,6 +82,8 @@ function updateDashboard(selectedPlot) {
     renderQualityChartAndTable(selectedPlot);
     renderCarbonData(selectedPlot);
     renderForestStatus(selectedPlot);
+
+    highlightMapPlot(selectedPlot);
 }
 
 document.getElementById('growth-badge').addEventListener('click', (e) => {
@@ -91,7 +93,7 @@ document.getElementById('growth-badge').addEventListener('click', (e) => {
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub] = await Promise.all([
+        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub, resMap] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
@@ -102,6 +104,7 @@ async function loadData() {
             fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/Plot_ForestEstatus_EN.csv'),
             fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/PlotTreeLayer_EN.csv'),
             fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/PlotShrubLayer_EN.csv'),
+            fetch('../Plot_Data_EN/Plot_1_SITUATION/PlotSituation_EN.csv')
         ]);
 
         parseRawData(await resVol.text());
@@ -114,6 +117,7 @@ async function loadData() {
         parseStatusData(await resStatus.text());
         parseTreeLayerData(await resTree.text());
         parseShrubLayerData(await resShrub.text());
+        parseAndRenderMapData(await resMap.text());
 
         assignSpeciesColors();
         populateDropdown();
