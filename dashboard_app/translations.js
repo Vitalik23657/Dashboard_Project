@@ -73,6 +73,7 @@ const QUALITY_DESCRIPTIONS_ES = {
 
 const UI_TRANSLATIONS = {
     en: {
+        nav_situation:        'Situation',
         nav_stocks:           'Forest Stocks',
         nav_damage:           'Damage Analysis',
         nav_quality:          'Wood Quality',
@@ -173,6 +174,7 @@ const UI_TRANSLATIONS = {
         nfi_prefix: 'NFI',
     },
     es: {
+        nav_situation:        'Situación',
         nav_stocks:           'Existencias Forestales',
         nav_damage:           'Análisis de Daños',
         nav_quality:          'Calidad de Madera',

@@ -30,9 +30,7 @@ function setLanguage(lang) {
 }
 
 function applyTranslations() {
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const navKeys  = ['nav_stocks', 'nav_damage', 'nav_quality', 'nav_carbon', 'nav_status'];
-    navLinks.forEach((el, i) => { if (navKeys[i]) el.textContent = t(navKeys[i]); });
+    // nav links and all [data-i18n] elements are handled below
 
     [
         ['#stocks-section h2',  'nav_stocks'],
@@ -292,7 +290,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks  = document.querySelectorAll('.nav-links a');
-    const sectionIds = ['stocks-section', 'damage-section', 'quality-section', 'carbon-section', 'status-section'];
+    const sectionIds = ['map-section', 'stocks-section', 'damage-section', 'quality-section', 'carbon-section', 'status-section'];
     const NAV_HEIGHT = 80;
 
     function updateActiveNav() {
