@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Forest Stocks Dashboard</title>
+    <title>BMP Dashboard</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -13,7 +13,7 @@
 <body>
     <nav class="top-nav">
         <div class="nav-content">
-            <div class="nav-logo">Dashboard</div>
+            <div class="nav-logo">BMP Dashboard</div>
             <div class="lang-switcher">
                 <button id="lang-en" class="lang-btn active" onclick="setLanguage('en')">EN</button>
                 <span style="color:#aaa;">|</span>
@@ -22,6 +22,7 @@
             
             <div class="nav-links">
                 <a href="#map-section" data-i18n="nav_situation">Situation</a>
+                <a href="#natural-section" data-i18n="nav_natural">Natural Conditions</a>
                 <a href="#stocks-section" class="active" data-i18n="nav_stocks">Forest Stocks</a>
                 <a href="#damage-section" data-i18n="nav_damage">Damage Analysis</a>
                 <a href="#quality-section" data-i18n="nav_quality">Wood Quality</a>
@@ -38,6 +39,26 @@
             </div>
         </div>
 
+        <div class="header-panel" id="natural-section">
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+                <h2 data-i18n="nav_natural">Natural Conditions</h2>
+            </div>
+
+            <!-- Climate view -->
+            <div id="natural-view-climate">
+                <div class="chart-card" style="padding:0; overflow:hidden;">
+                    <div id="natural-climate-chart" style="height:560px; position:relative;"></div>
+                </div>
+                <div class="chart-card">
+                    <div id="natural-annual-table"></div>
+                </div>
+            </div>
+
+            <!-- Site conditions view -->
+            <div id="natural-view-site">
+                <div id="natural-site-cards" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px;"></div>
+            </div>
+        </div>
         <div class="header-panel" id="stocks-section">
             <div class="header-top">
                 <h2>Forest Stocks</h2>
@@ -268,6 +289,7 @@
     <script src="translations.js"></script>
     <script src="parsers.js"></script>
     <script src="renderers.js"></script>
+    <script src="natural.js"></script>
     <script src="ui.js"></script>
     <script src="script.js"></script>
     <script src="map.js"></script>

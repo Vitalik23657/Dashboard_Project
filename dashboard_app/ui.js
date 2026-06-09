@@ -289,19 +289,23 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navLinks  = document.querySelectorAll('.nav-links a');
-    const sectionIds = ['map-section', 'stocks-section', 'damage-section', 'quality-section', 'carbon-section', 'status-section'];
-    const NAV_HEIGHT = 80;
+    const navLinks   = document.querySelectorAll('.nav-links a');
+    const sectionIds = ['map-section', 'natural-section', 'stocks-section', 'damage-section', 'quality-section', 'carbon-section', 'status-section'];
+    const NAV_HEIGHT = 60;
 
     function updateActiveNav() {
-        const scrollY = window.scrollY + NAV_HEIGHT + 10;
+        // Use getBoundingClientRect so it works regardless of scroll container
         let currentId = sectionIds[0];
         for (const id of sectionIds) {
             const el = document.getElementById(id);
-            if (el && el.offsetTop <= scrollY) currentId = id;
+            if (!el) continue;
+            const rect = el.getBoundingClientRect();
+            // Section counts as active once its top passes the nav bar
+            if (rect.top <= NAV_HEIGHT + 20) currentId = id;
         }
         navLinks.forEach(l => {
-            l.classList.toggle('active', l.getAttribute('href').replace('#', '') === currentId);
+            const href = l.getAttribute('href');
+            if (href) l.classList.toggle('active', href.replace('#', '') === currentId);
         });
     }
 
@@ -309,7 +313,10 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetEl = document.querySelector(this.getAttribute('href'));
-            if (targetEl) window.scrollTo({ top: targetEl.offsetTop - NAV_HEIGHT + 1, behavior: 'smooth' });
+            if (targetEl) {
+                const top = targetEl.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT - 8;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
         });
     });
 

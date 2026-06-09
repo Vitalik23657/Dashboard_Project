@@ -388,7 +388,7 @@ td:first-child { text-align: left; font-weight: bold; background: #fdfdfd; }
 }
 
 :root {
-    --nav-height: 60px;
+    --nav-height: 56px;
 }
 
 body {
@@ -413,32 +413,39 @@ body {
 
 .nav-content {
     width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
+    max-width: 1400px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
 .nav-logo {
-    font-weight: bold;
+    font-weight: 800;
     color: #4A90A4;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 2px;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-main);
-    font-size: 0.9rem;
+    color: #555;
+    font-size: 0.82rem;
     font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -449,6 +456,8 @@ body {
 .nav-links a.active {
     background: #4A90A4;
     color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(74,144,164,0.3);
 }
 
 .header-panel {
@@ -483,8 +492,8 @@ body {
 .lang-switcher {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-left: 16px;
+    gap: 4px;
+    flex-shrink: 0;
 }
 .lang-btn {
     background: none;
