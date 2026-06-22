@@ -10,9 +10,12 @@ const MONTH_LABELS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct
 function parseNaturalConditions(csvText) {
     const lines = csvText.trim().split('\n');
     for (let i = 1; i < lines.length; i++) {
-        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-        if (!row || row.length < 14) continue;
-        const id = row[0].trim();
+        // Robust split to preserve empty columns (like missing Aspect)
+        const row = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+        
+        if (row.length < 14) continue;
+        
+        const id = row[0].replace(/"/g, '').trim();
         naturalConditionsData[id] = {
             altitude:      cleanVal(row[3]),
             fuelModel:     cleanVal(row[4]),
@@ -32,19 +35,20 @@ function parseNaturalConditions(csvText) {
 function parseClimateData(csvText) {
     const lines = csvText.trim().split('\n');
     for (let i = 1; i < lines.length; i++) {
-        const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-        if (!row || row.length < 15) continue;
-        const id    = row[0].trim();
-        const month = row[2].trim().replace(/"/g, '');
+        const row = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+        if (row.length < 15) continue;
+        
+        const id    = row[0].replace(/"/g, '').trim();
+        const month = row[2].replace(/"/g, '').trim();
         if (!climateData[id]) climateData[id] = { months: [], annual: null };
 
         const entry = {
             month,
-            tmin:     parseFloat(row[7])  || 0,   // tmin      col 7
-            tmax:     parseFloat(row[8])  || 0,   // tmax      col 8
-            tavg:     parseFloat(row[9])  || 0,   // tavg      col 9
-            prec:     parseFloat(row[10]) || 0,   // prec      col 10
-            martonne: row[15] ? parseFloat(row[15]) : null,  // martonne col 15
+            tmin:     parseFloat(row[7])  || 0,
+            tmax:     parseFloat(row[8])  || 0,
+            tavg:     parseFloat(row[9])  || 0,
+            prec:     parseFloat(row[10]) || 0,
+            martonne: row[15] ? parseFloat(row[15]) : null,
         };
 
         if (month === 'annual') {
@@ -56,12 +60,6 @@ function parseClimateData(csvText) {
     Object.values(climateData).forEach(d => {
         d.months.sort((a, b) => parseInt(a.month) - parseInt(b.month));
     });
-}
-
-// ── View Switcher (removed – both views are always visible) ───────────────────
-
-function switchNaturalView(view) {
-    // Buttons removed; both climate and site conditions are always shown.
 }
 
 // ── Site Conditions Cards ─────────────────────────────────────────────────────
@@ -77,16 +75,16 @@ function renderSiteConditions(plotId) {
     }
 
     const cards = [
-        { icon: '⛰️', label: t('natural_altitude'),       value: nc.altitude ? nc.altitude + ' m' : '-' },
+        { icon: '⛰️', label: t('natural_altitude'),       value: nc.altitude !== '-' ? nc.altitude + ' m' : '-' },
         { icon: '🧭', label: t('natural_exposure'),        value: nc.exposure      || '-' },
-        { icon: '📐', label: t('natural_slope'),           value: nc.slope ? nc.slope + '°' : '-' },
+        { icon: '📐', label: t('natural_slope'),           value: nc.slope !== '-' ? nc.slope + '°' : '-' },
         { icon: '🪨', label: t('natural_stoniness'),       value: nc.stoniness     || '-' },
         { icon: '🏔️', label: t('natural_aspect'),          value: nc.aspect        || '-' },
         { icon: '🌱', label: t('natural_soil_type'),       value: nc.soilType      || '-' },
         { icon: '🧪', label: t('natural_soil_ph'),         value: nc.soilPH        || '-' },
         { icon: '🌾', label: t('natural_texture'),         value: nc.texture       || '-' },
         { icon: '🌍', label: t('natural_bio_region'),      value: nc.bioRegion     || '-' },
-        { icon: '🍂', label: t('natural_org_matter'),  value: nc.organicMatter || '-' },
+        { icon: '🍂', label: t('natural_org_matter'),      value: nc.organicMatter || '-' },
         { icon: '🔥', label: t('natural_fuel_model'),      value: nc.fuelModel     || '-' },
     ];
 
@@ -103,8 +101,6 @@ function renderSiteConditions(plotId) {
     `).join('');
 }
 
-
-
 function renderNaturalConditions(selectedPlot) {
     if (selectedPlot === 'ALL') {
         document.getElementById('natural-climate-chart').innerHTML = '';
@@ -118,241 +114,172 @@ function renderNaturalConditions(selectedPlot) {
     renderSiteConditions(selectedPlot);
 }
 
-// ── Info Cards ────────────────────────────────────────────────────────────────
-
-function renderNaturalInfoCards(plotId) {
-    const nc = naturalConditionsData[plotId];
-    const cl = climateData[plotId];
-    const container = document.getElementById('natural-info-cards');
-
-    const cards = [
-        { icon: '⛰️', label: t('natural_altitude'),         value: nc ? nc.altitude + ' m' : '-' },
-        { icon: '🧭', label: t('natural_exposure'),          value: nc ? nc.exposure : '-' },
-        { icon: '📐', label: t('natural_slope'),             value: nc ? nc.slope + '°' : '-' },
-        { icon: '🪨', label: t('natural_stoniness'),         value: nc ? nc.stoniness : '-' },
-        { icon: '🌱', label: t('natural_soil_type'),         value: nc ? nc.soilType : '-' },
-        { icon: '🧪', label: t('natural_soil_ph'),           value: nc ? nc.soilPH : '-' },
-        { icon: '🌍', label: t('natural_bio_region'),        value: nc ? nc.bioRegion : '-' },
-        { icon: '🌡️', label: 'Mean Temp',        value: cl && cl.annual ? (+cl.annual.tavg).toFixed(1) + ' °C' : '-' },
-        { icon: '🌧️', label: 'Annual Precip',    value: cl && cl.annual ? (+cl.annual.prec).toFixed(0) + ' mm' : '-' },
-        { icon: '💧', label: 'Martonne Index',    value: cl && cl.annual && cl.annual.martonne ? (+cl.annual.martonne).toFixed(1) : '-' },
-    ];
-
-    container.innerHTML = cards.map(c => `
-        <div style="background:var(--card-bg);border-radius:10px;
-                    box-shadow:0 2px 10px rgba(0,0,0,0.06);
-                    padding:14px 16px;display:flex;flex-direction:column;gap:4px;">
-            <div style="font-size:1.3rem;">${c.icon}</div>
-            <div style="font-size:11px;color:#888;font-weight:500;text-transform:uppercase;letter-spacing:.5px;">${c.label}</div>
-            <div style="font-size:15px;font-weight:700;color:var(--text-main);">${c.value}</div>
-        </div>
-    `).join('');
-}
-
-// ── Climodiagram PNG ──────────────────────────────────────────────────────────
-
-function renderClimodiagram(plotId) {
-    const container = document.getElementById('natural-climodiagram');
-    const BASE = '../Parcelas/2_EstadoNatural/Clima/Climodiagramas/';
-    const url = `${BASE}climograma_${plotId}_1991_2020.png`;
-    container.innerHTML = `
-        <img src="${url}" alt="Climodiagram Plot ${plotId}"
-             style="max-width:100%;max-height:340px;object-fit:contain;border-radius:6px;"
-             onerror="this.parentElement.innerHTML='<span style=color:#aaa;font-size:13px>No climodiagram available for Plot ${plotId}</span>'">
-    `;
-}
-
-// ── Catmull-Rom smooth path helper ────────────────────────────────────────────
-
-function smoothPath(points) {
-    if (points.length < 2) return '';
-    let d = `M ${points[0][0].toFixed(1)} ${points[0][1].toFixed(1)}`;
-    for (let i = 0; i < points.length - 1; i++) {
-        const p0 = points[Math.max(i - 1, 0)];
-        const p1 = points[i];
-        const p2 = points[i + 1];
-        const p3 = points[Math.min(i + 2, points.length - 1)];
-        const cp1x = p1[0] + (p2[0] - p0[0]) / 6;
-        const cp1y = p1[1] + (p2[1] - p0[1]) / 6;
-        const cp2x = p2[0] - (p3[0] - p1[0]) / 6;
-        const cp2y = p2[1] - (p3[1] - p1[1]) / 6;
-        d += ` C ${cp1x.toFixed(1)} ${cp1y.toFixed(1)}, ${cp2x.toFixed(1)} ${cp2y.toFixed(1)}, ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`;
-    }
-    return d;
-}
-
 // ── Walter-Lieth Climate Chart ────────────────────────────────────────────────
 
 function renderClimateChart(plotId) {
     const container = document.getElementById('natural-climate-chart');
     const data = climateData[plotId];
+    const nc = naturalConditionsData[plotId];
+    
     if (!data || !data.months.length) {
-        container.innerHTML = '<p style="color:#aaa;font-size:13px;text-align:center;padding-top:80px;">No climate data available.</p>';
+        container.innerHTML = '<div style="padding:20px;color:#888;text-align:center;">No climate data available.</div>';
         return;
     }
 
-    const nc = naturalConditionsData[plotId];
+    const alt = nc?.altitude && nc.altitude !== '-' ? `${nc.altitude} m` : '-';
+
     const months = data.months;
-    const annual = data.annual;
+    const tData = months.map(m => +m.tavg);
+    const pData = months.map(m => +m.prec);
 
-    const prec = months.map(m => +m.prec);
-    const tavg = months.map(m => +m.tavg);
-    const tmin = months.map(m => +m.tmin);
-
-    // ── Walter-Lieth: 1°C = 2mm, so precip axis = 2× temp axis
-    // Arid month: P < 2T
-    const aridMonths = months.filter((m, i) => prec[i] < 2 * tavg[i]).length;
-
-    // Axis bounds – temp-driven (Walter-Lieth rule)
-    const tempMin = Math.floor(Math.min(...tavg, ...tmin) / 5) * 5 - 5;
-    const tempMax = Math.ceil(Math.max(...tavg) / 5) * 5 + 5;
-    const precMax = tempMax * 2;  // strict Walter-Lieth scaling
-
-    // Layout
-    const W = 900, H = 520;
-    const statsH = 56;
-    const padL = 54, padR = 60, padT = statsH + 20, padB = 60;
-    const legH = 32;
-    const chartH = H - padT - padB - legH;
+    const W = 900, H = 560; 
+    const padL = 60, padR = 60, padT = 80, padB = 80;
     const chartW = W - padL - padR;
+    const chartH = H - padT - padB;
 
-    const scaleT = v => padT + chartH - ((v - tempMin) / (tempMax - tempMin)) * chartH;
-    const scaleP = v => padT + chartH - (Math.min(v, precMax) / precMax) * chartH;
-    const scaleX = i => padL + (i + 0.5) * (chartW / 12);
+    const maxT = Math.max(...tData, 0);
+    const maxP = Math.max(...pData, 0);
+    
+    let tempMax = Math.max(Math.ceil(maxT / 10) * 10, Math.ceil(maxP / 20) * 10);
+    if (tempMax < 30) tempMax = 30; 
+    const precMax = tempMax * 2;
 
-    // ── Dashed vertical grid lines
-    const grid = MONTH_LABELS.map((_, i) => {
-        const x = scaleX(i);
-        return `<line x1="${x.toFixed(1)}" y1="${padT}" x2="${x.toFixed(1)}" y2="${padT + chartH}"
-                      stroke="#e8e8e8" stroke-width="1" stroke-dasharray="4,3"/>`;
-    }).join('');
+    const getY_T = val => padT + chartH - (val / tempMax) * chartH;
+    const getY_P = val => padT + chartH - (val / precMax) * chartH;
+    const getX = i => padL + (i + 0.5) * (chartW / 12);
 
-    // ── Precipitation bars (blue = normal, yellow = arid)
-    const barW = chartW / 12 * 0.65;
-    const bars = prec.map((p, i) => {
-        const isArid = p < 2 * tavg[i];
-        const color  = isArid ? '#F5C842' : '#7DC4E8';
-        const stroke = isArid ? '#D4A800' : '#4A90A4';
-        const x = scaleX(i) - barW / 2;
-        const y = scaleP(p);
-        const h = Math.max(1, padT + chartH - y);
-        return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}"
-                      fill="${color}" stroke="${stroke}" stroke-width="0.8" rx="1"/>`;
-    }).join('');
-
-    // ── Smooth temperature lines
-    const avgPts = tavg.map((v, i) => [scaleX(i), scaleT(v)]);
-    const minPts = tmin.map((v, i) => [scaleX(i), scaleT(v)]);
-
-    // ── Y-axis ticks
-    const tempStep = (tempMax - tempMin) <= 30 ? 5 : 10;
-    const tempTicks = [];
-    for (let t = tempMin; t <= tempMax; t += tempStep) {
-        const y = scaleT(t);
-        tempTicks.push(`
-            <line x1="${padL - 4}" y1="${y.toFixed(1)}" x2="${padL}" y2="${y.toFixed(1)}" stroke="#bbb" stroke-width="1"/>
-            <line x1="${padL}" y1="${y.toFixed(1)}" x2="${padL + chartW}" y2="${y.toFixed(1)}" stroke="#f0f0f0" stroke-width="1"/>
-            <text x="${(padL - 7).toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="end" font-size="13" fill="#555">${t}</text>
-        `);
-    }
-
-    const precStep = precMax <= 60 ? 10 : precMax <= 100 ? 20 : 50;
-    const precTicks = [];
-    for (let p = 0; p <= precMax; p += precStep) {
-        const y = scaleP(p);
-        precTicks.push(`
-            <line x1="${W - padR}" y1="${y.toFixed(1)}" x2="${W - padR + 4}" y2="${y.toFixed(1)}" stroke="#bbb" stroke-width="1"/>
-            <text x="${(W - padR + 7).toFixed(1)}" y="${(y + 4).toFixed(1)}" font-size="13" fill="#4A90A4">${p}</text>
-        `);
-    }
-
-    // ── Stats bar values
-    const fmtT = v => isNaN(+v) ? '-' : (+v).toFixed(1) + ' °C';
-    const fmtP = v => isNaN(+v) ? '-' : (+v).toFixed(0) + ' mm';
-    const fmtM = v => (!v || isNaN(+v)) ? '-' : (+v).toFixed(1);
-    const alt  = nc ? nc.altitude + ' m' : '-';
-    const mart = annual && annual.martonne ? fmtM(annual.martonne) : '-';
-
-    const statsItems = [
-        { label: t('natural_mean_temp').split(' ').slice(0,2).join(' '),    value: annual ? fmtT(annual.tavg) : '-', color: '#E05C2A' },
-        { label: t('natural_ann_prec').split(' ').slice(0,2).join(' '),  value: annual ? fmtP(annual.prec) : '-', color: '#4A90A4' },
-        { label: t('natural_arid_months') || 'Arid months',  value: aridMonths,                        color: '#D4A800' },
-        { label: t('natural_altitude'),     value: alt,                               color: '#666' },
-        { label: t('natural_martonne').split(' ')[0],     value: mart,                              color: '#2E7D32' },
-    ];
-
-    const statsCellW = W / statsItems.length;
-    const statsBar = statsItems.map((s, i) => {
-        const cx = i * statsCellW + statsCellW / 2;
-        const bg = i % 2 === 0 ? '#f7f9fc' : '#eef2f7';
-        return `
-            <rect x="${(i * statsCellW).toFixed(1)}" y="0" width="${statsCellW.toFixed(1)}" height="${statsH}"
-                  fill="${bg}"/>
-            <text x="${cx.toFixed(1)}" y="18" text-anchor="middle" font-size="11" fill="#999" font-weight="500"
-                  letter-spacing="0.3">${s.label.toUpperCase()}</text>
-            <text x="${cx.toFixed(1)}" y="40" text-anchor="middle" font-size="16" fill="${s.color}" font-weight="700">${s.value}</text>
+    let gridHtml = '';
+    for (let t = 0; t <= tempMax; t += 10) {
+        const y = getY_T(t);
+        const p = t * 2; 
+        gridHtml += `
+            <line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="#eee" stroke-width="1"/>
+            <text x="${padL - 10}" y="${y + 5}" text-anchor="end" font-size="13" fill="#E05C2A" font-weight="bold">${t}</text>
+            <text x="${W - padR + 10}" y="${y + 5}" text-anchor="start" font-size="13" fill="#4A90A4" font-weight="bold">${p}</text>
         `;
-    }).join('');
+    }
 
-    // ── Legend
-    const legY = padT + chartH + padB - 4;
-    const legend = `
-        <rect x="${padL}" y="${legY - 10}" width="14" height="14" fill="#7DC4E8" stroke="#4A90A4" stroke-width="0.8" rx="1"/>
-        <text x="${padL + 20}" y="${legY + 2}" font-size="13" fill="#555">Precipitation</text>
-        <rect x="${padL + 130}" y="${legY - 10}" width="14" height="14" fill="#F5C842" stroke="#D4A800" stroke-width="0.8" rx="1"/>
-        <text x="${padL + 150}" y="${legY + 2}" font-size="13" fill="#555">Arid month</text>
-        <line x1="${padL + 256}" y1="${legY - 4}" x2="${padL + 276}" y2="${legY - 4}" stroke="#E05C2A" stroke-width="2.5"/>
-        <circle cx="${padL + 266}" cy="${legY - 4}" r="4" fill="#E05C2A" stroke="#fff" stroke-width="1.2"/>
-        <text x="${padL + 284}" y="${legY + 2}" font-size="13" fill="#555">Avg Temp</text>
-        <line x1="${padL + 376}" y1="${legY - 4}" x2="${padL + 396}" y2="${legY - 4}" stroke="#5BA4D4" stroke-width="2" stroke-dasharray="5,3"/>
-        <circle cx="${padL + 386}" cy="${legY - 4}" r="3.5" fill="#5BA4D4" stroke="#fff" stroke-width="1"/>
-        <text x="${padL + 404}" y="${legY + 2}" font-size="13" fill="#555">Min Temp</text>
-    `;
+    let pointsT_str = `${padL},${getY_T(tData[0])} ` + tData.map((val, i) => `${getX(i)},${getY_T(val)}`).join(' ') + ` ${W - padR},${getY_T(tData[11])}`;
+    let pointsP_str = `${padL},${getY_P(pData[0])} ` + pData.map((val, i) => `${getX(i)},${getY_P(val)}`).join(' ') + ` ${W - padR},${getY_P(pData[11])}`;
+
+    const bottomY = padT + chartH;
+    const topY = padT;
+    const polyT_bottom = `${pointsT_str} ${W - padR},${bottomY} ${padL},${bottomY}`;
+    const polyP_top = `${pointsP_str} ${W - padR},${topY} ${padL},${topY}`;
+    const polyP_bottom = `${pointsP_str} ${W - padR},${bottomY} ${padL},${bottomY}`;
+    const polyT_top = `${pointsT_str} ${W - padR},${topY} ${padL},${topY}`;
+
+    let labelsX = MONTH_LABELS.map((m, i) => `
+        <text x="${getX(i)}" y="${padT + chartH + 25}" text-anchor="middle" font-size="14" fill="#555">${m}</text>
+    `).join('');
 
     container.innerHTML = `
-        <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:100%;" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">
+            
+            <defs>
+                <clipPath id="clip-T-bottom-${plotId}"><polygon points="${polyT_bottom}"/></clipPath>
+                <clipPath id="clip-P-top-${plotId}"><polygon points="${polyP_top}"/></clipPath>
+                <clipPath id="clip-P-bottom-${plotId}"><polygon points="${polyP_bottom}"/></clipPath>
+                <clipPath id="clip-T-top-${plotId}"><polygon points="${polyT_top}"/></clipPath>
+            </defs>
 
-            <!-- Stats bar background -->
-            <rect x="0" y="0" width="${W}" height="${statsH}" fill="#f7f9fc" rx="6"/>
-            <line x1="0" y1="${statsH}" x2="${W}" y2="${statsH}" stroke="#e0e4ea" stroke-width="1"/>
-            ${statsBar}
+            <text x="${W/2}" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">
+                ${t('plot_label') || 'Plot'} ${plotId}
+            </text>
+            <text x="${W/2}" y="60" text-anchor="middle" font-size="15" fill="#666">
+                Altitude: ${alt}
+            </text>
 
-            <!-- Grid -->
-            ${grid}
+            ${gridHtml}
 
-            <!-- Axes -->
-            <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + chartH}" stroke="#bbb" stroke-width="1.2"/>
-            <line x1="${padL}" y1="${padT + chartH}" x2="${W - padR}" y2="${padT + chartH}" stroke="#bbb" stroke-width="1.2"/>
-            <line x1="${W - padR}" y1="${padT}" x2="${W - padR}" y2="${padT + chartH}" stroke="#bbb" stroke-width="1.2"/>
+            <g clip-path="url(#clip-P-bottom-${plotId})">
+                <rect x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="rgba(30, 136, 229, 0.25)" clip-path="url(#clip-T-top-${plotId})" />
+            </g>
 
-            <!-- Ticks -->
-            ${tempTicks.join('')}
-            ${precTicks.join('')}
+            <g clip-path="url(#clip-T-bottom-${plotId})">
+                <rect x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="rgba(255, 193, 7, 0.6)" clip-path="url(#clip-P-top-${plotId})" />
+            </g>
+            
+            <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + chartH}" stroke="#E05C2A" stroke-width="2"/>
+            <line x1="${W - padR}" y1="${padT}" x2="${W - padR}" y2="${padT + chartH}" stroke="#4A90A4" stroke-width="2"/>
+            <line x1="${padL}" y1="${padT + chartH}" x2="${W - padR}" y2="${padT + chartH}" stroke="#888" stroke-width="2"/>
 
-            <!-- Precipitation bars -->
-            ${bars}
+            ${labelsX}
 
-            <!-- Avg temp curve -->
-            <path d="${smoothPath(avgPts)}" fill="none" stroke="#E05C2A" stroke-width="2.5" stroke-linejoin="round"/>
-            ${avgPts.map(p => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="#E05C2A" stroke="#fff" stroke-width="1.2"/>`).join('')}
+            <polyline points="${pointsP_str}" fill="none" stroke="#4A90A4" stroke-width="3" />
+            <polyline points="${pointsT_str}" fill="none" stroke="#E05C2A" stroke-width="3" />
+            
+            ${tData.map((val, i) => `<circle class="t-node" cx="${getX(i)}" cy="${getY_T(val)}" r="6" fill="#E05C2A" stroke="#fff" stroke-width="1.5" style="cursor:pointer; transition: r 0.2s;"/>`).join('')}
+            ${pData.map((val, i) => `<circle class="p-node" cx="${getX(i)}" cy="${getY_P(val)}" r="6" fill="#4A90A4" stroke="#fff" stroke-width="1.5" style="cursor:pointer; transition: r 0.2s;"/>`).join('')}
 
-            <!-- Min temp curve -->
-            <path d="${smoothPath(minPts)}" fill="none" stroke="#5BA4D4" stroke-width="1.8" stroke-dasharray="5,3"/>
-            ${minPts.map(p => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="2.8" fill="#5BA4D4" stroke="#fff" stroke-width="1"/>`).join('')}
+            <text x="15" y="${padT + chartH/2}" transform="rotate(-90 15,${padT + chartH/2})" text-anchor="middle" font-size="15" font-weight="bold" fill="#E05C2A">Temperature (°C)</text>
+            <text x="${W - 15}" y="${padT + chartH/2}" transform="rotate(90 ${W - 15},${padT + chartH/2})" text-anchor="middle" font-size="15" font-weight="bold" fill="#4A90A4">Precipitation (mm)</text>
 
-            <!-- X-axis labels -->
-            ${MONTH_LABELS.map((m, i) => `<text x="${scaleX(i).toFixed(1)}" y="${(padT + chartH + 20).toFixed(1)}" text-anchor="middle" font-size="13" fill="#555">${m}</text>`).join('')}
+            <rect x="${W/2 - 200}" y="${padT + chartH + 50}" width="14" height="14" fill="rgba(255, 193, 7, 0.6)" />
+            <text x="${W/2 - 180}" y="${padT + chartH + 62}" font-size="13" fill="#555">Arid Period</text>
 
-            <!-- Axis unit labels -->
-            <text x="14" y="${(padT + chartH / 2).toFixed(1)}" text-anchor="middle" font-size="13" fill="#E05C2A" font-weight="600"
-                  transform="rotate(-90, 14, ${(padT + chartH / 2).toFixed(1)})">°C</text>
-            <text x="${(W - 12).toFixed(1)}" y="${(padT + chartH / 2).toFixed(1)}" text-anchor="middle" font-size="13" fill="#4A90A4" font-weight="600"
-                  transform="rotate(90, ${(W - 12).toFixed(1)}, ${(padT + chartH / 2).toFixed(1)})">mm</text>
+            <rect x="${W/2 - 90}" y="${padT + chartH + 50}" width="14" height="14" fill="rgba(30, 136, 229, 0.25)" />
+            <text x="${W/2 - 70}" y="${padT + chartH + 62}" font-size="13" fill="#555">Humid Period</text>
 
-            <!-- Legend -->
-            ${legend}
+            <line x1="${W/2 + 30}" y1="${padT + chartH + 57}" x2="${W/2 + 60}" y2="${padT + chartH + 57}" stroke="#E05C2A" stroke-width="3"/>
+            <circle cx="${W/2 + 45}" cy="${padT + chartH + 57}" r="4" fill="#E05C2A"/>
+            <text x="${W/2 + 68}" y="${padT + chartH + 62}" font-size="13" fill="#555">Temperature</text>
+
+            <line x1="${W/2 + 160}" y1="${padT + chartH + 57}" x2="${W/2 + 190}" y2="${padT + chartH + 57}" stroke="#4A90A4" stroke-width="3"/>
+            <circle cx="${W/2 + 175}" cy="${padT + chartH + 57}" r="4" fill="#4A90A4"/>
+            <text x="${W/2 + 198}" y="${padT + chartH + 62}" font-size="13" fill="#555">Precipitation</text>
         </svg>
     `;
+
+    // ── Attach Tooltip Events ──────────────────────────────────────────────────
+    
+    // Attach to Temperature nodes
+    const tNodes = container.querySelectorAll('.t-node');
+    tNodes.forEach((node, i) => {
+        const val = tData[i];
+        const month = MONTH_LABELS[i];
+        const tooltipHtml = `
+            <div style="margin-bottom:4px; border-bottom:1px solid #555; padding-bottom:4px;">
+                <strong>${month}</strong>
+            </div>
+            <div>
+                <span class="tooltip-color-box" style="background:#E05C2A"></span>
+                <strong>T:</strong> ${val.toFixed(1)} °C
+            </div>`;
+        
+        node.addEventListener('mousemove', (e) => {
+            node.setAttribute('r', '9'); // Expand on hover
+            showTooltip(e, tooltipHtml);
+        });
+        node.addEventListener('mouseleave', () => {
+            node.setAttribute('r', '6'); // Shrink on exit
+            hideTooltip();
+        });
+    });
+
+    // Attach to Precipitation nodes
+    const pNodes = container.querySelectorAll('.p-node');
+    pNodes.forEach((node, i) => {
+        const val = pData[i];
+        const month = MONTH_LABELS[i];
+        const tooltipHtml = `
+            <div style="margin-bottom:4px; border-bottom:1px solid #555; padding-bottom:4px;">
+                <strong>${month}</strong>
+            </div>
+            <div>
+                <span class="tooltip-color-box" style="background:#4A90A4"></span>
+                <strong>P:</strong> ${val.toFixed(1)} mm
+            </div>`;
+        
+        node.addEventListener('mousemove', (e) => {
+            node.setAttribute('r', '9'); // Expand on hover
+            showTooltip(e, tooltipHtml);
+        });
+        node.addEventListener('mouseleave', () => {
+            node.setAttribute('r', '6'); // Shrink on exit
+            hideTooltip();
+        });
+    });
 }
 
 // ── Annual Summary Table ───────────────────────────────────────────────────────
