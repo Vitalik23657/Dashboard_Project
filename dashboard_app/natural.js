@@ -1,5 +1,3 @@
-// ─── Natural Conditions & Climatograph Module ───────────────────────────────
-
 let naturalConditionsData = {};
 let climateData           = {};
 
@@ -10,7 +8,6 @@ const MONTH_LABELS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct
 function parseNaturalConditions(csvText) {
     const lines = csvText.trim().split('\n');
     for (let i = 1; i < lines.length; i++) {
-        // Robust split to preserve empty columns (like missing Aspect)
         const row = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
         
         if (row.length < 14) continue;
@@ -231,9 +228,8 @@ function renderClimateChart(plotId) {
         </svg>
     `;
 
-    // ── Attach Tooltip Events ──────────────────────────────────────────────────
+    // ── Tooltip Events ──────────────────────────────────────────────────
     
-    // Attach to Temperature nodes
     const tNodes = container.querySelectorAll('.t-node');
     tNodes.forEach((node, i) => {
         const val = tData[i];
@@ -248,16 +244,15 @@ function renderClimateChart(plotId) {
             </div>`;
         
         node.addEventListener('mousemove', (e) => {
-            node.setAttribute('r', '9'); // Expand on hover
+            node.setAttribute('r', '9');
             showTooltip(e, tooltipHtml);
         });
         node.addEventListener('mouseleave', () => {
-            node.setAttribute('r', '6'); // Shrink on exit
+            node.setAttribute('r', '6');
             hideTooltip();
         });
     });
 
-    // Attach to Precipitation nodes
     const pNodes = container.querySelectorAll('.p-node');
     pNodes.forEach((node, i) => {
         const val = pData[i];
@@ -272,11 +267,11 @@ function renderClimateChart(plotId) {
             </div>`;
         
         node.addEventListener('mousemove', (e) => {
-            node.setAttribute('r', '9'); // Expand on hover
+            node.setAttribute('r', '9');
             showTooltip(e, tooltipHtml);
         });
         node.addEventListener('mouseleave', () => {
-            node.setAttribute('r', '6'); // Shrink on exit
+            node.setAttribute('r', '6');
             hideTooltip();
         });
     });

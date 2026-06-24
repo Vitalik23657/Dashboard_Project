@@ -30,7 +30,6 @@ function setLanguage(lang) {
 }
 
 function applyTranslations() {
-    // nav links and all [data-i18n] elements are handled below
 
     [
         ['#stocks-section h2',  'nav_stocks'],
@@ -294,13 +293,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const NAV_HEIGHT = 60;
 
     function updateActiveNav() {
-        // Use getBoundingClientRect so it works regardless of scroll container
         let currentId = sectionIds[0];
         for (const id of sectionIds) {
             const el = document.getElementById(id);
             if (!el) continue;
             const rect = el.getBoundingClientRect();
-            // Section counts as active once its top passes the nav bar
             if (rect.top <= NAV_HEIGHT + 20) currentId = id;
         }
         navLinks.forEach(l => {
