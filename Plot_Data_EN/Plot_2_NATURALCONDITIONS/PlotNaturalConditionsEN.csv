@@ -1,130 +1,131 @@
 "Estadillo","CoorX","CoorY","Altitude_m","FuelModel","Aspect","Slope","Exposure","Stoniness","Texture","BioRigion","OrganicMatter","SoilpH","SoilType"
-47,368892,4754814,1572,5,,6.25,Shady slope,Slightly stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-49,369907,4753795,1350,9,,12.5,Shady slope,Slightly stony,Sandy texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-54,357918,4751766,1405,7,,10.25,Shady slope,Very stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-66,365937,4749769,1307,2,,11.25,Sunny slope,Stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Limestone soil
-69,349879,4748713,1402,7,,7.5,Shady slope,Stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-72,357892,4748794,1499,7,,10.5,Shady slope,Stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-90,372951,4747849,1126,9,,5.75,Shady slope,Slightly stony,Loam texture,Atlantic,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-94,358890,4746728,1566,7,,7.0,Sunny slope,Very stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-109,363930,4745778,1400,5,,8.75,Sunny slope,Stony,Loam texture,Atlantic,Highly humic,Moderately acidic (5>pH<6),Limestone soil
-111,348850,4744750,1204,8,,0.25,All exposures,Slightly stony,Sandy texture,Atlantic,Moderately humic,Strongly acidic (3>pH<4),Siliceous soil
-113,363902,4743810,1233,7,,7.5,Shady slope,Stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-123,381873,4757828,1304,9,,5.75,Sunny slope,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-125,378901,4756814,1179,4,,6.5,Shady slope,No stoniness,Loam texture,Atlantic,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-131,385851,4755778,1431,6,,11.0,Sunny slope,Slightly stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-133,377862,4754828,1181,9,,0.75,All exposures,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-151,376861,4751808,1114,5,,4.5,Shady slope,Slightly stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-154,380891,4751806,1332,5,,2.75,Shady slope,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-160,377887,4750782,1230,9,,6.5,Shady slope,No stoniness,Loam texture,Atlantic,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-168,398912,4749759,1128,5,,4.0,Shady slope,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-172,375895,4747785,1128,5,,4.25,Shady slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-173,376880,4747795,1043,6,,6.0,Shady slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-174,379899,4747817,1020,6,,7.5,Sunny slope,No stoniness,Loam texture,Mediterranean,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-175,381914,4747807,1088,6,,6.75,Sunny slope,No stoniness,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-181,398898,4746779,1065,6,,4.25,Sunny slope,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-184,377874,4745777,1038,5,,5.25,Shady slope,No stoniness,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-190,381869,4743777,1200,5,,3.5,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-193,345924,4743793,1438,8,,6.0,Shady slope,Slightly stony,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-194,346920,4743814,1270,8,,10.0,Shady slope,Slightly stony,Loam texture,Atlantic,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-200,345856,4735793,1180,11,,0.5,All exposures,Slightly stony,Clay texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-203,346995,4734838,1168,11,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-205,345868,4733795,1157,8,,0.5,All exposures,Slightly stony,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-211,346963,4729817,1122,11,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-213,345887,4728809,1110,11,,5.5,All exposures,Slightly stony,Clay texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-215,347873,4728789,1100,11,,1.0,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-217,346936,4727784,1115,7,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-219,344871,4726777,1094,11,,1.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-227,373885,4739823,1103,5,,6.5,Shady slope,No stoniness,Loam texture,Mediterranean,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-229,361861,4737796,1121,5,,2.5,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-234,357904,4735777,1137,9,,4.0,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-236,359901,4735801,1124,5,,3.5,Shady slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-241,352865,4734813,1154,5,,1.0,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-242,353876,4734814,1161,5,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-250,352892,4733753,1154,7,,1.0,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-252,359878,4733793,1127,9,,0.5,All exposures,Slightly stony,Clay texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-255,369882,4733786,1082,5,,3.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-259,353892,4732804,1149,7,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-260,369881,4732783,1068,5,,6.5,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-267,354892,4730794,1132,7,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-277,370905,4729765,1066,5,,6.5,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-280,356902,4728782,1107,11,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-281,357857,4728757,1099,7,,2.5,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-283,355888,4727755,1059,5,,1.75,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-290,367892,4727794,980,6,,1.5,All exposures,Slightly stony,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-293,356886,4726774,1072,7,,5.5,Sunny slope,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-295,358886,4726778,1044,7,,4.5,Shady slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-297,361863,4726789,1018,6,,7.5,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-298,362873,4726785,1071,6,,1.0,All exposures,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-301,355872,4725777,1087,7,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-303,357880,4725784,1022,7,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-308,363877,4725797,1030,5,,3.0,Shady slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-309,365914,4725803,984,6,,4.0,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-310,369891,4725818,1002,5,,6.0,Sunny slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-312,371910,4725776,1071,5,,0.25,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-314,379922,4741791,1169,5,,4.75,Sunny slope,No stoniness,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Limestone soil
-317,395892,4739813,974,8,,2.5,Sunny slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-323,392897,4737784,944,8,,2.0,All exposures,No stoniness,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-324,393919,4737785,949,9,,2.5,Sunny slope,No stoniness,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-328,391892,4735793,1000,4,,4.0,Shady slope,Slightly stony,Loam texture,Mediterranean,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-329,393907,4735792,951,5,,12.25,Sunny slope,Stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-331,377904,4734780,1092,5,,3.25,Shady slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-338,385903,4733807,1012,6,,5.0,Sunny slope,Stony,Clay texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-345,399933,4732794,1041,5,,2.0,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-352,395886,4729801,912,5,,6.25,Sunny slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-354,397911,4729768,940,5,,4.75,Shady slope,No stoniness,Clay texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Limestone soil
-363,389904,4726785,969,8,,1.25,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-365,391912,4726792,965,6,,1.5,All exposures,Stony,Loam texture,Mediterranean,Highly humic,Neutral (pH=7),Limestone soil
-368,376882,4725806,1055,5,,1.0,All exposures,No stoniness,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-371,409896,4741812,994,11,,5.5,Sunny slope,No stoniness,Loam texture,Atlantic,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-382,345937,4724840,1089,11,,0.5,All exposures,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-384,345955,4723788,1080,11,,1.0,All exposures,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-386,345918,4722804,1076,11,,0.5,All exposures,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-398,347903,4719775,1041,11,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-402,344928,4717802,1041,11,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-404,344906,4716775,1022,11,,0.5,All exposures,Stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-407,344905,4714759,1010,8,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-411,345899,4710808,989,5,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-412,346899,4710829,991,5,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-418,356864,4724825,1077,7,,0.25,All exposures,Stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-424,371876,4724791,1063,5,,0.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-431,370880,4723808,1005,5,,5.25,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-436,355869,4722843,1069,11,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-439,364896,4722817,1009,2,,5.0,Shady slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-452,360862,4720787,1013,11,,0.75,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-453,366901,4720793,1004,6,,7.0,Shady slope,Slightly stony,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-454,370877,4720814,970,6,,1.5,All exposures,Slightly stony,Loam texture,Mediterranean,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-458,362936,4719770,1000,9,,6.25,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-461,371894,4719803,1014,5,,2.5,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-465,353868,4718832,1043,11,,3.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-472,354883,4717798,1039,11,,0.25,All exposures,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-475,354882,4716797,1032,2,,2.75,Sunny slope,Slightly stony,Sandy texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-478,370892,4716793,933,5,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-479,371880,4716791,950,5,,0.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-486,371893,4714777,926,11,,1.5,All exposures,Slightly stony,Sandy texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-490,361938,4713829,1008,5,,9.0,Shady slope,Slightly stony,Clay texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-495,357928,4712810,1011,5,,1.0,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-499,365895,4711778,997,11,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-504,347892,4709783,987,8,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-508,368879,4708799,951,5,,3.0,Sunny slope,No stoniness,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-514,368910,4707768,946,6,,6.25,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-527,381904,4719769,945,5,,0.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-528,375897,4717807,961,5,,1.0,All exposures,No stoniness,Clay texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-530,375915,4716812,998,7,,2.0,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-532,376914,4715806,995,5,,0.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-534,375886,4714758,992,6,,1.25,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-536,381923,4714793,916,5,,1.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-537,382949,4714815,898,5,,1.0,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-539,375907,4713789,991,6,,0.5,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-542,380917,4713787,944,5,,2.0,Sunny slope,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-549,383915,4712820,920,8,,5.5,Sunny slope,No stoniness,Loam texture,Mediterranean,Highly humic,Moderately acidic (5>pH<6),Siliceous soil
-553,376886,4710778,921,6,,2.5,Shady slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-555,376889,4709803,918,6,,3.25,Sunny slope,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-557,375873,4708781,906,5,,3.25,Sunny slope,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-576,345836,4697773,930,8,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-578,346837,4696847,923,8,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-581,347913,4706774,973,11,,0.5,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-599,347828,4694857,915,9,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-602,347874,4692812,908,8,,0.25,All exposures,No stoniness,Loam texture,Mediterranean,Moderately humic,Moderately acidic (5>pH<6),Siliceous soil
-623,383887,4701819,852,2,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
-627,383918,4700770,844,4,,0.25,All exposures,Slightly stony,Loam texture,Mediterranean,Low humic,Moderately acidic (5>pH<6),Siliceous soil
+47,368892,4754814,1572,5,0,6.25,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+49,369907,4753795,1350,9,280,12.5,"Shady slope","Slightly stony","Sandy texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+54,357918,4751766,1405,7,46,10.25,"Shady slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+66,365937,4749769,1307,2,365,11.25,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+69,349879,4748713,1402,7,361,7.5,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+72,357892,4748794,1499,7,180,10.5,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+90,372951,4747849,1126,9,395,5.75,"Shady slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+94,358890,4746728,1566,7,135,7,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+109,363930,4745778,1400,5,288,8.75,"Sunny slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+111,348850,4744750,1204,8,144,0.25,"All exposures","Slightly stony","Sandy texture","Atlantic","Moderately humic","Strongly acidic (3 < pH < 4)","Siliceous soil"
+113,363902,4743810,1233,7,265,7.5,"Shady slope","Stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+123,381873,4757828,1304,9,58,5.75,"Sunny slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+125,378901,4756814,1179,4,232,6.5,"Shady slope","No stoniness","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+131,385851,4755778,1431,6,258,11,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+133,377862,4754828,1181,9,97,0.75,"All exposures","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+151,376861,4751808,1114,5,31,4.5,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+154,380891,4751806,1332,5,397,2.75,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+160,377887,4750782,1230,9,259,6.5,"Shady slope","No stoniness","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+162,396931,4750791,1400,9,85,7.75,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+168,398912,4749759,1128,5,302,4,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+172,375895,4747785,1128,5,231,4.25,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+173,376880,4747795,1043,6,55,6,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+174,379899,4747817,1020,6,11,7.5,"Sunny slope","No stoniness","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+175,381914,4747807,1088,6,58,6.75,"Sunny slope","No stoniness","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+181,398898,4746779,1065,6,394,4.25,"Sunny slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+184,377874,4745777,1038,5,270,5.25,"Shady slope","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+190,381869,4743777,1200,5,353,3.5,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+193,345924,4743793,1438,8,67,6,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+194,346920,4743814,1270,8,78,10,"Shady slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+200,345856,4735793,1180,11,230,0.5,"All exposures","Slightly stony","Clay texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+203,346995,4734838,1168,11,290,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+205,345868,4733795,1157,8,380,0.5,"All exposures","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+211,346963,4729817,1122,11,390,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+213,345887,4728809,1110,11,250,5.5,"All exposures","Slightly stony","Clay texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+215,347873,4728789,1100,11,325,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+217,346936,4727784,1115,7,300,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+219,344871,4726777,1094,11,270,1.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+227,373885,4739823,1103,5,285,6.5,"Shady slope","No stoniness","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+229,361861,4737796,1121,5,225,2.5,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+234,357904,4735777,1137,9,345,4,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+236,359901,4735801,1124,5,355,3.5,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+241,352865,4734813,1154,5,125,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+242,353876,4734814,1161,5,340,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+250,352892,4733753,1154,7,260,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+252,359878,4733793,1127,9,15,0.5,"All exposures","Slightly stony","Clay texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+255,369882,4733786,1082,5,30,3.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+259,353892,4732804,1149,7,220,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+260,369881,4732783,1068,5,76,6.5,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+267,354892,4730794,1132,7,360,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+277,370905,4729765,1066,5,50,6.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+280,356902,4728782,1107,11,165,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+281,357857,4728757,1099,7,80,2.5,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+283,355888,4727755,1059,5,305,1.75,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+290,367892,4727794,980,6,235,1.5,"All exposures","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+293,356886,4726774,1072,7,240,5.5,"Sunny slope","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+295,358886,4726778,1044,7,250,4.5,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+297,361863,4726789,1018,6,360,7.5,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+298,362873,4726785,1071,6,35,1,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+301,355872,4725777,1087,7,160,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+303,357880,4725784,1022,7,343,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+308,363877,4725797,1030,5,20,3,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+309,365914,4725803,984,6,146,4,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+310,369891,4725818,1002,5,341,6,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+312,371910,4725776,1071,5,329,0.25,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+314,379922,4741791,1169,5,363,4.75,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+317,395892,4739813,974,8,325,2.5,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+323,392897,4737784,944,8,38,2,"All exposures","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+324,393919,4737785,949,9,172,2.5,"Sunny slope","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+328,391892,4735793,1000,4,180,4,"Shady slope","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+329,393907,4735792,951,5,8,12.25,"Sunny slope","Stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+331,377904,4734780,1092,5,166,3.25,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+338,385903,4733807,1012,6,103,5,"Sunny slope","Stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+345,399933,4732794,1041,5,42,2,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+352,395886,4729801,912,5,277,6.25,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+354,397911,4729768,940,5,355,4.75,"Shady slope","No stoniness","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+363,389904,4726785,969,8,193,1.25,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+365,391912,4726792,965,6,220,1.5,"All exposures","Stony","Loam texture","Mediterranean","Highly humic","Neutral (pH = 7)","Limestone soil"
+368,376882,4725806,1055,5,280,1,"All exposures","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+371,409896,4741812,994,11,196,5.5,"Sunny slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+382,345937,4724840,1089,11,150,0.5,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+384,345955,4723788,1080,11,170,1,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+386,345918,4722804,1076,11,350,0.5,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+398,347903,4719775,1041,11,175,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+402,344928,4717802,1041,11,165,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+404,344906,4716775,1022,11,235,0.5,"All exposures","Stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+407,344905,4714759,1010,8,165,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+411,345899,4710808,989,5,190,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+412,346899,4710829,991,5,250,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+418,356864,4724825,1077,7,110,0.25,"All exposures","Stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+424,371876,4724791,1063,5,25,0.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+431,370880,4723808,1005,5,350,5.25,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+436,355869,4722843,1069,11,380,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+439,364896,4722817,1009,2,130,5,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+452,360862,4720787,1013,11,300,0.75,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+453,366901,4720793,1004,6,325,7,"Shady slope","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+454,370877,4720814,970,6,265,1.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+458,362936,4719770,1000,9,262,6.25,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+461,371894,4719803,1014,5,287,2.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+465,353868,4718832,1043,11,110,3.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+472,354883,4717798,1039,11,280,0.25,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+475,354882,4716797,1032,2,270,2.75,"Sunny slope","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+478,370892,4716793,933,5,150,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+479,371880,4716791,950,5,55,0.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+486,371893,4714777,926,11,120,1.5,"All exposures","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+490,361938,4713829,1008,5,295,9,"Shady slope","Slightly stony","Clay texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+495,357928,4712810,1011,5,40,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+499,365895,4711778,997,11,220,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+504,347892,4709783,987,8,300,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+508,368879,4708799,951,5,390,3,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+514,368910,4707768,946,6,320,6.25,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+527,381904,4719769,945,5,160,0.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+528,375897,4717807,961,5,110,1,"All exposures","No stoniness","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+530,375915,4716812,998,7,300,2,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+532,376914,4715806,995,5,23,0.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+534,375886,4714758,992,6,180,1.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+536,381923,4714793,916,5,396,1.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+537,382949,4714815,898,5,279,1,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+539,375907,4713789,991,6,70,0.5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+542,380917,4713787,944,5,165,2,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+549,383915,4712820,920,8,260,5.5,"Sunny slope","No stoniness","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+553,376886,4710778,921,6,100,2.5,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+555,376889,4709803,918,6,250,3.25,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+557,375873,4708781,906,5,150,3.25,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+576,345836,4697773,930,8,180,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+578,346837,4696847,923,8,55,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+581,347913,4706774,973,11,100,0.5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+599,347828,4694857,915,9,380,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+602,347874,4692812,908,8,349,0.25,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+623,383887,4701819,852,2,205,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+627,383918,4700770,844,4,250,0.25,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
