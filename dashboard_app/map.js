@@ -6,10 +6,9 @@ let bmpBoundaryLayer = null;
 const utmProjection = "+proj=utm +zone=30 +datum=WGS84 +units=m +no_defs";
 const wgs84Projection = "+proj=longlat +datum=WGS84 +no_defs";
 
-const CONT_MARKER_COLOR = "#4A90A4";   // continuous plots (comparable across inventories)
-const NC_MARKER_COLOR   = "#E8912A";   // non-continuity plots
+const CONT_MARKER_COLOR = "#4A90A4";
+const NC_MARKER_COLOR   = "#E8912A";
 
-// Base marker colour for a plot id, respecting whether it is an NC plot.
 function basePlotColor(id) {
     return (typeof ncPlots !== 'undefined' && ncPlots.has(id)) ? NC_MARKER_COLOR : CONT_MARKER_COLOR;
 }
@@ -147,7 +146,6 @@ function highlightMapPlot(selectedPlot) {
     }
 }
 
-// Non-continuity plots come with WGS84 lat/lng already, so no UTM conversion.
 function renderNCMapData(points) {
     if (!leafletMap) initMap();
 

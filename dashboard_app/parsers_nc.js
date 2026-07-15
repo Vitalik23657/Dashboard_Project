@@ -1,27 +1,9 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Non-continuity (NC) plots
-//
-// These plots do not have continuity across the three inventories (or are not
-// pine/oak stands). Their CSVs share the same fields as the main dataset but
-// with a different column layout: 4 extra columns (ClaIFN3, SubclaseIFN3,
-// ClaIFN4, SubclaseIFN4) are inserted after the coordinates, the coordinates
-// are WGS84 lat/lng instead of UTM, and some files reorder the value columns.
-// To stay robust against all of that we parse strictly by HEADER NAME and
-// feed the existing global structures, so the renderers stay untouched.
-//
-// A plot is fully comparable with the following inventory only when it is
-// classified there as Class A, Subclass 1 (A-1). plotMeta records that so we
-// can warn when it is not.
-// ─────────────────────────────────────────────────────────────────────────────
-
-const plotMeta    = {};   // estadillo -> { cla3, sub3, cla4, sub4 }
+const plotMeta    = {};
 const ncPlots     = new Set();
-const ncMapPoints = [];    // { est, lat, lng, muni }
+const ncMapPoints = [];
 
 // ── CSV helpers ──────────────────────────────────────────────────────────────
 
-// Quote-aware line splitter: keeps commas that live inside quoted fields
-// (e.g. "E.L.M. de Valderrueda, E.L.M. de La Sota") and strips the quotes.
 function parseCSVLine(line) {
     const out = [];
     let cur = '', inQuotes = false;
@@ -48,8 +30,6 @@ function ncHeaderIndex(headerLine) {
     return idx;
 }
 
-// Iterate data rows of an NC CSV, calling fn(get, row) where get(name) returns
-// the trimmed value of the named column ('' if absent).
 function forEachNCRow(csvText, fn) {
     const lines = csvText.split(/\r?\n/).filter(l => l.trim().length);
     if (lines.length < 2) return;
@@ -82,7 +62,7 @@ function parseSituationNC(csvText) {
             cla4: get('ClaIFN4'), sub4: get('SubclaseIFN4'),
         };
         ncPlots.add(est);
-        uniqueEstadillos.add(est);   // make every NC plot selectable
+        uniqueEstadillos.add(est);
 
         const lat = parseFloat(get('lat'));
         const lng = parseFloat(get('lng'));
@@ -104,7 +84,7 @@ function parseRawDataNC(csvText) {
         globalRawData.push({
             estadillo: est,
             species,
-            nc: true,                         // flag: excluded from the ALL aggregate
+            nc: true,
             dc: parseInt(get('DC'), 10),
             n2: ncNum(get('N_NFI2')),  n3: ncNum(get('N_NFI3')),  n4: ncNum(get('N_NFI4')),
             ba2: ncNum(get('BA_NFI2')), ba3: ncNum(get('BA_NFI3')), ba4: ncNum(get('BA_NFI4')),
@@ -189,8 +169,6 @@ function parseQualityNC(csvText) {
     });
 }
 
-// The NC general-status file reorders columns heavily, so we rebuild a row in
-// the exact positional layout renderForestStatus() expects (indices 6..44).
 function parseStatusNC(csvText) {
     forEachNCRow(csvText, (get) => {
         const est = get('Estadillo');
@@ -215,8 +193,6 @@ function parseStatusNC(csvText) {
     });
 }
 
-// Tree layer: same field order as the main file with 6 columns inserted after
-// Estadillo, so slicing from SpeciesID reproduces the original layout exactly.
 function parseTreeLayerNC(csvText) {
     forEachNCRow(csvText, (get, row, idx) => {
         const est = get('Estadillo');
@@ -228,8 +204,6 @@ function parseTreeLayerNC(csvText) {
     });
 }
 
-// Shrub layer interleaves canopy/height per inventory, so rebuild the grouped
-// layout the renderer reads (canopy 2/3/4 then Hm 2/3/4).
 function parseShrubLayerNC(csvText) {
     forEachNCRow(csvText, (get) => {
         const est = get('Estadillo');
@@ -249,8 +223,6 @@ function parseShrubLayerNC(csvText) {
 const isNAclass = (c) => !c || c === 'NA' || c === '-';
 const isA1      = (c, s) => c === 'A' && s === '1';
 
-// Build the human-readable comparability notes for an NC plot. Empty array
-// means the plot is A-1 wherever it appears (data are directly comparable).
 function getContinuityMessages(m) {
     const msgs = [];
 

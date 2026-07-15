@@ -34,8 +34,6 @@ function populateDropdown() {
 }
 
 function updateDashboard(selectedPlot) {
-    // The "ALL Plots Combined" aggregate keeps its original meaning: only the
-    // continuous plots. Non-continuity (NC) plots are viewable individually.
     const filteredRows = selectedPlot === 'ALL'
         ? globalRawData.filter(row => !row.nc)
         : globalRawData.filter(row => row.estadillo === selectedPlot);
@@ -98,7 +96,7 @@ document.getElementById('growth-badge').addEventListener('click', (e) => {
 
 async function loadData() {
     try {
-        const NC = '../Plot_Data_NoContinuity_EN';   // non-continuity dataset root
+        const NC = '../Plot_Data_NoContinuity_EN';
         const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub, resMap, resNatural, resClimate,
                resVolNC, resD2NC, resD3NC, resD4NC, resQualNC, resCarbNC, resStatusNC, resTreeNC, resShrubNC, resMapNC, resNaturalNC] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
@@ -141,7 +139,6 @@ async function loadData() {
         parseNaturalConditions(await resNatural.text());
         parseClimateData(await resClimate.text());
 
-        // Non-continuity plots (parsed by header name; different column layout)
         parseSituationNC(await resMapNC.text());
         parseRawDataNC(await resVolNC.text());
         parseNaturalConditionsNC(await resNaturalNC.text());
