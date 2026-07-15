@@ -1,0 +1,412 @@
+"Estadillo","lat","lng","ClaIFN3","SubclaseIFN3","ClaIFN4","SubclaseIFN4","DamageNFI2","DamageNFI2_EN"
+22,42.857966,-4.898488,"A","4","A","1","M912","Moderate damage caused by fire"
+23,42.848966,-4.898212,NA,NA,NA,NA,"M314","Moderate branch damage caused by fungi"
+24,42.84937112,-4.88538975,"A","1","A","1","M314","Moderate branch damage caused by fungi"
+25,42.849569,-4.861516,"A","1",NA,NA,"M912","Moderate damage caused by fire"
+50,42.92601198,-4.56981941,NA,NA,"A","4","01","No damage observed"
+51,42.917313,-4.54501,"A","4","A","1","01","No damage observed"
+52,42.904935,-4.777437,"A","1","A","1","M204","Moderate leaf damage caused by insects"
+53,42.905124,-4.765193,"A","1",NA,NA,"M912","Moderate damage caused by fire"
+57,42.907978,-4.569276,"A","4C",NA,NA,"01","No damage observed"
+58,42.896684,-4.72821,"A","1",NA,NA,"M204","Moderate leaf damage caused by insects"
+59,42.896868,-4.715967,"A","3E",NA,NA,"P204","Minor leaf damage caused by insects"
+60,42.89766952,-4.64260042,"A","1","A","1","01","No damage observed"
+62,42.887497,-4.740199,"A","4","A","1","P204","Minor leaf damage caused by insects"
+67,42.890308,-4.544335,"A","1",NA,NA,"01","No damage observed"
+68,42.87624031,-4.85072573,NA,NA,"A","1","G912","Severe damage caused by fire"
+70,42.878121,-4.764423,NA,NA,NA,NA,"01","No damage observed"
+71,42.878309,-4.752185,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+73,42.878866,-4.715468,NA,NA,NA,NA,"01","No damage observed"
+77,42.8678215,-4.8501191,NA,NA,"A","4C","G912","Severe damage caused by fire"
+79,42.86912,-4.764167,"A","4","A","1","01","No damage observed"
+80,42.869308,-4.75193,"A","4","A","1","",NA
+81,42.869864,-4.715219,NA,NA,NA,NA,"01","No damage observed"
+82,42.870047,-4.702981,"A","4","A","1","P907","Minor other damage caused by humans"
+89,42.871971,-4.568364,"A","4","A","1","01","No damage observed"
+91,42.872304,-4.543886,"A","1","A","1","01","No damage observed"
+92,42.858965,-4.837318,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+93,42.860494,-4.73944,"A","1",NA,NA,"01","No damage observed"
+95,42.860863,-4.714969,"A","4C","A","1","01","No damage observed"
+96,42.861046,-4.702734,"A","4",NA,NA,"01","No damage observed"
+100,42.86246,-4.604846,"A","4","A","4","01","No damage observed"
+102,42.86262983,-4.56755122,"A","1","A","1","G914","Severe crown damage caused by wind"
+103,42.863136,-4.555899,"A","3E","A","1","01","No damage observed"
+104,42.863302,-4.543662,"A","4","A","1","01","No damage observed"
+105,42.849767,-4.849284,"A","1",NA,NA,"01","No damage observed"
+106,42.849964,-4.837051,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+107,42.851306,-4.751421,"A","1",NA,NA,"01","No damage observed"
+108,42.852406,-4.678019,"A","1","A","1","01","No damage observed"
+112,42.834223,-4.689762,"A","1",NA,NA,"01","No damage observed"
+128,42.94497,-4.496672,"A","4","A","1","01","No damage observed"
+129,42.94513,-4.484419,"A","1",NA,NA,"G302","Severe branch damage caused by fungi"
+144,42.918438,-4.459274,"A","1",NA,NA,"M111","Moderate bark damage from unknown causes"
+145,42.918594,-4.447025,"A","1",NA,NA,"01","No damage observed"
+146,42.918901,-4.422528,"A","4","A","1","G912","Severe damage caused by fire"
+147,42.919053,-4.410279,"A","4","A","1","01","No damage observed"
+152,42.908962,-4.4958,"A","1",NA,NA,"01","No damage observed"
+157,42.911631,-4.275352,"A","4","A","4","P412","Minor trunk damage caused by fire"
+159,42.899799,-4.507827,"A","1",NA,NA,"01","No damage observed"
+163,42.890797,-4.507608,"A","4C",NA,NA,"01","No damage observed"
+166,42.893625,-4.27498,"A","1",NA,NA,"01","No damage observed"
+169,42.882273,-4.470666,NA,NA,NA,NA,"01","No damage observed"
+170,42.885025,-4.238067,"A","3E","A","1","01","No damage observed"
+177,42.875619,-4.27461,"A","4",NA,NA,"01","No damage observed"
+179,42.876022,-4.237887,"A","1",NA,NA,"01","No damage observed"
+182,42.86718041,-4.22554958,NA,NA,"A","1","01","No damage observed"
+183,42.854627,-4.518967,"A","4",NA,NA,"01","No damage observed"
+189,42.847769,-4.347466,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+191,42.83818,-4.396202,"A","3E",NA,NA,"01","No damage observed"
+192,42.839607,-4.273869,"A","1",NA,NA,"01","No damage observed"
+195,42.81307064,-4.89692111,NA,NA,"A","1","G912","Severe damage caused by fire"
+196,42.813167,-4.884886,"A","3E","A","1","M714","Moderate terminal leader damage caused by wind"
+197,42.795166,-4.884339,"A","4","A","1","M912","Moderate damage caused by fire"
+199,42.777565,-4.859357,"A","3E","A","6C","",NA
+201,42.759364,-4.871033,"A","4",NA,NA,"01","No damage observed"
+202,42.750164,-4.882975,"A","1",NA,NA,"P313","Minor branch damage caused by snow"
+204,42.740962,-4.894913,"A","3E","A","1","01","No damage observed"
+206,42.741363,-4.870492,"A","1",NA,NA,"01","No damage observed"
+207,42.731961,-4.894639,"A","1",NA,NA,"01","No damage observed"
+208,42.732163,-4.88243,"A","1",NA,NA,"01","No damage observed"
+209,42.723162,-4.882158,"A","1",NA,NA,"01","No damage observed"
+210,42.714161,-4.881886,"A","1",NA,NA,"P313","Minor branch damage caused by snow"
+214,42.69636,-4.86914,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+216,42.68716,-4.88107,"A","1",NA,NA,"M814","Moderate crown damage caused by wind"
+218,42.687558,-4.856669,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+220,42.668957,-4.892724,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+223,42.79596,-4.835453,NA,NA,NA,NA,"P204","Minor leaf damage caused by insects"
+224,42.796734,-4.786564,"A","1",NA,NA,"01","No damage observed"
+231,42.772443,-4.602519,"A","4",NA,NA,"01","No damage observed"
+233,42.77362686,-4.54141932,NA,NA,"A","1","01","No damage observed"
+235,42.761666,-4.724451,"A","1",NA,NA,"01","No damage observed"
+238,42.763948,-4.565635,"A","4",NA,NA,"01","No damage observed"
+239,42.764114,-4.553418,"A","4C","A","4","01","No damage observed"
+240,42.76428,-4.5412,"A","4C",NA,NA,"01","No damage observed"
+243,42.754268,-4.61427,"A","1",NA,NA,"01","No damage observed"
+244,42.754439,-4.602055,"A","3E",NA,NA,"P204","Minor leaf damage caused by insects"
+246,42.754778,-4.577624,"A","4","A","1","P204","Minor leaf damage caused by insects"
+247,42.754946,-4.565409,"A","4C","A","1","01","No damage observed"
+248,42.755112,-4.553193,"A","4C","A","4","01","No damage observed"
+249,42.755277,-4.540977,"A","4C","A","4","P204","Minor leaf damage caused by insects"
+251,42.742728,-4.785012,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+253,42.744209,-4.687314,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+254,42.745437,-4.601823,"A","4","A","1","P204","Minor leaf damage caused by insects"
+256,42.745944,-4.565182,"A","4C",NA,NA,"01","No damage observed"
+258,42.733536,-4.796964,"A","4","A","1","P204","Minor leaf damage caused by insects"
+261,42.736774,-4.577167,"A","4C","A","1","01","No damage observed"
+262,42.736942,-4.564956,"A","4C","A","1","01","No damage observed"
+263,42.72484493,-4.78452548,NA,NA,"A","1","01","No damage observed"
+264,42.724915,-4.772288,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+265,42.727772,-4.576939,"A","1",NA,NA,"P314","Minor branch damage caused by wind"
+268,42.716103,-4.759825,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+269,42.71877,-4.576711,"A","4",NA,NA,"01","No damage observed"
+270,42.718938,-4.564503,"A","1",NA,NA,"01","No damage observed"
+271,42.705953,-4.832798,"A","3E","A","1","P208","Minor leaf damage caused by livestock"
+272,42.706913,-4.771775,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+274,42.707288,-4.747365,"A","3E","A","1","P204","Minor leaf damage caused by insects"
+276,42.709258,-4.613103,"A","4C",NA,NA,"M912","Moderate damage caused by fire"
+279,42.6981,-4.759316,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+284,42.689286,-4.74686,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+285,42.689471,-4.734659,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+286,42.689655,-4.722457,"A","4","A","1","P204","Minor leaf damage caused by insects"
+288,42.690557,-4.661447,"A","1",NA,NA,"G912","Severe damage caused by fire"
+289,42.690908,-4.637042,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+291,42.69218251,-4.53947652,NA,NA,"A","1","P204","Minor leaf damage caused by insects"
+292,42.680098,-4.758808,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+294,42.68047,-4.734408,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+296,42.680837,-4.710008,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+299,42.670529,-4.795147,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+300,42.670719,-4.78295,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+302,42.671283,-4.746356,"A","3E",NA,NA,"P204","Minor leaf damage caused by insects"
+304,42.671652,-4.72196,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+305,42.67186295,-4.70984871,NA,NA,"A","1","01","No damage observed"
+306,42.672197,-4.685364,"A","3E","A","1","P204","Minor leaf damage caused by insects"
+311,42.67376,-4.575573,"A","4",NA,NA,"P204","Minor leaf damage caused by insects"
+313,42.818619,-4.518085,"A","4C","A","1","01","No damage observed"
+319,42.794038,-4.321844,"A","1",NA,NA,"01","No damage observed"
+320,42.794317,-4.297395,"A","1",NA,NA,"01","No damage observed"
+321,42.78261,-4.517205,"A","1",NA,NA,"M412","Moderate trunk damage caused by fire"
+325,42.764606,-4.516765,"A","4C","A","1","01","No damage observed"
+326,42.764927,-4.49233,"A","3E",NA,NA,"01","No damage observed"
+327,42.765243,-4.467894,"A","1","A","1","01","No damage observed"
+330,42.755765,-4.50433,"A","1",NA,NA,"01","No damage observed"
+332,42.756083,-4.479897,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+333,42.757305,-4.382164,"A","4C","A","1","",NA
+335,42.746601,-4.516326,"A","1",NA,NA,"M412","Moderate trunk damage caused by fire"
+336,42.746922,-4.491898,"A","4",NA,NA,"01","No damage observed"
+339,42.748302,-4.381964,"A","1",NA,NA,"01","No damage observed"
+341,42.749845,-4.247591,"A","1",NA,NA,"01","No damage observed"
+342,42.739002,-4.406191,"A","4C","A","1","01","No damage observed"
+343,42.739151,-4.393978,"A","4",NA,NA,"M204","Moderate leaf damage caused by insects"
+344,42.740299,-4.296268,"A","4","A","1","P204","Minor leaf damage caused by insects"
+346,42.741235,-4.210767,"A","4",NA,NA,"01","No damage observed"
+351,42.711994,-4.405581,NA,NA,NA,NA,"P404","Minor trunk damage caused by machinery"
+353,42.713698,-4.259079,"A","1",NA,NA,"01","No damage observed"
+355,42.702991,-4.405378,"A","4C","A","1","01","No damage observed"
+356,42.704489,-4.28330905,NA,NA,"A","4","01","No damage observed"
+357,42.70456,-4.271104,"A","1",NA,NA,"01","No damage observed"
+358,42.704828,-4.246689,NA,NA,NA,NA,"01","No damage observed"
+359,42.695004,-4.319741,"A","1","A","4","01","No damage observed"
+361,42.683746,-4.50259,"A","1",NA,NA,"01","No damage observed"
+362,42.685574,-4.35616,NA,NA,NA,NA,"P204","Minor leaf damage caused by insects"
+364,42.68586,-4.331754,"A","4","A","1","01","No damage observed"
+366,42.68628,-4.295144,"A","4",NA,NA,"P204","Minor leaf damage caused by insects"
+369,42.677277,-4.294957,"A","4","A","1","P204","Minor leaf damage caused by insects"
+381,42.659957,-4.892451,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+383,42.650956,-4.892178,"A","4",NA,NA,"P204","Minor leaf damage caused by insects"
+385,42.641955,-4.891905,"A","1","A","4","P204","Minor leaf damage caused by insects"
+387,42.642356,-4.867522,"A","1",NA,NA,"P202","Minor leaf damage from unknown causes"
+388,42.632955,-4.891632,"A","1","A","4","01","No damage observed"
+389,42.633156,-4.879442,"A","1",NA,NA,"M202","Moderate leaf damage from unknown causes"
+391,42.633553,-4.855063,NA,NA,"A","1","G412","Severe trunk damage caused by fire"
+392,42.6236709,-4.89115871,NA,NA,"A","1","G412","Severe trunk damage caused by fire"
+393,42.624155,-4.879171,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+394,42.624354,-4.866984,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+395,42.614953,-4.891087,"A","1",NA,NA,"P202","Minor leaf damage from unknown causes"
+397,42.615353,-4.866715,NA,NA,NA,NA,"P204","Minor leaf damage caused by insects"
+399,42.605953,-4.890814,"A","1",NA,NA,"M202","Moderate leaf damage from unknown causes"
+400,42.606153,-4.87863,"A","4","A","1","M402","Moderate trunk damage from unknown causes"
+401,42.60655,-4.854261,"A","1",NA,NA,"P202","Minor leaf damage from unknown causes"
+406,42.578951,-4.889998,"A","1",NA,NA,"P202","Minor leaf damage from unknown causes"
+409,42.543148,-4.876739,"A","4","A","1","P202","Minor leaf damage from unknown causes"
+410,42.543346,-4.864567,"A","4","A","1","M413","Moderate trunk damage caused by snow"
+413,42.524946,-4.888369,"A","1",NA,NA,"01","No damage observed"
+414,42.525344,-4.864031,"A","1",NA,NA,"P402","Minor trunk damage from unknown causes"
+415,42.515945,-4.888098,"A","1",NA,NA,"01","No damage observed"
+417,42.507342,-4.863496,"A","4","A","1","P402","Minor trunk damage from unknown causes"
+419,42.663374,-4.672924,"A","1",NA,NA,"01","No damage observed"
+420,42.663552,-4.660727,"A","3E","A","1","01","No damage observed"
+422,42.66459,-4.587543,"A","1",NA,NA,"01","No damage observed"
+423,42.664758,-4.575345,"A","1",NA,NA,"01","No damage observed"
+426,42.65328,-4.745852,"A","3E",NA,NA,"01","No damage observed"
+428,42.65455,-4.660488,"A","1",NA,NA,"01","No damage observed"
+429,42.655075,-4.623901,"A","4",NA,NA,"01","No damage observed"
+430,42.655587,-4.587314,"A","1",NA,NA,"01","No damage observed"
+432,42.655923,-4.562922,"A","1",NA,NA,"01","No damage observed"
+434,42.643716,-4.782178,"A","3E","A","1","",NA
+435,42.643905,-4.769986,"A","1",NA,NA,"01","No damage observed"
+437,42.644279,-4.7456,"A","1",NA,NA,"01","No damage observed"
+438,42.644464,-4.733407,"A","1",NA,NA,"01","No damage observed"
+440,42.646585,-4.587085,"A","1",NA,NA,"01","No damage observed"
+442,42.634524,-4.794112,NA,NA,"A","1","01","No damage observed"
+443,42.634714,-4.781921,"A","1",NA,NA,"01","No damage observed"
+444,42.635463,-4.733158,"A","4","A","1","01","No damage observed"
+445,42.63619,-4.684392,"A","4","A","1","01","No damage observed"
+446,42.636722,-4.647817,"A","1",NA,NA,"01","No damage observed"
+447,42.637919,-4.562471,"A","1",NA,NA,"01","No damage observed"
+448,42.638084,-4.550278,"A","4","A","1","P402","Minor trunk damage from unknown causes"
+449,42.625523,-4.793853,"A","4","A","1","P202","Minor leaf damage from unknown causes"
+450,42.626461,-4.732908,"A","1",NA,NA,"01","No damage observed"
+451,42.626645,-4.720718,"A","1",NA,NA,"01","No damage observed"
+455,42.628916,-4.562246,"A","4","A","1","P204","Minor leaf damage caused by insects"
+456,42.629082,-4.550055,"A","4","A","1","01","No damage observed"
+457,42.617089,-4.757033,NA,NA,NA,NA,"01","No damage observed"
+459,42.618893,-4.635154,"A","4","A","1","01","No damage observed"
+460,42.619747,-4.57421,"A","1",NA,NA,"01","No damage observed"
+462,42.62008,-4.549832,"A","1",NA,NA,"01","No damage observed"
+464,42.606747,-4.842076,"A","4C","A","4","01","No damage observed"
+466,42.610745,-4.573983,"A","4","A","1","01","No damage observed"
+467,42.611077,-4.549608,"A","1","A","4","01","No damage observed"
+469,42.597746,-4.841811,"A","1",NA,NA,"01","No damage observed"
+471,42.598709,-4.780894,"A","1",NA,NA,"01","No damage observed"
+474,42.602239,-4.537199,"A","4","A","1","01","No damage observed"
+476,42.590271,-4.744092,"A","1","A","4","01","No damage observed"
+477,42.590639,-4.719727,"A","1",NA,NA,"01","No damage observed"
+480,42.593073,-4.549162,"A","1",NA,NA,"01","No damage observed"
+481,42.593237,-4.536978,"A","1",NA,NA,"01","No damage observed"
+483,42.58407,-4.548939,"A","4",NA,NA,"01","No damage observed"
+484,42.584234,-4.536757,"A","1",NA,NA,"01","No damage observed"
+485,42.574736,-4.573077,NA,NA,NA,NA,"01","No damage observed"
+488,42.575395,-4.524355,"A","4","A","4","01","No damage observed"
+489,42.563634,-4.718985,NA,NA,NA,NA,"P402","Minor trunk damage from unknown causes"
+491,42.5659,-4.560672,"A","4",NA,NA,"01","No damage observed"
+492,42.56623,-4.536315,"A","4","A","1","01","No damage observed"
+493,42.566392,-4.524136,"A","4",NA,NA,"01","No damage observed"
+496,42.55739,-4.523917,"A","4","A","1","P202","Minor leaf damage from unknown causes"
+497,42.545263,-4.742838,"A","4","A","1","01","No damage observed"
+498,42.545448,-4.730665,"A","1",NA,NA,"01","No damage observed"
+500,42.548225,-4.535873,"A","4",NA,NA,"P702","Minor terminal leader damage from unknown causes"
+501,42.548387,-4.523698,"A","1",NA,NA,"01","No damage observed"
+503,42.539222,-4.535652,"A","4","A","4","P204","Minor leaf damage caused by insects"
+507,42.516541,-4.851597,"A","4",NA,NA,"P702","Minor terminal leader damage from unknown causes"
+509,42.50754,-4.851331,"A","4","A","1","P202","Minor leaf damage from unknown causes"
+511,42.509806,-4.705337,NA,NA,NA,NA,"P202","Minor leaf damage from unknown causes"
+513,42.511213,-4.607999,"A","4","A","1","01","No damage observed"
+515,42.51143902,-4.58340482,NA,NA,"A","1","M412","Moderate trunk damage caused by fire"
+517,42.502717,-4.57127,"A","1",NA,NA,"P202","Minor leaf damage from unknown causes"
+518,42.657522,-4.440955,"A","1",NA,NA,"01","No damage observed"
+520,42.657827,-4.416561,"A","4C","A","1","01","No damage observed"
+521,42.638734,-4.501507,"A","1",NA,NA,"01","No damage observed"
+523,42.63931106,-4.4647083,NA,NA,"A","1","01","No damage observed"
+524,42.630048,-4.476907,"A","3E","A","1","01","No damage observed"
+526,42.621202,-4.464505,NA,NA,NA,NA,"01","No damage observed"
+531,42.584559,-4.512392,"A","1",NA,NA,"01","No damage observed"
+535,42.576033,-4.475632,"A","1",NA,NA,"P112","Minor leaf damage caused by fire"
+538,42.576801,-4.414725,"A","1",NA,NA,"01","No damage observed"
+540,42.56703,-4.475419,"A","4","A","1","01","No damage observed"
+541,42.567186,-4.46324,"A","4","A","1","01","No damage observed"
+543,42.567647,-4.426701,"A","1",NA,NA,"01","No damage observed"
+544,42.567948,-4.402342,"A","1",NA,NA,"01","No damage observed"
+545,42.568096,-4.390162,"A","4","A","1","01","No damage observed"
+547,42.557551,-4.51174,"A","4","A","1","01","No damage observed"
+548,42.557711,-4.499562,"A","1",NA,NA,"01","No damage observed"
+550,42.548549,-4.511522,"A","1",NA,NA,"01","No damage observed"
+552,42.549181,-4.462819,"A","4",NA,NA,"01","No damage observed"
+554,42.530543,-4.511088,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+558,42.512698,-4.498485,NA,NA,"A","1","01","No damage observed"
+559,42.512856,-4.486317,"A","1","A","4","01","No damage observed"
+560,42.513014,-4.474148,"A","4C","A","1","P204","Minor leaf damage caused by insects"
+562,42.515217,-4.291605,"A","4","A","1","01","No damage observed"
+563,42.503536,-4.510437,NA,NA,NA,NA,"01","No damage observed"
+564,42.503695,-4.49827,NA,NA,NA,NA,"01","No damage observed"
+566,42.480141,-4.874855,"A","4",NA,NA,"P204","Minor leaf damage caused by insects"
+567,42.480339,-4.862695,"A","1",NA,NA,"P204","Minor leaf damage caused by insects"
+568,42.47114,-4.874586,"A","1",NA,NA,"01","No damage observed"
+569,42.462139,-4.874317,"A","4","A","1","P204","Minor leaf damage caused by insects"
+570,42.462337,-4.862161,NA,NA,NA,NA,"01","No damage observed"
+571,42.452939,-4.886203,"A","4","A","1","01","No damage observed"
+572,42.453138,-4.874049,"A","4",NA,NA,"01","No damage observed"
+573,42.453336,-4.861894,"A","1","A","1","01","No damage observed"
+574,42.44449007,-4.86148878,NA,NA,"A","1","01","No damage observed"
+575,42.435136,-4.873512,"A","1","A","1","01","No damage observed"
+577,42.408133,-4.872708,"A","1","A","1","P204","Minor leaf damage caused by insects"
+579,42.398732,-4.896729,"A","4",NA,NA,"01","No damage observed"
+580,42.381129,-4.871905,"A","1","A","4","01","No damage observed"
+582,42.489538,-4.8508,"A","4",NA,NA,"M402","Moderate trunk damage from unknown causes"
+584,42.493881,-4.55888,NA,NA,NA,NA,"M204","Moderate leaf damage caused by insects"
+585,42.480536,-4.850534,"A","1",NA,NA,"M702","Moderate terminal leader damage from unknown causes"
+586,42.484713,-4.570819,"A","1","A","1","01","No damage observed"
+587,42.484879,-4.558656,"A","1",NA,NA,"M204","Moderate leaf damage caused by insects"
+588,42.471535,-4.850269,"A","4",NA,NA,"P204","Minor leaf damage caused by insects"
+591,42.462924,-4.82569,"A","1",NA,NA,"01","No damage observed"
+592,42.453533,-4.849739,"A","4","A","1","01","No damage observed"
+594,42.444532,-4.849474,"A","4",NA,NA,"P104","Minor leaf damage from unknown causes"
+598,42.399526,-4.848151,"A","4",NA,NA,"01","No damage observed"
+604,42.363521,-4.847095,"A","4",NA,NA,"01","No damage observed"
+605,42.363716,-4.834958,"A","4",NA,NA,"01","No damage observed"
+608,42.354714,-4.834696,"A","1",NA,NA,"01","No damage observed"
+611,42.345906,-4.822299,"A","1","A","1","01","No damage observed"
+613,42.495924,-4.400731,NA,NA,NA,NA,"01","No damage observed"
+616,42.486005,-4.473514,"A","1","A","4","01","No damage observed"
+621,42.468765,-4.412289,"A","1",NA,NA,"01","No damage observed"
+624,42.460779,-4.326973,"A","1",NA,NA,"01","No damage observed"
+625,42.460919,-4.314813,"A","4","A","1","P104","Minor leaf damage from unknown causes"
+628,42.451634,-4.33894,"A","4","A","1","01","No damage observed"
+629,42.451776,-4.326783,"A","1","A","1","01","No damage observed"
+630,42.442772,-4.326593,"A","4C",NA,NA,"01","No damage observed"
+1014,42.91377468,-4.79002978,NA,NA,"A","4",NA,NA
+1015,42.916811,-4.581752,"N","N","A","4",NA,NA
+1016,42.904163,-4.826411,"N","N","A","1",NA,NA
+1017,42.908476,-4.532539,"N","N",NA,NA,NA,NA
+1018,42.895743,-4.789421,"N","N","A","1",NA,NA
+1019,42.898467,-4.605779,"N","N",NA,NA,NA,NA
+1021,42.877741,-4.7889,"N","N","A","1",NA,NA
+1022,42.880635,-4.593072,"N","N","A","1",NA,NA
+1024,42.86877037,-4.78872838,NA,NA,"A","4C",NA,NA
+1025,42.850354,-4.812586,"N","N","A","1",NA,NA
+1026,42.850739,-4.78812,"N","N",NA,NA,NA,NA
+1027,42.841929,-4.775629,"N","N","A","1",NA,NA
+1031,42.836296,-4.542989,"N","N","A","1",NA,NA
+1036,42.95491,-4.423357,"N","N",NA,NA,NA,NA
+1037,42.945445,-4.459911,"N","N","A","1",NA,NA
+1038,42.936286,-4.471951,"N","N",NA,NA,NA,NA
+1039,42.926805,-4.508486,"N","N","A","1",NA,NA
+1040,42.927126,-4.483986,"N","N","A","1",NA,NA
+1041,42.928205,-4.398234,"N","N","A","1",NA,NA
+1042,42.917641,-4.520514,"N","N","A","1",NA,NA
+1048,42.902352,-4.299658,"N","N","A","1",NA,NA
+1050,42.882115,-4.482907,"N","N",NA,NA,NA,NA
+1051,42.874921,-4.335813,"N","N","A","4",NA,NA
+1053,42.865188,-4.396811,"N","N","A","1",NA,NA
+1054,42.857058,-4.323188,"N","N",NA,NA,NA,NA
+1055,42.846106,-4.482045,"N","N","A","1",NA,NA
+1057,42.836785,-4.506294,"N","N","A","1",NA,NA
+1058,42.839332,-4.298336,"N","N",NA,NA,NA,NA
+1059,42.840654,-4.175996,"N","N","A","1",NA,NA
+1060,42.841025,-4.139293,"N","N","A","1",NA,NA
+1061,42.822567,-4.860706,"N","N",NA,NA,NA,NA
+1062,42.804566,-4.860166,"N","N",NA,NA,NA,NA
+1064,42.74935,-4.931824,"N","N",NA,NA,NA,NA
+1065,42.832737,-4.787601,"N","N","A","4",NA,NA
+1066,42.82449,-4.73843,"N","N",NA,NA,NA,NA
+1067,42.825041,-4.701745,"N","N",NA,NA,NA,NA
+1068,42.813962,-4.835985,"N","N","A","4",NA,NA
+1070,42.814926,-4.774856,"N","N","A","1",NA,NA
+1072,42.805156,-4.823495,"N","N","A","1",NA,NA
+1073,42.806301,-4.75015,"N","N","A","1",NA,NA
+1074,42.807577,-4.664576,"N","N",NA,NA,NA,NA
+1076,42.789036,-4.700758,"N","N","A","1",NA,NA
+1077,42.790102,-4.627428,"N","N",NA,NA,NA,NA
+1079,42.778922,-4.773827,"N","N",NA,NA,NA,NA
+1081,42.770297,-4.749136,"N","N",NA,NA,NA,NA
+1083,42.763611,-4.59007,"N","N","A","1",NA,NA
+1084,42.753211,-4.687559,"N","N","A","1",NA,NA
+1085,42.74176,-4.846069,"N","N",NA,NA,NA,NA
+1086,42.745093,-4.62625,"N","N","A","1",NA,NA
+1087,42.735387,-4.674859,"N","N",NA,NA,NA,NA
+1088,42.726026,-4.699035,"N","N",NA,NA,NA,NA
+1089,42.715148,-4.820857,"N","N",NA,NA,NA,NA
+1090,42.717205,-4.686582,"N","N",NA,NA,NA,NA
+1091,42.70856,-4.661927,"N","N","A","1",NA,NA
+1093,42.699735,-4.649483,"N","N",NA,NA,NA,NA
+1098,42.829326,-4.383768,"N","N",NA,NA,NA,NA
+1099,42.82135558,-4.29804241,NA,NA,"A","4C",NA,NA
+1100,42.810566,-4.444504,"N","N","A","1",NA,NA
+1101,42.811321,-4.383367,"N","N","A","1",NA,NA
+1105,42.784015,-4.40721,"N","N","A","1",NA,NA
+1110,42.738078,-4.479469,"N","N",NA,NA,NA,NA
+1112,42.7229867,-4.23492091,NA,NA,"A","1",NA,NA
+1113,42.723228,-4.210417,"N","N","A","1",NA,NA
+1117,42.692908,-4.490604,"N","N","A","1",NA,NA
+1120,42.813769,-4.163255,"N","N",NA,NA,NA,NA
+1121,42.805487,-4.089721,"N","N",NA,NA,NA,NA
+1122,42.787125,-4.126078,"N","N","A","1",NA,NA
+1123,42.75063966,-4.17437398,NA,NA,"A","1",NA,NA
+1126,42.656416,-4.526333,"N","N","A","1",NA,NA
+1127,42.647251,-4.538308,"N","N","A","1",NA,NA
+1130,42.61142266,-4.52531823,NA,NA,"A","1",NA,NA
+1132,42.591182,-4.683179,"N","N",NA,NA,NA,NA
+1133,42.59190542,-4.63453351,NA,NA,"A","1",NA,NA
+1134,42.580707,-4.780382,"N","N","A","1",NA,NA
+1135,42.573534,-4.658336,"N","N",NA,NA,NA,NA
+1137,42.563266,-4.743339,"N","N","A","1",NA,NA
+1138,42.554815,-4.706563,"N","N",NA,NA,NA,NA
+1139,42.546528,-4.657621,"N","N",NA,NA,NA,NA
+1140,42.536811,-4.706072,"N","N","A","1",NA,NA
+1141,42.53839,-4.596519,"N","N","A","1",NA,NA
+1142,42.528347,-4.669316,"N","N","A","1",NA,NA
+1143,42.529046,-4.620632,"N","N",NA,NA,NA,NA
+1146,42.666215,-4.465561,"N","N","A","1",NA,NA
+1148,42.650267,-4.294396,"N","N",NA,NA,NA,NA
+1154,42.540333,-4.450435,"N","N",NA,NA,NA,NA
+1156,42.531635,-4.425881,"N","N",NA,NA,NA,NA
+1157,42.533086,-4.30415,"N","N",NA,NA,NA,NA
+1158,42.523803,-4.328306,"N","N","A","1",NA,NA
+1160,42.51363,-4.425472,"N","N","A","1",NA,NA
+1161,42.504475,-4.437435,"N","N","A","1",NA,NA
+1162,42.505796,-4.327925,"N","N",NA,NA,NA,NA
+1164,42.479941,-4.887014,"N","N","A","1",NA,NA
+1166,42.390328,-4.86003,"N","N","A","1",NA,NA
+1167,42.466874,-4.558209,"N","N","A","1",NA,NA
+1176,42.49721,-4.291234,"N","N",NA,NA,NA,NA
+1177,42.486921,-4.40053,"N","N","A","1",NA,NA
+1178,42.479203,-4.290864,"N","N",NA,NA,NA,NA
+1300,42.75858398,-4.91997952,NA,NA,"N","N",NA,NA
+1301,42.71438943,-4.86976921,NA,NA,"N","N",NA,NA
+1303,42.86819079,-4.82543789,NA,NA,"N","N",NA,NA
+1304,42.85018931,-4.82490751,NA,NA,"N","N",NA,NA
+1307,42.86896095,-4.77649164,NA,NA,"N","N",NA,NA
+1310,42.72550467,-4.73574954,NA,NA,"N","N",NA,NA
+1312,42.8518917,-4.71480775,NA,NA,"N","N",NA,NA
+1315,42.8891492,-4.6301157,NA,NA,"N","N",NA,NA
+1318,42.91650037,-4.60633315,NA,NA,"N","N",NA,NA
+1319,42.94384682,-4.58252977,NA,NA,"N","N",NA,NA
+1325,42.91750815,-4.53284757,NA,NA,"N","N",NA,NA
+1326,42.80048097,-4.52995489,NA,NA,"N","N",NA,NA
+1329,42.73761863,-4.51619173,NA,NA,"N","N",NA,NA
+1331,42.92699649,-4.49632126,NA,NA,"N","N",NA,NA
+1332,42.5578875,-4.48746939,NA,NA,"N","N",NA,NA
+1339,42.96379041,-4.43589464,NA,NA,"N","N",NA,NA
+1348,42.78462548,-4.35840368,NA,NA,"N","N",NA,NA
+1354,42.83922226,-4.31065297,NA,NA,"N","N",NA,NA
+1370,42.74099354,-4.23527826,NA,NA,"N","N",NA,NA
+1372,42.72311773,-4.22270976,NA,NA,"N","N",NA,NA

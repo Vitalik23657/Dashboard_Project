@@ -27,14 +27,17 @@ function populateDropdown() {
         .forEach(plot => {
             const option = document.createElement('option');
             option.value = plot;
-            option.textContent = `${t('plot_label')} ${plot}`;
+            const ncMark = (typeof ncPlots !== 'undefined' && ncPlots.has(plot)) ? ' ⚠' : '';
+            option.textContent = `${t('plot_label')} ${plot}${ncMark}`;
             select.appendChild(option);
         });
 }
 
 function updateDashboard(selectedPlot) {
+    // The "ALL Plots Combined" aggregate keeps its original meaning: only the
+    // continuous plots. Non-continuity (NC) plots are viewable individually.
     const filteredRows = selectedPlot === 'ALL'
-        ? globalRawData
+        ? globalRawData.filter(row => !row.nc)
         : globalRawData.filter(row => row.estadillo === selectedPlot);
 
     const activeSpecies = new Set();
@@ -85,6 +88,7 @@ function updateDashboard(selectedPlot) {
 
     highlightMapPlot(selectedPlot);
     renderNaturalConditions(selectedPlot);
+    renderContinuityWarning(selectedPlot);
 }
 
 document.getElementById('growth-badge').addEventListener('click', (e) => {
@@ -94,7 +98,9 @@ document.getElementById('growth-badge').addEventListener('click', (e) => {
 
 async function loadData() {
     try {
-        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub, resMap, resNatural, resClimate] = await Promise.all([
+        const NC = '../Plot_Data_NoContinuity_EN';   // non-continuity dataset root
+        const [resVol, resD2, resD3, resD4, resQual, resCarb, resQualDesc, resStatus, resTree, resShrub, resMap, resNatural, resClimate,
+               resVolNC, resD2NC, resD3NC, resD4NC, resQualNC, resCarbNC, resStatusNC, resTreeNC, resShrubNC, resMapNC, resNaturalNC] = await Promise.all([
             fetch('../Plot_Data_EN/Plot_3_FORESTSTOCKS/PlotForestStocks_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI2_EN.csv'),
             fetch('../Plot_Data_EN/Plot_4_FORESTDAMAGE/DamageNFI3_EN.csv'),
@@ -107,7 +113,18 @@ async function loadData() {
             fetch('../Plot_Data_EN/Plot_7_FORESTSTATUS/PlotShrubLayer_EN.csv'),
             fetch('../Plot_Data_EN/Plot_1_SITUATION/PlotSituation_EN.csv'),
             fetch('../Plot_Data_EN/Plot_2_NATURALCONDITIONS/PlotNaturalConditionsEN.csv'),
-            fetch('../Plot_Data_EN/Plot_2_NATURALCONDITIONS/PlotClimate.csv')
+            fetch('../Plot_Data_EN/Plot_2_NATURALCONDITIONS/PlotClimate.csv'),
+            fetch(encodeURI(`${NC}/3_PlotNC_FORESTSTOCKS/PlotForestStocks_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/4_PlotNC_FORESTDAMAGE/DamageNFI2_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/4_PlotNC_FORESTDAMAGE/DamageNFI3_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/4_PlotNC_FORESTDAMAGE/DamageNFI4_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/5_PlotNC_WOODQUALITY/WoodQuality_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/6_PlotNC_CARBON/PlotCarbon_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/7_PlotNC_FORESTSTATUS/Plot_ForestEstatus_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/7_PlotNC_FORESTSTATUS/PlotTreeLayer_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/7_PlotNC_FORESTSTATUS/PlotShrubLayer_EN_NC (1).csv`)),
+            fetch(encodeURI(`${NC}/1_PlotNC_SITUATION/PlotSituation_EN_NC.csv`)),
+            fetch(encodeURI(`${NC}/2_PlotNC_NATURALCONDITIONS/PlotNaturalConditionsEN_NC (1).csv`))
         ]);
 
         parseRawData(await resVol.text());
@@ -123,6 +140,20 @@ async function loadData() {
         parseAndRenderMapData(await resMap.text());
         parseNaturalConditions(await resNatural.text());
         parseClimateData(await resClimate.text());
+
+        // Non-continuity plots (parsed by header name; different column layout)
+        parseSituationNC(await resMapNC.text());
+        parseRawDataNC(await resVolNC.text());
+        parseNaturalConditionsNC(await resNaturalNC.text());
+        parseDamageNFI2NC(await resD2NC.text());
+        parseDamageNFI34NC(await resD3NC.text(), 'nfi3', 3);
+        parseDamageNFI34NC(await resD4NC.text(), 'nfi4', 4);
+        parseQualityNC(await resQualNC.text());
+        parseCarbonNC(await resCarbNC.text());
+        parseStatusNC(await resStatusNC.text());
+        parseTreeLayerNC(await resTreeNC.text());
+        parseShrubLayerNC(await resShrubNC.text());
+        renderNCMapData(ncMapPoints);
 
         assignSpeciesColors();
         populateDropdown();

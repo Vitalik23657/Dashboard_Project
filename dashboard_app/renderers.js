@@ -258,6 +258,7 @@ function _renderDamageBarsAndTable(nfiKey, chartContainerId, tableContainerId, s
         const agg = {};
         let totalTreesOverall = 0;
         for (const plot in damageData[nfiKey]) {
+            if (typeof ncPlots !== 'undefined' && ncPlots.has(plot)) continue;
             const r = damageData[nfiKey][plot];
             if (r && r.length > 0) {
                 totalTreesOverall += r[0].totalTrees;
@@ -366,6 +367,7 @@ function renderQualityChartAndTable(selectedPlot) {
     if (selectedPlot === 'ALL') {
         const totals = { v2: 0, v3: 0, v4: 0 };
         for (const plot in qualityData) {
+            if (typeof ncPlots !== 'undefined' && ncPlots.has(plot)) continue;
             for (const qc in qualityData[plot]) {
                 if (!qData[qc]) qData[qc] = { v2: 0, v3: 0, v4: 0 };
                 const d = qualityData[plot][qc];
@@ -462,6 +464,7 @@ function renderCarbonData(selectedPlot) {
             nfi4: { stem:0, branches_large:0, branches_small:0, leaves:0, roots:0, total:0 },
         };
         for (const plot in carbonData) {
+            if (typeof ncPlots !== 'undefined' && ncPlots.has(plot)) continue;
             NFI_KEYS.forEach(nfi => {
                 for (const part in carbonData[plot][nfi]) cData[nfi][part] += carbonData[plot][nfi][part];
             });

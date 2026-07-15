@@ -195,6 +195,15 @@ const UI_TRANSLATIONS = {
         nfi_3: 'NFI 3',
         nfi_4: 'NFI 4',
         nfi_prefix: 'NFI',
+        nc_badge:            'Non-continuous plot',
+        nc_continuous_legend:'Continuous plots',
+        nc_map_legend:       'Non-continuous plots',
+        nc_intro:            'Inventory records for this plot may not be directly comparable:',
+        nc_warn_only_ifn2:   'This plot was only surveyed in NFI2 — there is no continuity in NFI3 or NFI4.',
+        nc_warn_ifn3:        'In NFI3 it is classified as {c} (not A-1), so NFI2 ↔ NFI3 figures are not directly comparable.',
+        nc_warn_ifn4:        'In NFI4 it is classified as {c} (not A-1), so NFI3 ↔ NFI4 figures are not directly comparable.',
+        nc_warn_absent_ifn3: 'This plot was not surveyed in NFI3.',
+        nc_warn_absent_ifn4: 'This plot was not surveyed in NFI4.',
     },
     es: {
         nav_situation:        'Situación',
@@ -319,6 +328,15 @@ const UI_TRANSLATIONS = {
         nfi_3: 'IFN 3',
         nfi_4: 'IFN 4',
         nfi_prefix: 'IFN',
+        nc_badge:            'Parcela sin continuidad',
+        nc_continuous_legend:'Parcelas con continuidad',
+        nc_map_legend:       'Parcelas sin continuidad',
+        nc_intro:            'Los registros de inventario de esta parcela pueden no ser directamente comparables:',
+        nc_warn_only_ifn2:   'Esta parcela solo se inventarió en el IFN2 — no hay continuidad en el IFN3 ni el IFN4.',
+        nc_warn_ifn3:        'En el IFN3 está clasificada como {c} (no A-1), por lo que las cifras IFN2 ↔ IFN3 no son directamente comparables.',
+        nc_warn_ifn4:        'En el IFN4 está clasificada como {c} (no A-1), por lo que las cifras IFN3 ↔ IFN4 no son directamente comparables.',
+        nc_warn_absent_ifn3: 'Esta parcela no se inventarió en el IFN3.',
+        nc_warn_absent_ifn4: 'Esta parcela no se inventarió en el IFN4.',
     }
 };
 

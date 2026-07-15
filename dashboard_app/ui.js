@@ -49,7 +49,10 @@ function applyTranslations() {
     if (allOption) allOption.textContent = t('all_plots');
 
     Array.from(document.getElementById('estadillo-filter').options).forEach(opt => {
-        if (opt.value !== 'ALL') opt.textContent = `${t('plot_label')} ${opt.value}`;
+        if (opt.value !== 'ALL') {
+            const ncMark = (typeof ncPlots !== 'undefined' && ncPlots.has(opt.value)) ? ' ⚠' : '';
+            opt.textContent = `${t('plot_label')} ${opt.value}${ncMark}`;
+        }
     });
 
     [['species-filter-btn', 'species_filter'], ['nfi-filter-btn', 'nfi_filter']].forEach(([id, key]) => {

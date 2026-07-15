@@ -32,10 +32,29 @@
         </div>
     </nav>
     <div class="dashboard-container" style="padding-top: 20px;">
+        <div id="continuity-warning" class="continuity-warning" style="display:none;"></div>
         <div class="header-panel" id="map-section">
-            <h2 data-i18n="nav_situation">Situation</h2>
+            <div class="header-top">
+                <h2 data-i18n="nav_situation">Situation</h2>
+                <div>
+                    <label for="estadillo-filter" style="font-weight: 600; margin-right: 8px;">Filter by Plot (Estadillo):</label>
+                    <select id="estadillo-filter">
+                        <option value="ALL">All Plots Combined</option>
+                    </select>
+                </div>
+            </div>
             <div style="height: 500px; width: 100%; border-radius: 8px; overflow: hidden;">
                 <div id="map" style="height: 100%; width: 100%;"></div>
+            </div>
+            <div class="map-legend">
+                <span class="map-legend-item">
+                    <span class="map-legend-dot" style="background:#4A90A4;"></span>
+                    <span data-i18n="nc_continuous_legend">Continuous plots</span>
+                </span>
+                <span class="map-legend-item">
+                    <span class="map-legend-dot" style="background:#E8912A;"></span>
+                    <span data-i18n="nc_map_legend">Non-continuous plots</span>
+                </span>
             </div>
         </div>
 
@@ -66,12 +85,6 @@
                             Calculating...
                         </div>
                         <div id="growth-dropdown" class="growth-dropdown"></div>
-                    </div>
-                    <div>
-                        <label for="estadillo-filter" style="font-weight: 600; margin-right: 8px;">Filter by Plot (Estadillo):</label>
-                        <select id="estadillo-filter">
-                            <option value="ALL">All Plots Combined</option>
-                        </select>
                     </div>
                 </div>
             </div>
@@ -286,6 +299,7 @@
     <script src="config.js"></script>
     <script src="translations.js"></script>
     <script src="parsers.js"></script>
+    <script src="parsers_nc.js"></script>
     <script src="renderers.js"></script>
     <script src="natural.js"></script>
     <script src="ui.js"></script>

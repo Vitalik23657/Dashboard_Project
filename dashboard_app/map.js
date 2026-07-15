@@ -6,6 +6,14 @@ let bmpBoundaryLayer = null;
 const utmProjection = "+proj=utm +zone=30 +datum=WGS84 +units=m +no_defs";
 const wgs84Projection = "+proj=longlat +datum=WGS84 +no_defs";
 
+const CONT_MARKER_COLOR = "#4A90A4";   // continuous plots (comparable across inventories)
+const NC_MARKER_COLOR   = "#E8912A";   // non-continuity plots
+
+// Base marker colour for a plot id, respecting whether it is an NC plot.
+function basePlotColor(id) {
+    return (typeof ncPlots !== 'undefined' && ncPlots.has(id)) ? NC_MARKER_COLOR : CONT_MARKER_COLOR;
+}
+
 function initMap() {
     leafletMap = L.map('map', { attributionControl: false }).setView([42.8, -4.5], 9); 
     
@@ -110,7 +118,7 @@ function highlightMapPlot(selectedPlot) {
     Object.entries(plotMarkers).forEach(([id, marker]) => {
         marker._isSelected = false;
         marker.setStyle({
-            fillColor: "#4A90A4",
+            fillColor: basePlotColor(id),
             radius: 6,
             color: "#ffffff",
             weight: 1,
@@ -136,5 +144,63 @@ function highlightMapPlot(selectedPlot) {
             fillOpacity: 1
         });
         targetMarker.bringToFront();
+    }
+}
+
+// Non-continuity plots come with WGS84 lat/lng already, so no UTM conversion.
+function renderNCMapData(points) {
+    if (!leafletMap) initMap();
+
+    points.forEach(p => {
+        if (isNaN(p.lat) || isNaN(p.lng)) return;
+
+        const marker = L.circleMarker([p.lat, p.lng], {
+            radius: 6,
+            fillColor: NC_MARKER_COLOR,
+            color: "#ffffff",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.75
+        }).addTo(leafletMap);
+
+        const m = (typeof plotMeta !== 'undefined') ? plotMeta[p.est] : null;
+        const fmtCls = (c, s) => (!c || c === 'NA') ? '—' : `${c}-${s}`;
+        const classLine = m
+            ? `<br><span style="font-size:11px;color:#eee;">NFI3: ${fmtCls(m.cla3, m.sub3)} &middot; NFI4: ${fmtCls(m.cla4, m.sub4)}</span>`
+            : '';
+
+        marker.bindTooltip(
+            `<strong>${t('plot_label')} ${p.est}</strong> ` +
+            `<span style="color:${NC_MARKER_COLOR};">&#9670; ${t('nc_badge')}</span><br>` +
+            `${p.muni || ''}${classLine}`,
+            { direction: 'top', offset: [0, -8], opacity: 0.92 }
+        );
+
+        marker.on('click', () => {
+            const select = document.getElementById('estadillo-filter');
+            if (select) select.value = p.est;
+            disabledSpecies.clear();
+            setPlotInURL(p.est);
+            updateDashboard(p.est);
+        });
+
+        marker.on('mouseover', () => {
+            if (marker._isSelected) return;
+            marker.setStyle({ fillColor: '#c6781f', radius: 8 });
+            leafletMap.getContainer().style.cursor = 'pointer';
+        });
+
+        marker.on('mouseout', () => {
+            if (marker._isSelected) return;
+            marker.setStyle({ fillColor: NC_MARKER_COLOR, radius: 6 });
+            leafletMap.getContainer().style.cursor = '';
+        });
+
+        plotMarkers[p.est] = marker;
+        mapBounds.push([p.lat, p.lng]);
+    });
+
+    if (mapBounds.length > 0) {
+        leafletMap.fitBounds(mapBounds, { padding: [30, 30] });
     }
 }

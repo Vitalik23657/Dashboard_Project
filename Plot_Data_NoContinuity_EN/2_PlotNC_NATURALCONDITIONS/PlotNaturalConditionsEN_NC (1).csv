@@ -1,0 +1,412 @@
+"Estadillo","lng","lat","ClaIFN3","SubclaseIFN3","ClaIFN4","SubclaseIFN4","Altitude_m","FuelModel","Aspect","Slope","Exposure","Stoniness","Texture","BioRigion","OrganicMatter","SoilpH","SoilType"
+22,-4.898488,42.857966,"A","4","A","1",1574,5,290,63,"Shady slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+23,-4.898212,42.848966,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,-4.88538975,42.84937112,"A","1","A","1",1375,7,305,55,"Shady slope","Slightly stony","Clay texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+25,-4.861516,42.849569,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+50,-4.56981941,42.92601198,NA,NA,"A","4",1466,5,290,60,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+51,-4.54501,42.917313,"A","4","A","1",1254,7,395,20,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+52,-4.777437,42.904935,"A","1","A","1",1415,9,279,25,"Shady slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+53,-4.765193,42.905124,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+57,-4.569276,42.907978,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+58,-4.72821,42.896684,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+59,-4.715967,42.896868,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+60,-4.64260042,42.89766952,"A","1","A","1",1437,5,55,33,"Shady slope","Very stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+62,-4.740199,42.887497,"A","4","A","1",1374,8,200,39,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+67,-4.544335,42.890308,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+68,-4.85072573,42.87624031,NA,NA,"A","1",1442,7,247,49,"Sunny slope","Stony","Sandy texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+70,-4.764423,42.878121,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,-4.752185,42.878309,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+73,-4.715468,42.878866,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,-4.8501191,42.8678215,NA,NA,"A","4C",1251,7,340,39,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+79,-4.764167,42.86912,"A","4","A","1",1489,5,225,24,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+80,-4.75193,42.869308,"A","4","A","1",1851,5,24,26,"Shady slope","Very stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+81,-4.715219,42.869864,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,-4.702981,42.870047,"A","4","A","1",1561,7,180,20,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+89,-4.568364,42.871971,"A","4","A","1",1182,5,22,36,"Shady slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+91,-4.543886,42.872304,"A","1","A","1",1199,6,175,62,"Shady slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+92,-4.837318,42.858965,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,-4.73944,42.860494,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+95,-4.714969,42.860863,"A","4C","A","1",1758,6,375,37,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+96,-4.702734,42.861046,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+100,-4.604846,42.86246,"A","4","A","4",1371,8,315,54,"Sunny slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+102,-4.56755122,42.86262983,"A","1","A","1",1328,8,135,37,"Shady slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+103,-4.555899,42.863136,"A","3E","A","1",1190,9,156,35,"Shady slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+104,-4.543662,42.863302,"A","4","A","1",1109,8,385,39,"Shady slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+105,-4.849284,42.849767,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+106,-4.837051,42.849964,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,-4.751421,42.851306,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+108,-4.678019,42.852406,"A","1","A","1",1315,5,276,20,"Shady slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+112,-4.689762,42.834223,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+128,-4.496672,42.94497,"A","4","A","1",1197,9,340,13,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+129,-4.484419,42.94513,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+144,-4.459274,42.918438,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+145,-4.447025,42.918594,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+146,-4.422528,42.918901,"A","4","A","1",1305,6,175,12,"Sunny slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+147,-4.410279,42.919053,"A","4","A","1",1361,5,145,38,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+152,-4.4958,42.908962,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+157,-4.275352,42.911631,"A","4","A","4",1332,8,120,33,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+159,-4.507827,42.899799,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+163,-4.507608,42.890797,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+166,-4.27498,42.893625,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+169,-4.470666,42.882273,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,-4.238067,42.885025,"A","3E","A","1",1115,5,73,24,"Shady slope","No stoniness","Clay texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+177,-4.27461,42.875619,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+179,-4.237887,42.876022,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+182,-4.22554958,42.86718041,NA,NA,"A","1",1027,5,102,18,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+183,-4.518967,42.854627,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+189,-4.347466,42.847769,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+191,-4.396202,42.83818,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+192,-4.273869,42.839607,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+195,-4.89692111,42.81307064,NA,NA,"A","1",1347,7,109,23,"Sunny slope","Stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+196,-4.884886,42.813167,"A","3E","A","1",1317,11,349,34,"Shady slope","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+197,-4.884339,42.795166,"A","4","A","1",1258,2,325,27,"Shady slope","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+199,-4.859357,42.777565,"A","3E","A","6C",1188,2,370,3,"All exposures","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+201,-4.871033,42.759364,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+202,-4.882975,42.750164,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+204,-4.894913,42.740962,"A","3E","A","1",1150,7,368,24,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+206,-4.870492,42.741363,"A","1",NA,NA,1152,11,10,3,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+207,-4.894639,42.731961,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+208,-4.88243,42.732163,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+209,-4.882158,42.723162,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+210,-4.881886,42.714161,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+214,-4.86914,42.69636,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+216,-4.88107,42.68716,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+218,-4.856669,42.687558,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+220,-4.892724,42.668957,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+223,-4.835453,42.79596,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+224,-4.786564,42.796734,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+231,-4.602519,42.772443,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+233,-4.54141932,42.77362686,NA,NA,"A","1",1131,4,45,6,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+235,-4.724451,42.761666,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+238,-4.565635,42.763948,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+239,-4.553418,42.764114,"A","4C","A","4",1111,7,380,10,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+240,-4.5412,42.76428,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+243,-4.61427,42.754268,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+244,-4.602055,42.754439,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+246,-4.577624,42.754778,"A","4","A","1",1090,5,315,6,"All exposures","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+247,-4.565409,42.754946,"A","4C","A","1",1097,6,381,7,"All exposures","Slightly stony","Sandy texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+248,-4.553193,42.755112,"A","4C","A","4",1130,6,85,20,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+249,-4.540977,42.755277,"A","4C","A","4",1158,6,185,6,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+251,-4.785012,42.742728,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+253,-4.687314,42.744209,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+254,-4.601823,42.745437,"A","4","A","1",1083,5,80,13,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+256,-4.565182,42.745944,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+258,-4.796964,42.733536,"A","4","A","1",1138,11,90,8,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+261,-4.577167,42.736774,"A","4C","A","1",1071,5,125,11,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+262,-4.564956,42.736942,"A","4C","A","1",1104,7,250,6,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+263,-4.78452548,42.72484493,NA,NA,"A","1",1141,5,335,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+264,-4.772288,42.724915,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+265,-4.576939,42.727772,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+268,-4.759825,42.716103,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+269,-4.576711,42.71877,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+270,-4.564503,42.718938,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+271,-4.832798,42.705953,"A","3E","A","1",1049,6,295,19,"Shady slope","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+272,-4.771775,42.706913,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+274,-4.747365,42.707288,"A","3E","A","1",1110,7,255,24,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+276,-4.613103,42.709258,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+279,-4.759316,42.6981,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+284,-4.74686,42.689286,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+285,-4.734659,42.689471,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+286,-4.722457,42.689655,"A","4","A","1",1094,8,325,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+288,-4.661447,42.690557,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+289,-4.637042,42.690908,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+291,-4.53947652,42.69218251,NA,NA,"A","1",1047,6,295,15,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+292,-4.758808,42.680098,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+294,-4.734408,42.68047,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+296,-4.710008,42.680837,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+299,-4.795147,42.670529,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+300,-4.78295,42.670719,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+302,-4.746356,42.671283,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+304,-4.72196,42.671652,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+305,-4.70984871,42.67186295,NA,NA,"A","1",1049,6,225,29,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+306,-4.685364,42.672197,"A","3E","A","1",1064,5,250,22,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+311,-4.575573,42.67376,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+313,-4.518085,42.818619,"A","4C","A","1",1136,5,206,10,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+319,-4.321844,42.794038,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+320,-4.297395,42.794317,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+321,-4.517205,42.78261,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+325,-4.516765,42.764606,"A","4C","A","1",1146,5,9,17,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+326,-4.49233,42.764927,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+327,-4.467894,42.765243,"A","1","A","1",1048,4,241,24,"Sunny slope","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+330,-4.50433,42.755765,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+332,-4.479897,42.756083,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+333,-4.382164,42.757305,"A","4C","A","1",1014,2,62,30,"Sunny slope","Very stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+335,-4.516326,42.746601,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+336,-4.491898,42.746922,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+339,-4.381964,42.748302,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+341,-4.247591,42.749845,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+342,-4.406191,42.739002,"A","4C","A","1",976,6,285,9,"All exposures","Stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+343,-4.393978,42.739151,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+344,-4.296268,42.740299,"A","4","A","1",913,5,183,8,"All exposures","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+346,-4.210767,42.741235,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+351,-4.405581,42.711994,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+353,-4.259079,42.713698,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+355,-4.405378,42.702991,"A","4C","A","1",959,7,285,22,"Sunny slope","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+356,-4.28330905,42.704489,NA,NA,"A","4",881,4,192,41,"Shady slope","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+357,-4.271104,42.70456,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+358,-4.246689,42.704828,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+359,-4.319741,42.695004,"A","1","A","4",989,11,1,26,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+361,-4.50259,42.683746,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+362,-4.35616,42.685574,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+364,-4.331754,42.68586,"A","4","A","1",965,11,270,2,"All exposures","Stony","Clay texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+366,-4.295144,42.68628,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+369,-4.294957,42.677277,"A","4","A","1",895,4,140,52,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+381,-4.892451,42.659957,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+383,-4.892178,42.650956,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+385,-4.891905,42.641955,"A","1","A","4",1075,11,240,3,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+387,-4.867522,42.642356,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+388,-4.891632,42.632955,"A","1","A","4",1068,11,160,3,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+389,-4.879442,42.633156,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+391,-4.855063,42.633553,NA,NA,"A","1",1053,11,385,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+392,-4.89115871,42.6236709,NA,NA,"A","1",1059,11,0,6,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+393,-4.879171,42.624155,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+394,-4.866984,42.624354,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+395,-4.891087,42.614953,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+397,-4.866715,42.615353,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+399,-4.890814,42.605953,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+400,-4.87863,42.606153,"A","4","A","1",1035,6,235,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+401,-4.854261,42.60655,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+406,-4.889998,42.578951,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+409,-4.876739,42.543148,"A","4","A","1",998,5,100,4,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+410,-4.864567,42.543346,"A","4","A","1",994,9,100,3,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+413,-4.888369,42.524946,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+414,-4.864031,42.525344,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+415,-4.888098,42.515945,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+417,-4.863496,42.507342,"A","4","A","1",977,9,200,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+419,-4.672924,42.663374,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+420,-4.660727,42.663552,"A","3E","A","1",975,2,240,18,"Shady slope","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+422,-4.587543,42.66459,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+423,-4.575345,42.664758,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+426,-4.745852,42.65328,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+428,-4.660488,42.65455,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+429,-4.623901,42.655075,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+430,-4.587314,42.655587,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+432,-4.562922,42.655923,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+434,-4.782178,42.643716,"A","3E","A","1",1072,5,35,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+435,-4.769986,42.643905,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+437,-4.7456,42.644279,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+438,-4.733407,42.644464,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+440,-4.587085,42.646585,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+442,-4.794112,42.634524,NA,NA,"A","1",1054,5,240,23,"Sunny slope","Stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+443,-4.781921,42.634714,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+444,-4.733158,42.635463,"A","4","A","1",1058,7,184,1,"All exposures","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+445,-4.684392,42.63619,"A","4","A","1",1015,5,5,10,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+446,-4.647817,42.636722,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+447,-4.562471,42.637919,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+448,-4.550278,42.638084,"A","4","A","1",1021,5,260,5,"All exposures","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+449,-4.793853,42.625523,"A","4","A","1",1039,11,280,25,"Sunny slope","Slightly stony","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+450,-4.732908,42.626461,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+451,-4.720718,42.626645,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+455,-4.562246,42.628916,"A","4","A","1",995,5,102,9,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+456,-4.550055,42.629082,"A","4","A","1",1013,5,290,11,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+457,-4.757033,42.617089,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+459,-4.635154,42.618893,"A","4","A","1",1027,4,138,21,"Shady slope","Stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+460,-4.57421,42.619747,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+462,-4.549832,42.62008,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+464,-4.842076,42.606747,"A","4C","A","4",1035,11,7,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+466,-4.573983,42.610745,"A","4","A","1",943,5,330,5,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+467,-4.549608,42.611077,"A","1","A","4",1013,11,30,2,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+469,-4.841811,42.597746,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+471,-4.780894,42.598709,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+474,-4.537199,42.602239,"A","4","A","1",1006,5,339,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+476,-4.744092,42.590271,"A","1","A","4",1010,11,110,18,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+477,-4.719727,42.590639,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+480,-4.549162,42.593073,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+481,-4.536978,42.593237,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+483,-4.548939,42.58407,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+484,-4.536757,42.584234,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+485,-4.573077,42.574736,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+488,-4.524355,42.575395,"A","4","A","4",981,11,125,23,"Sunny slope","Slightly stony","Clay texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+489,-4.718985,42.563634,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+491,-4.560672,42.5659,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+492,-4.536315,42.56623,"A","4","A","1",951,5,200,27,"Shady slope","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+493,-4.524136,42.566392,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+496,-4.523917,42.55739,"A","4","A","1",949,6,235,9,"All exposures","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+497,-4.742838,42.545263,"A","4","A","1",997,5,90,8,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+498,-4.730665,42.545448,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+500,-4.535873,42.548225,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+501,-4.523698,42.548387,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+503,-4.535652,42.539222,"A","4","A","4",936,6,195,4,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+507,-4.851597,42.516541,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+509,-4.851331,42.50754,"A","4","A","1",978,5,220,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+511,-4.705337,42.509806,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+513,-4.607999,42.511213,"A","4","A","1",961,6,300,28,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+515,-4.58340482,42.51143902,NA,NA,"A","1",962,6,10,6,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+517,-4.57127,42.502717,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+518,-4.440955,42.657522,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+520,-4.416561,42.657827,"A","4C","A","1",930,4,310,9,"All exposures","Slightly stony","Sandy texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+521,-4.501507,42.638734,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+523,-4.4647083,42.63931106,NA,NA,"A","1",981,6,10,12,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+524,-4.476907,42.630048,"A","3E","A","1",952,4,148,10,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+526,-4.464505,42.621202,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+531,-4.512392,42.584559,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+535,-4.475632,42.576033,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+538,-4.414725,42.576801,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+540,-4.475419,42.56703,"A","4","A","1",986,5,260,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+541,-4.46324,42.567186,"A","4","A","1",984,5,50,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+543,-4.426701,42.567647,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+544,-4.402342,42.567948,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+545,-4.390162,42.568096,"A","4","A","1",882,2,396,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+547,-4.51174,42.557551,"A","4","A","1",986,5,20,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+548,-4.499562,42.557711,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+550,-4.511522,42.548549,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+552,-4.462819,42.549181,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+554,-4.511088,42.530543,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+558,-4.498485,42.512698,NA,NA,"A","1",914,7,240,5,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+559,-4.486317,42.512856,"A","1","A","4",895,11,385,11,"All exposures","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+560,-4.474148,42.513014,"A","4C","A","1",918,5,120,21,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+562,-4.291605,42.515217,"A","4","A","1",879,9,0,17,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+563,-4.510437,42.503536,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+564,-4.49827,42.503695,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+566,-4.874855,42.480141,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+567,-4.862695,42.480339,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+568,-4.874586,42.47114,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+569,-4.874317,42.462139,"A","4","A","1",953,5,180,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+570,-4.862161,42.462337,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+571,-4.886203,42.452939,"A","4","A","1",946,5,250,2,"All exposures","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+572,-4.874049,42.453138,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+573,-4.861894,42.453336,"A","1","A","1",944,6,280,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+574,-4.86148878,42.44449007,NA,NA,"A","1",940,5,340,2,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+575,-4.873512,42.435136,"A","1","A","1",940,12,100,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+577,-4.872708,42.408133,"A","1","A","1",924,9,325,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+579,-4.896729,42.398732,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+580,-4.871905,42.381129,"A","1","A","4",922,5,85,2,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+582,-4.8508,42.489538,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+584,-4.55888,42.493881,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+585,-4.850534,42.480536,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+586,-4.570819,42.484713,"A","1","A","1",948,5,380,16,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+587,-4.558656,42.484879,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+588,-4.850269,42.471535,"A","4",NA,NA,954,11,190,1,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+591,-4.82569,42.462924,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+592,-4.849739,42.453533,"A","4","A","1",945,9,240,2,"All exposures","No stoniness","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+594,-4.849474,42.444532,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+598,-4.848151,42.399526,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+604,-4.847095,42.363521,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+605,-4.834958,42.363716,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+608,-4.834696,42.354714,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+611,-4.822299,42.345906,"A","1","A","1",895,6,150,2,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+613,-4.400731,42.495924,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+616,-4.473514,42.486005,"A","1","A","4",877,6,10,3,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+621,-4.412289,42.468765,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+624,-4.326973,42.460779,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+625,-4.314813,42.460919,"A","4","A","1",876,2,200,1,"All exposures","No stoniness","Clay texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+628,-4.33894,42.451634,"A","4","A","1",872,8,390,3,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+629,-4.326783,42.451776,"A","1","A","1",865,5,340,22,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+630,-4.326593,42.442772,"A","4C",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1014,-4.79002978,42.91377468,NA,NA,"A","4",1666,5,230,76,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1015,-4.581752,42.916811,"N","N","A","4",1173,4,95,46,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1016,-4.826411,42.904163,"N","N","A","1",1557,7,5,61,"Shady slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1017,-4.532539,42.908476,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1018,-4.789421,42.895743,"N","N","A","1",1290,7,240,48,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1019,-4.605779,42.898467,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1021,-4.7889,42.877741,"N","N","A","1",1506,5,348,51,"Shady slope","Stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1022,-4.593072,42.880635,"N","N","A","1",1282,7,70,51,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1024,-4.78872838,42.86877037,NA,NA,"A","4C",1560,7,25,42,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1025,-4.812586,42.850354,"N","N","A","1",1464,5,135,49,"Shady slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1026,-4.78812,42.850739,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1027,-4.775629,42.841929,"N","N","A","1",1629,5,240,38,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1031,-4.542989,42.836296,"N","N","A","1",1210,5,85,50,"Shady slope","Very stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1036,-4.423357,42.95491,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1037,-4.459911,42.945445,"N","N","A","1",1201,5,311,24,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1038,-4.471951,42.936286,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1039,-4.508486,42.926805,"N","N","A","1",1196,5,270,30,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1040,-4.483986,42.927126,"N","N","A","1",1190,5,320,16,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1041,-4.398234,42.928205,"N","N","A","1",1370,4,132,33,"Sunny slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1042,-4.520514,42.917641,"N","N","A","1",1085,5,275,38,"Sunny slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1048,-4.299658,42.902352,"N","N","A","1",1213,4,70,22,"Shady slope","No stoniness","Sandy texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1050,-4.482907,42.882115,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1051,-4.335813,42.874921,"N","N","A","4",1179,5,95,50,"Sunny slope","Stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1053,-4.396811,42.865188,"N","N","A","1",1024,5,205,20,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1054,-4.323188,42.857058,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1055,-4.482045,42.846106,"N","N","A","1",1038,5,146,21,"Shady slope","No stoniness","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1057,-4.506294,42.836785,"N","N","A","1",1150,5,43,5,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1058,-4.298336,42.839332,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1059,-4.175996,42.840654,"N","N","A","1",932,4,224,31,"Shady slope","No stoniness","Clay texture","Atlantic","Moderately humic","Neutral (pH = 7)","Limestone soil"
+1060,-4.139293,42.841025,"N","N","A","1",1047,7,283,39,"Sunny slope","Slightly stony","Clay texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1061,-4.860706,42.822567,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1062,-4.860166,42.804566,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1064,-4.931824,42.74935,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1065,-4.787601,42.832737,"N","N","A","4",1725,7,230,33,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1066,-4.73843,42.82449,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1067,-4.701745,42.825041,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1068,-4.835985,42.813962,"N","N","A","4",1356,5,60,30,"Sunny slope","Very stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1070,-4.774856,42.814926,"N","N","A","1",1351,5,345,44,"Sunny slope","Very stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1072,-4.823495,42.805156,"N","N","A","1",1218,2,117,35,"Shady slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1073,-4.75015,42.806301,"N","N","A","1",1225,5,95,28,"Shady slope","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1074,-4.664576,42.807577,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1076,-4.700758,42.789036,"N","N","A","1",1094,5,130,45,"Shady slope","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1077,-4.627428,42.790102,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1079,-4.773827,42.778922,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1081,-4.749136,42.770297,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1083,-4.59007,42.763611,"N","N","A","1",1092,5,320,8,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1084,-4.687559,42.753211,"N","N","A","1",1103,5,320,31,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1085,-4.846069,42.74176,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1086,-4.62625,42.745093,"N","N","A","1",1099,4,130,27,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1087,-4.674859,42.735387,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1088,-4.699035,42.726026,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1089,-4.820857,42.715148,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1090,-4.686582,42.717205,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1091,-4.661927,42.70856,"N","N","A","1",1073,5,245,14,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1093,-4.649483,42.699735,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1098,-4.383768,42.829326,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1099,-4.29804241,42.82135558,NA,NA,"A","4C",984,6,95,29,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1100,-4.444504,42.810566,"N","N","A","1",1119,5,289,24,"Sunny slope","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1101,-4.383367,42.811321,"N","N","A","1",1027,5,185,30,"Sunny slope","Stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1105,-4.40721,42.784015,"N","N","A","1",1077,2,250,11,"All exposures","Stony","Loam texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+1110,-4.479469,42.738078,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1112,-4.23492091,42.7229867,NA,NA,"A","1",921,4,301,5,"All exposures","No stoniness","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1113,-4.210417,42.723228,"N","N","A","1",1011,6,353,33,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1117,-4.490604,42.692908,"N","N","A","1",1006,5,320,6,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1120,-4.163255,42.813769,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1121,-4.089721,42.805487,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1122,-4.126078,42.787125,"N","N","A","1",1052,8,387,36,"Shady slope","No stoniness","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1123,-4.17437398,42.75063966,NA,NA,"A","1",915,4,114,6,"All exposures","No stoniness","Sandy texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1126,-4.526333,42.656416,"N","N","A","1",982,5,231,19,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1127,-4.538308,42.647251,"N","N","A","1",1025,6,260,5,"All exposures","Slightly stony","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1130,-4.52531823,42.61142266,NA,NA,"A","1",972,6,310,7,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1132,-4.683179,42.591182,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1133,-4.63453351,42.59190542,NA,NA,"A","1",978,4,25,12,"Sunny slope","Stony","Loam texture","Mediterranean","Moderately humic","Very strongly acidic (pH = 2)","Siliceous soil"
+1134,-4.780382,42.580707,"N","N","A","1",949,6,10,28,"Sunny slope","Stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1135,-4.658336,42.573534,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1137,-4.743339,42.563266,"N","N","A","1",991,6,275,11,"All exposures","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1138,-4.706563,42.554815,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1139,-4.657621,42.546528,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1140,-4.706072,42.536811,"N","N","A","1",982,5,260,31,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1141,-4.596519,42.53839,"N","N","A","1",959,6,90,30,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1142,-4.669316,42.528347,"N","N","A","1",963,5,95,9,"All exposures","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1143,-4.620632,42.529046,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1146,-4.465561,42.666215,"N","N","A","1",980,4,370,4,"All exposures","No stoniness","Clay texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1148,-4.294396,42.650267,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1154,-4.450435,42.540333,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1156,-4.425881,42.531635,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1157,-4.30415,42.533086,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1158,-4.328306,42.523803,"N","N","A","1",893,5,372,12,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1160,-4.425472,42.51363,"N","N","A","1",945,5,95,22,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1161,-4.437435,42.504475,"N","N","A","1",896,8,290,24,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1162,-4.327925,42.505796,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1164,-4.887014,42.479941,"N","N","A","1",954,6,100,24,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1166,-4.86003,42.390328,"N","N","A","1",906,5,120,12,"Shady slope","Slightly stony","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1167,-4.558209,42.466874,"N","N","A","1",907,8,160,14,"Sunny slope","No stoniness","Loam texture","Mediterranean","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1176,-4.291234,42.49721,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1177,-4.40053,42.486921,"N","N","A","1",894,5,15,22,"Shady slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1178,-4.290864,42.479203,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1300,-4.91997952,42.75858398,NA,NA,"N","N",1133,5,155,13,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1301,-4.86976921,42.71438943,NA,NA,"N","N",1138,8,110,4,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1303,-4.82543789,42.86819079,NA,NA,"N","N",1233,12,290,47,"Shady slope","Slightly stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1304,-4.82490751,42.85018931,NA,NA,"N","N",1414,5,200,46,"Shady slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1307,-4.77649164,42.86896095,NA,NA,"N","N",1625,5,30,39,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1310,-4.73574954,42.72550467,NA,NA,"N","N",1098,2,240,12,"Shady slope","Slightly stony","Sandy texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1312,-4.71480775,42.8518917,NA,NA,"N","N",1545,5,228,43,"Sunny slope","Very stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1315,-4.6301157,42.8891492,NA,NA,"N","N",1167,8,325,40,"Sunny slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1318,-4.60633315,42.91650037,NA,NA,"N","N",1396,5,95,33,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1319,-4.58252977,42.94384682,NA,NA,"N","N",1516,5,124,55,"Shady slope","Stony","Loam texture","Atlantic","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1325,-4.53284757,42.91750815,NA,NA,"N","N",1213,4,138,12,"Sunny slope","Stony","Loam texture","Atlantic","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1326,-4.52995489,42.80048097,NA,NA,"N","N",1099,5,215,24,"Sunny slope","No stoniness","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1329,-4.51619173,42.73761863,NA,NA,"N","N",1116,4,95,4,"All exposures","Slightly stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1331,-4.49632126,42.92699649,NA,NA,"N","N",1111,5,70,32,"Shady slope","Slightly stony","Clay texture","Atlantic","Low humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1332,-4.48746939,42.5578875,NA,NA,"N","N",942,5,385,9,"All exposures","Slightly stony","Loam texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1339,-4.43589464,42.96379041,NA,NA,"N","N",1222,6,278,19,"Sunny slope","Slightly stony","Loam texture","Atlantic","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1348,-4.35840368,42.78462548,NA,NA,"N","N",1052,2,70,26,"Shady slope","Stony","Clay texture","Mediterranean","Moderately humic","Moderately acidic (5 < pH < 6)","Limestone soil"
+1354,-4.31065297,42.83922226,NA,NA,"N","N",1006,6,295,25,"Shady slope","No stoniness","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"
+1370,-4.23527826,42.74099354,NA,NA,"N","N",1011,5,260,11,"Sunny slope","Slightly stony","Loam texture","Mediterranean","Moderately humic","Neutral (pH = 7)","Limestone soil"
+1372,-4.22270976,42.72311773,NA,NA,"N","N",973,6,200,35,"Shady slope","No stoniness","Loam texture","Mediterranean","Highly humic","Moderately acidic (5 < pH < 6)","Siliceous soil"

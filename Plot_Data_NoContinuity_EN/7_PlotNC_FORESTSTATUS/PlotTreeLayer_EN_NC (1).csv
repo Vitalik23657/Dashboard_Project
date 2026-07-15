@@ -1,0 +1,643 @@
+"Estadillo","lat","lng","ClaIFN3","SubclaseIFN3","ClaIFN4","SubclaseIFN4","SpeciesID","SpeciesName","NtreesNFI2","NtreesNFI3","NtreesNFI4","AgeNFI3","AgeNFI4","SPdevelopmentNFI2","SPdevelopmentNFI2name","SPdevelopmentNFI3","SPdevelopmentNFI3name","SPdevelopmentNFI4","SPdevelopmentNFI4name","Origin1NFI3","Origin1NFI3_EN","Origin2NFI3","Origin2NFI3_EN","Origin1NFI4","Origin1NFI4_EN","Origin2NFI4","Origin2NFI4_EN","SPcoverNFI2","SPcoverNFI3","SPcoverNFI4","RegenerNFI2","RegenerNFI2_EN","RegenerNFI3","RegenerNFI3_EN","RegenerNFI4","RegenerNFI4_EN"
+22,42.857966,-4.898488,"A","4","A","1","43","Quercus pyrenaica",11,3,3,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",NA,NA,NA,NA
+22,42.857966,-4.898488,"A","4","A","1","71","Fagus sylvatica",12,19,20,0,0,"4","Old growth",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,80,80,2,"5–15 stems",2,"5–15 stems",1,"1–4 stems"
+23,42.848966,-4.898212,NA,NA,NA,NA,"71","Fagus sylvatica",35,40,NA,NA,NA,"4","Old growth",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,90,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+24,42.84937112,-4.88538975,"A","1","A","1","71","Fagus sylvatica",1,2,9,0,0,"4","Old growth",4,"Old growth",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",80,80,80,1,"1–4 stems",1,"1–4 stems",1,"1–4 stems"
+25,42.849569,-4.861516,"A","1",NA,NA,"38","Juniperus thurifera",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,40,NA,1,"1–4 stems",2,"5–15 stems",NA,NA
+25,42.849569,-4.861516,"A","1",NA,NA,"43","Quercus pyrenaica",1,1,NA,0,NA,"4","Old growth",4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,50,50,NA,3,">15 stems",2,"5–15 stems",NA,NA
+50,42.92601198,-4.56981941,NA,NA,"A","4","42","Quercus petraea",NA,NA,28,NA,0,"3","Polewood",NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",50,NA,90,3,">15 stems",NA,NA,3,">15 stems"
+50,42.92601198,-4.56981941,NA,NA,"A","4","43","Quercus pyrenaica",NA,NA,NA,0,30,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,10,3,">15 stems",3,">15 stems",NA,NA
+51,42.917313,-4.54501,"A","4","A","1","21","Pinus sylvestris",NA,41,61,20,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",50,80,90,1,"1–4 stems",NA,NA,NA,NA
+51,42.917313,-4.54501,"A","4","A","1","43","Quercus pyrenaica",NA,3,4,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",1,"1–4 stems",3,">15 stems"
+52,42.904935,-4.777437,"A","1","A","1","71","Fagus sylvatica",13,16,21,0,0,"4","Old growth",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",90,70,70,2,"5–15 stems",2,"5–15 stems",NA,NA
+53,42.905124,-4.765193,"A","1",NA,NA,"43","Quercus pyrenaica",8,16,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,3,">15 stems",3,">15 stems",NA,NA
+57,42.907978,-4.569276,"A","4C",NA,NA,"295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,1,"Young growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,2,"5–15 stems",NA,NA
+57,42.907978,-4.569276,"A","4C",NA,NA,"43","Quercus pyrenaica",NA,2,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,2,"5–15 stems",NA,NA,NA,NA
+58,42.896684,-4.72821,"A","1",NA,NA,"21","Pinus sylvestris",29,47,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,90,90,NA,1,"1–4 stems",NA,NA,NA,NA
+59,42.896868,-4.715967,"A","3E",NA,NA,"21","Pinus sylvestris",NA,27,NA,15,NA,NA,NA,2,"Thicket",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,100,NA,2,"5–15 stems",NA,NA,NA,NA
+60,42.89766952,-4.64260042,"A","1","A","1","37","Juniperus communis",NA,NA,NA,0,NA,NA,NA,1,"Young growth",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+60,42.89766952,-4.64260042,"A","1","A","1","71","Fagus sylvatica",17,20,24,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,70,3,">15 stems",3,">15 stems",3,">15 stems"
+62,42.887497,-4.740199,"A","4","A","1","21","Pinus sylvestris",24,37,57,30,0,NA,NA,4,"Old growth",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,100,100,1,"1–4 stems",NA,NA,NA,NA
+67,42.890308,-4.544335,"A","1",NA,NA,"43","Quercus pyrenaica",11,20,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+68,42.87624031,-4.85072573,NA,NA,"A","1","42","Quercus petraea",NA,NA,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,1,"1–4 stems",1,"1–4 stems"
+68,42.87624031,-4.85072573,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,70,NA,NA,3,">15 stems",NA,NA,NA,NA
+70,42.878121,-4.764423,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+71,42.878309,-4.752185,"A","1",NA,NA,"21","Pinus sylvestris",45,38,NA,40,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,NA,100,NA,1,"1–4 stems",NA,NA,NA,NA
+73,42.878866,-4.715468,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+77,42.8678215,-4.8501191,NA,NA,"A","4C","21","Pinus sylvestris",NA,NA,7,15,0,NA,NA,2,"Thicket",3,"Polewood",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",NA,100,100,2,"5–15 stems",NA,NA,NA,NA
+79,42.86912,-4.764167,"A","4","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+80,42.869308,-4.75193,"A","4","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+81,42.869864,-4.715219,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+82,42.870047,-4.702981,"A","4","A","1","21","Pinus sylvestris",24,45,65,30,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",90,100,100,0,NA,NA,NA,NA,NA
+89,42.871971,-4.568364,"A","4","A","1","43","Quercus pyrenaica",16,25,44,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,3,">15 stems",3,">15 stems",3,">15 stems"
+91,42.872304,-4.543886,"A","1","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+92,42.858965,-4.837318,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+93,42.860494,-4.73944,"A","1",NA,NA,"21","Pinus sylvestris",4,18,NA,25,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,NA,100,NA,1,"1–4 stems",NA,NA,NA,NA
+95,42.860863,-4.714969,"A","4C","A","1","22","Pinus uncinata",NA,3,35,20,0,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,100,100,2,"5–15 stems",1,"1–4 stems",NA,NA
+96,42.861046,-4.702734,"A","4",NA,NA,"21","Pinus sylvestris",1,5,NA,20,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,40,NA,1,"1–4 stems",NA,NA,NA,NA
+96,42.861046,-4.702734,"A","4",NA,NA,"22","Pinus uncinata",NA,7,NA,20,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,60,NA,1,"1–4 stems",NA,NA,NA,NA
+100,42.86246,-4.604846,"A","4","A","4","71","Fagus sylvatica",46,34,56,0,0,"3","Polewood",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",80,100,100,2,"5–15 stems",NA,NA,NA,NA
+102,42.86262983,-4.56755122,"A","1","A","1","71","Fagus sylvatica",30,34,32,0,0,"4","Old growth",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",80,80,90,1,"1–4 stems",NA,NA,NA,NA
+103,42.863136,-4.555899,"A","3E","A","1","42","Quercus petraea",NA,27,31,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,NA,NA,1,"1–4 stems"
+103,42.863136,-4.555899,"A","3E","A","1","71","Fagus sylvatica",15,30,10,0,0,"3","Polewood",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",90,20,20,3,">15 stems",1,"1–4 stems",1,"1–4 stems"
+103,42.863136,-4.555899,"A","3E","A","1","74","Corylus avellana",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+104,42.863302,-4.543662,"A","4","A","1","278","Sorbus aria",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",1,"1–4 stems"
+104,42.863302,-4.543662,"A","4","A","1","71","Fagus sylvatica",18,29,36,0,0,"3","Polewood",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",80,70,70,3,">15 stems",2,"5–15 stems",3,">15 stems"
+105,42.849767,-4.849284,"A","1",NA,NA,"21","Pinus sylvestris",NA,12,NA,15,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,50,90,NA,2,"5–15 stems",NA,NA,NA,NA
+105,42.849767,-4.849284,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",1,"1–4 stems",NA,NA
+106,42.849964,-4.837051,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+107,42.851306,-4.751421,"A","1",NA,NA,"21","Pinus sylvestris",16,51,NA,25,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,50,100,NA,0,NA,NA,NA,NA,NA
+108,42.852406,-4.678019,"A","1","A","1","25","Pinus nigra",6,27,43,25,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",80,90,90,0,NA,NA,NA,NA,NA
+112,42.834223,-4.689762,"A","1",NA,NA,"43","Quercus pyrenaica",4,10,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,90,90,NA,2,"5–15 stems",3,">15 stems",NA,NA
+128,42.94497,-4.496672,"A","4","A","1","42","Quercus petraea",33,37,20,0,0,"3","Polewood",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",70,60,40,3,">15 stems",1,"1–4 stems",3,">15 stems"
+128,42.94497,-4.496672,"A","4","A","1","43","Quercus pyrenaica",NA,NA,20,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,40,NA,NA,NA,NA,1,"1–4 stems"
+129,42.94513,-4.484419,"A","1",NA,NA,"43","Quercus pyrenaica",34,38,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+144,42.918438,-4.459274,"A","1",NA,NA,"42","Quercus petraea",31,34,NA,0,NA,"4","Old growth",4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,90,60,NA,3,">15 stems",3,">15 stems",NA,NA
+144,42.918438,-4.459274,"A","1",NA,NA,"71","Fagus sylvatica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+145,42.918594,-4.447025,"A","1",NA,NA,"43","Quercus pyrenaica",35,35,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,3,">15 stems",3,">15 stems",NA,NA
+145,42.918594,-4.447025,"A","1",NA,NA,"71","Fagus sylvatica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",NA,NA,NA,NA
+146,42.918901,-4.422528,"A","4","A","1","215","Crataegus monogyna",NA,NA,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,1,"1–4 stems",1,"1–4 stems"
+146,42.918901,-4.422528,"A","4","A","1","43","Quercus pyrenaica",3,2,3,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,60,60,3,">15 stems",3,">15 stems",3,">15 stems"
+147,42.919053,-4.410279,"A","4","A","1","42","Quercus petraea",30,23,25,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,80,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+147,42.919053,-4.410279,"A","4","A","1","71","Fagus sylvatica",NA,1,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,NA,NA,1,"1–4 stems",2,"5–15 stems"
+152,42.908962,-4.4958,"A","1",NA,NA,"43","Quercus pyrenaica",15,20,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,60,70,NA,3,">15 stems",NA,NA,NA,NA
+157,42.911631,-4.275352,"A","4","A","4","43","Quercus pyrenaica",16,18,59,0,0,NA,NA,2,"Thicket",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,90,3,">15 stems",3,">15 stems",3,">15 stems"
+159,42.899799,-4.507827,"A","1",NA,NA,"43","Quercus pyrenaica",15,23,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+163,42.890797,-4.507608,"A","4C",NA,NA,"43","Quercus pyrenaica",NA,8,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+166,42.893625,-4.27498,"A","1",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",NA,NA
+166,42.893625,-4.27498,"A","1",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,3,">15 stems",3,">15 stems",NA,NA
+169,42.882273,-4.470666,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+170,42.885025,-4.238067,"A","3E","A","1","42","Quercus petraea",NA,17,16,0,0,"2","Thicket",4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",30,40,40,2,"5–15 stems",NA,NA,NA,NA
+170,42.885025,-4.238067,"A","3E","A","1","57","Salix spp.",NA,5,4,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,3,">15 stems",NA,NA,NA,NA
+170,42.885025,-4.238067,"A","3E","A","1","74","Corylus avellana",NA,2,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,30,NA,NA,3,">15 stems",1,"1–4 stems"
+177,42.875619,-4.27461,"A","4",NA,NA,"43","Quercus pyrenaica",2,3,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,3,">15 stems",3,">15 stems",NA,NA
+179,42.876022,-4.237887,"A","1",NA,NA,"42","Quercus petraea",1,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+179,42.876022,-4.237887,"A","1",NA,NA,"43","Quercus pyrenaica",25,35,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,70,70,NA,3,">15 stems",2,"5–15 stems",NA,NA
+182,42.86718041,-4.22554958,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,16,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,2,"5–15 stems",2,"5–15 stems",1,"1–4 stems"
+183,42.854627,-4.518967,"A","4",NA,NA,"43","Quercus pyrenaica",26,30,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,70,NA,3,">15 stems",2,"5–15 stems",NA,NA
+183,42.854627,-4.518967,"A","4",NA,NA,"71","Fagus sylvatica",NA,6,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,2,"5–15 stems",NA,NA
+189,42.847769,-4.347466,"A","1",NA,NA,"25","Pinus nigra",11,30,NA,25,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,100,NA,1,"1–4 stems",NA,NA,NA,NA
+191,42.83818,-4.396202,"A","3E",NA,NA,"37","Juniperus communis",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,40,NA,2,"5–15 stems",3,">15 stems",NA,NA
+191,42.83818,-4.396202,"A","3E",NA,NA,"43","Quercus pyrenaica",NA,2,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,70,50,NA,NA,NA,3,">15 stems",NA,NA
+192,42.839607,-4.273869,"A","1",NA,NA,"25","Pinus nigra",27,44,NA,30,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,100,NA,1,"1–4 stems",NA,NA,NA,NA
+195,42.81307064,-4.89692111,NA,NA,"A","1","21","Pinus sylvestris",NA,NA,14,10,21,NA,NA,1,"Young growth",2,"Thicket",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,100,100,NA,NA,1,"1–4 stems",NA,NA
+195,42.81307064,-4.89692111,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,60,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+196,42.813167,-4.884886,"A","3E","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+197,42.795166,-4.884339,"A","4","A","1","43","Quercus pyrenaica",12,1,5,0,0,"3","Polewood",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",90,80,30,3,">15 stems",3,">15 stems",NA,NA
+199,42.777565,-4.859357,"A","3E","A","6C","215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",2,"5–15 stems"
+199,42.777565,-4.859357,"A","3E","A","6C","43","Quercus pyrenaica",NA,10,2,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,2,"5–15 stems",3,">15 stems"
+201,42.759364,-4.871033,"A","4",NA,NA,"25","Pinus nigra",NA,2,NA,40,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,NA,30,NA,0,NA,NA,NA,NA,NA
+202,42.750164,-4.882975,"A","1",NA,NA,"21","Pinus sylvestris",6,10,NA,0,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,40,100,NA,3,">15 stems",3,">15 stems",NA,NA
+204,42.740962,-4.894913,"A","3E","A","1","21","Pinus sylvestris",44,46,29,30,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",40,90,90,NA,NA,1,"1–4 stems",NA,NA
+204,42.740962,-4.894913,"A","3E","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,2,"5–15 stems",1,"1–4 stems"
+206,42.741363,-4.870492,"A","1",NA,NA,"21","Pinus sylvestris",52,14,NA,35,4,"2","Thicket",4,"Old growth",1,"Young growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",40,100,100,NA,NA,NA,NA,2,"5–15 stems"
+207,42.731961,-4.894639,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+208,42.732163,-4.88243,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+209,42.723162,-4.882158,"A","1",NA,NA,"21","Pinus sylvestris",8,13,NA,35,NA,"1","Young growth",4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,40,50,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+209,42.723162,-4.882158,"A","1",NA,NA,"21","Pinus sylvestris",8,13,NA,35,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,50,50,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+210,42.714161,-4.881886,"A","1",NA,NA,"21","Pinus sylvestris",20,16,NA,35,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,40,40,NA,1,"1–4 stems",NA,NA,NA,NA
+214,42.69636,-4.86914,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+216,42.68716,-4.88107,"A","1",NA,NA,"21","Pinus sylvestris",30,45,NA,35,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,40,100,NA,0,NA,NA,NA,NA,NA
+218,42.687558,-4.856669,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+220,42.668957,-4.892724,"A","1",NA,NA,"21","Pinus sylvestris",58,31,NA,35,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,40,90,NA,0,NA,NA,NA,NA,NA
+220,42.668957,-4.892724,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",2,"5–15 stems",NA,NA
+223,42.79596,-4.835453,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+224,42.796734,-4.786564,"A","1",NA,NA,"43","Quercus pyrenaica",1,2,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,3,">15 stems",3,">15 stems",NA,NA
+231,42.772443,-4.602519,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+233,42.77362686,-4.54141932,NA,NA,"A","1","21","Pinus sylvestris",NA,NA,17,15,25,NA,NA,2,"Thicket",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,60,90,1,"1–4 stems",NA,NA,NA,NA
+233,42.77362686,-4.54141932,NA,NA,"A","1","25","Pinus nigra",NA,NA,1,15,NA,"3","Polewood",2,"Thicket",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,20,NA,2,"5–15 stems",1,"1–4 stems",NA,NA
+233,42.77362686,-4.54141932,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,NA,0,NA,"2","Thicket",2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,70,20,NA,3,">15 stems",NA,NA,NA,NA
+235,42.761666,-4.724451,"A","1",NA,NA,"43","Quercus pyrenaica",4,7,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+238,42.763948,-4.565635,"A","4",NA,NA,"25","Pinus nigra",NA,NA,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,50,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+238,42.763948,-4.565635,"A","4",NA,NA,"25","Pinus nigra",NA,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,60,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+239,42.764114,-4.553418,"A","4C","A","4","25","Pinus nigra",NA,1,28,15,35,"3","Polewood",3,"Polewood",3,"Polewood",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",60,40,60,2,"5–15 stems",NA,NA,NA,NA
+239,42.764114,-4.553418,"A","4C","A","4","43","Quercus pyrenaica",NA,1,17,0,35,"2","Thicket",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,60,40,3,">15 stems",3,">15 stems",3,">15 stems"
+240,42.76428,-4.5412,"A","4C",NA,NA,"25","Pinus nigra",NA,NA,NA,15,NA,"3","Polewood",2,"Thicket",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,10,NA,2,"5–15 stems",NA,NA,NA,NA
+240,42.76428,-4.5412,"A","4C",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,60,30,NA,3,">15 stems",1,"1–4 stems",NA,NA
+243,42.754268,-4.61427,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+244,42.754439,-4.602055,"A","3E",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+246,42.754778,-4.577624,"A","4","A","1","26","Pinus pinaster",47,35,28,0,0,"4","Old growth",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",2,"Artificial",2,"Plantation",90,90,90,1,"1–4 stems",NA,NA,NA,NA
+247,42.754946,-4.565409,"A","4C","A","1","21","Pinus sylvestris",NA,4,18,15,40,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,30,50,2,"5–15 stems",NA,NA,NA,NA
+247,42.754946,-4.565409,"A","4C","A","1","43","Quercus pyrenaica",NA,5,9,0,40,"2","Thicket",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,50,20,3,">15 stems",2,"5–15 stems",3,">15 stems"
+248,42.755112,-4.553193,"A","4C","A","4","21","Pinus sylvestris",NA,3,38,15,0,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,60,70,2,"5–15 stems",NA,NA,NA,NA
+248,42.755112,-4.553193,"A","4C","A","4","43","Quercus pyrenaica",NA,NA,2,0,20,"2","Thicket",3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,40,30,3,">15 stems",2,"5–15 stems",NA,NA
+249,42.755277,-4.540977,"A","4C","A","4","21","Pinus sylvestris",NA,8,41,20,0,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,60,70,1,"1–4 stems",NA,NA,NA,NA
+249,42.755277,-4.540977,"A","4C","A","4","25","Pinus nigra",NA,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,60,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+249,42.755277,-4.540977,"A","4C","A","4","25","Pinus nigra",NA,NA,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,60,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+249,42.755277,-4.540977,"A","4C","A","4","43","Quercus pyrenaica",NA,2,1,0,25,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,30,3,">15 stems",2,"5–15 stems",3,">15 stems"
+251,42.742728,-4.785012,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+253,42.744209,-4.687314,"A","1",NA,NA,"43","Quercus pyrenaica",5,10,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+254,42.745437,-4.601823,"A","4","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+256,42.745944,-4.565182,"A","4C",NA,NA,"21","Pinus sylvestris",NA,NA,NA,NA,NA,"1","Young growth",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,50,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+256,42.745944,-4.565182,"A","4C",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,40,NA,2,"5–15 stems",3,">15 stems",NA,NA
+258,42.733536,-4.796964,"A","4","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+261,42.736774,-4.577167,"A","4C","A","1","26","Pinus pinaster",NA,4,8,20,0,NA,NA,3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",5,"Mixed: seed and plantation",NA,20,20,2,"5–15 stems",NA,NA,NA,NA
+261,42.736774,-4.577167,"A","4C","A","1","43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,2,"5–15 stems",3,">15 stems"
+262,42.736942,-4.564956,"A","4C","A","1","21","Pinus sylvestris",NA,8,31,20,0,"1","Young growth",2,"Thicket",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",50,60,70,2,"5–15 stems",NA,NA,NA,NA
+262,42.736942,-4.564956,"A","4C","A","1","43","Quercus pyrenaica",NA,NA,NA,0,30,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,10,3,">15 stems",NA,NA,1,"1–4 stems"
+263,42.72484493,-4.78452548,NA,NA,"A","1","21","Pinus sylvestris",NA,NA,31,15,0,NA,NA,2,"Thicket",3,"Polewood",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",NA,100,100,2,"5–15 stems",2,"5–15 stems",NA,NA
+264,42.724915,-4.772288,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+265,42.727772,-4.576939,"A","1",NA,NA,"21","Pinus sylvestris",27,27,NA,0,NA,"3","Polewood",4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,70,70,NA,1,"1–4 stems",NA,NA,NA,NA
+265,42.727772,-4.576939,"A","1",NA,NA,"25","Pinus nigra",2,5,NA,0,NA,NA,NA,3,"Polewood",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+265,42.727772,-4.576939,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",3,">15 stems",NA,NA
+268,42.716103,-4.759825,"A","1",NA,NA,"25","Pinus nigra",5,17,NA,30,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,80,70,NA,1,"1–4 stems",NA,NA,NA,NA
+269,42.71877,-4.576711,"A","4",NA,NA,"21","Pinus sylvestris",NA,22,NA,20,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,70,NA,1,"1–4 stems",NA,NA,NA,NA
+269,42.71877,-4.576711,"A","4",NA,NA,"25","Pinus nigra",NA,1,NA,20,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,50,30,NA,1,"1–4 stems",NA,NA,NA,NA
+270,42.718938,-4.564503,"A","1",NA,NA,"25","Pinus nigra",6,43,NA,25,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,90,90,NA,0,NA,NA,NA,NA,NA
+270,42.718938,-4.564503,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",1,"1–4 stems",NA,NA
+271,42.705953,-4.832798,"A","3E","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,1,"1–4 stems",NA,NA
+271,42.705953,-4.832798,"A","3E","A","1","43","Quercus pyrenaica",1,20,27,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,3,">15 stems",3,">15 stems",2,"5–15 stems"
+272,42.706913,-4.771775,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+274,42.707288,-4.747365,"A","3E","A","1","21","Pinus sylvestris",6,30,17,0,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",90,70,70,1,"1–4 stems",NA,NA,NA,NA
+274,42.707288,-4.747365,"A","3E","A","1","25","Pinus nigra",NA,2,1,0,0,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,20,20,1,"1–4 stems",NA,NA,NA,NA
+276,42.709258,-4.613103,"A","4C",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+279,42.6981,-4.759316,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+284,42.689286,-4.74686,"A","1",NA,NA,"21","Pinus sylvestris",16,24,NA,30,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,60,NA,1,"1–4 stems",NA,NA,NA,NA
+284,42.689286,-4.74686,"A","1",NA,NA,"25","Pinus nigra",5,9,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,40,NA,1,"1–4 stems",NA,NA,NA,NA
+285,42.689471,-4.734659,"A","1",NA,NA,"21","Pinus sylvestris",24,24,NA,40,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","D",NA,NA,NA,NA,NA,80,70,NA,1,"1–4 stems",NA,NA,NA,NA
+285,42.689471,-4.734659,"A","1",NA,NA,"26","Pinus pinaster",14,6,NA,40,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","D",NA,NA,NA,NA,NA,30,10,NA,1,"1–4 stems",NA,NA,NA,NA
+286,42.689655,-4.722457,"A","4","A","1","21","Pinus sylvestris",14,15,21,35,0,"3","Polewood",4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",50,50,50,1,"1–4 stems",NA,NA,NA,NA
+286,42.689655,-4.722457,"A","4","A","1","25","Pinus nigra",14,20,18,35,0,NA,NA,4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,40,40,0,NA,NA,NA,NA,NA
+286,42.689655,-4.722457,"A","4","A","1","26","Pinus pinaster",8,4,1,35,0,"2","Thicket",4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",30,10,10,1,"1–4 stems",NA,NA,NA,NA
+288,42.690557,-4.661447,"A","1",NA,NA,"43","Quercus pyrenaica",3,4,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+289,42.690908,-4.637042,"A","1",NA,NA,"43","Quercus pyrenaica",1,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+291,42.69218251,-4.53947652,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,5,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,3,">15 stems",3,">15 stems",3,">15 stems"
+292,42.680098,-4.758808,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+294,42.68047,-4.734408,"A","1",NA,NA,"25","Pinus nigra",12,13,NA,35,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,60,60,NA,1,"1–4 stems",NA,NA,NA,NA
+296,42.680837,-4.710008,"A","1",NA,NA,"25","Pinus nigra",17,28,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,70,NA,0,NA,NA,NA,NA,NA
+296,42.680837,-4.710008,"A","1",NA,NA,"26","Pinus pinaster",18,9,NA,35,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,30,30,NA,0,NA,NA,NA,NA,NA
+299,42.670529,-4.795147,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+300,42.670719,-4.78295,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+302,42.671283,-4.746356,"A","3E",NA,NA,"21","Pinus sylvestris",16,21,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,70,50,NA,1,"1–4 stems",NA,NA,NA,NA
+304,42.671652,-4.72196,"A","1",NA,NA,"21","Pinus sylvestris",9,25,NA,25,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,NA,40,NA,0,NA,NA,NA,NA,NA
+304,42.671652,-4.72196,"A","1",NA,NA,"25","Pinus nigra",2,18,NA,25,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,50,NA,1,"1–4 stems",NA,NA,NA,NA
+304,42.671652,-4.72196,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,2,"5–15 stems",3,">15 stems",NA,NA
+305,42.67186295,-4.70984871,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,3,">15 stems",3,">15 stems",3,">15 stems"
+306,42.672197,-4.685364,"A","3E","A","1","25","Pinus nigra",3,19,8,0,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",90,20,20,1,"1–4 stems",NA,NA,NA,NA
+306,42.672197,-4.685364,"A","3E","A","1","37","Juniperus communis",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","1","Seed",1,"Natural",1,"Seed",NA,10,10,NA,NA,1,"1–4 stems",2,"5–15 stems"
+306,42.672197,-4.685364,"A","3E","A","1","43","Quercus pyrenaica",NA,13,19,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,2,"5–15 stems",2,"5–15 stems"
+311,42.67376,-4.575573,"A","4",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+313,42.818619,-4.518085,"A","4C","A","1","43","Quercus pyrenaica",NA,8,29,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,3,">15 stems",3,">15 stems",3,">15 stems"
+319,42.794038,-4.321844,"A","1",NA,NA,"21","Pinus sylvestris",6,33,NA,25,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,100,NA,1,"1–4 stems",NA,NA,NA,NA
+320,42.794317,-4.297395,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+321,42.78261,-4.517205,"A","1",NA,NA,"43","Quercus pyrenaica",25,32,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,90,90,NA,3,">15 stems",2,"5–15 stems",NA,NA
+325,42.764606,-4.516765,"A","4C","A","1","42","Quercus petraea",NA,5,23,0,40,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,100,1,"1–4 stems",2,"5–15 stems",2,"5–15 stems"
+326,42.764927,-4.49233,"A","3E",NA,NA,"25","Pinus nigra",NA,3,NA,NA,NA,"1","Young growth",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,50,NA,NA,2,"5–15 stems",NA,NA,NA,NA
+326,42.764927,-4.49233,"A","3E",NA,NA,"37","Juniperus communis",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+326,42.764927,-4.49233,"A","3E",NA,NA,"43","Quercus pyrenaica",1,9,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,3,">15 stems",3,">15 stems",NA,NA
+327,42.765243,-4.467894,"A","1","A","1","37","Juniperus communis",NA,NA,NA,NA,20,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",1,"Seed",NA,NA,20,2,"5–15 stems",3,">15 stems",2,"5–15 stems"
+327,42.765243,-4.467894,"A","1","A","1","45","Quercus ilex",2,24,44,0,40,"2","Thicket",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",90,80,80,3,">15 stems",3,">15 stems",2,"5–15 stems"
+330,42.755765,-4.50433,"A","1",NA,NA,"21","Pinus sylvestris",NA,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,70,NA,NA,NA,NA,1,"1–4 stems",NA,NA
+330,42.755765,-4.50433,"A","1",NA,NA,"25","Pinus nigra",NA,16,NA,20,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,90,90,NA,3,">15 stems",NA,NA,NA,NA
+332,42.756083,-4.479897,"A","1",NA,NA,"43","Quercus pyrenaica",NA,3,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",3,">15 stems",NA,NA
+333,42.757305,-4.382164,"A","4C","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+335,42.746601,-4.516326,"A","1",NA,NA,"43","Quercus pyrenaica",1,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",2,"5–15 stems",NA,NA
+336,42.746922,-4.491898,"A","4",NA,NA,"21","Pinus sylvestris",5,21,NA,40,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,40,50,NA,1,"1–4 stems",NA,NA,NA,NA
+336,42.746922,-4.491898,"A","4",NA,NA,"21","Pinus sylvestris",5,21,NA,40,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,50,NA,1,"1–4 stems",NA,NA,NA,NA
+336,42.746922,-4.491898,"A","4",NA,NA,"25","Pinus nigra",6,9,NA,40,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,40,NA,0,NA,NA,NA,NA,NA
+336,42.746922,-4.491898,"A","4",NA,NA,"43","Quercus pyrenaica",5,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",NA,NA,NA,NA
+339,42.748302,-4.381964,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+341,42.749845,-4.247591,"A","1",NA,NA,"25","Pinus nigra",8,10,NA,0,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,100,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+342,42.739002,-4.406191,"A","4C","A","1","25","Pinus nigra",NA,3,20,20,0,"2","Thicket",3,"Polewood",3,"Polewood",3,"Naturalized","5","Mixed: seed and plantation",2,"Artificial",2,"Plantation",40,30,30,1,"1–4 stems",1,"1–4 stems",1,"1–4 stems"
+342,42.739002,-4.406191,"A","4C","A","1","44","Quercus faginea",NA,NA,NA,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,40,3,">15 stems",NA,NA,2,"5–15 stems"
+343,42.739151,-4.393978,"A","4",NA,NA,"21","Pinus sylvestris",NA,5,NA,0,NA,NA,NA,4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,NA,30,NA,NA,NA,1,"1–4 stems",NA,NA
+343,42.739151,-4.393978,"A","4",NA,NA,"45","Quercus ilex",NA,3,NA,0,NA,"3","Polewood",2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,60,50,NA,2,"5–15 stems",NA,NA,NA,NA
+344,42.740299,-4.296268,"A","4","A","1","21","Pinus sylvestris",NA,3,7,20,0,"1","Young growth",3,"Polewood",3,"Polewood",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",70,20,20,0,NA,NA,NA,NA,NA
+344,42.740299,-4.296268,"A","4","A","1","25","Pinus nigra",5,39,63,20,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",70,80,80,0,NA,NA,NA,NA,NA
+346,42.741235,-4.210767,"A","4",NA,NA,"25","Pinus nigra",NA,26,NA,20,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,90,NA,2,"5–15 stems",NA,NA,NA,NA
+351,42.711994,-4.405581,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+353,42.713698,-4.259079,"A","1",NA,NA,"43","Quercus pyrenaica",14,7,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+355,42.702991,-4.405378,"A","4C","A","1","25","Pinus nigra",NA,9,11,30,0,"3","Polewood",3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",70,60,50,0,NA,NA,NA,NA,NA
+355,42.702991,-4.405378,"A","4C","A","1","45","Quercus ilex",NA,1,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,50,3,">15 stems",3,">15 stems",2,"5–15 stems"
+356,42.704489,-4.28330905,NA,NA,"A","4","21","Pinus sylvestris",NA,NA,3,0,0,NA,NA,3,"Polewood",4,"Old growth",2,"Artificial","J",NA,3,"Naturalized",5,"Mixed: seed and plantation",NA,30,20,1,"1–4 stems",1,"1–4 stems",NA,NA
+356,42.704489,-4.28330905,NA,NA,"A","4","43","Quercus pyrenaica",NA,NA,23,0,0,"2","Thicket",2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",70,70,70,3,">15 stems",3,">15 stems",1,"1–4 stems"
+357,42.70456,-4.271104,"A","1",NA,NA,"21","Pinus sylvestris",1,4,NA,0,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,60,50,NA,1,"1–4 stems",NA,NA,NA,NA
+358,42.704828,-4.246689,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+359,42.695004,-4.319741,"A","1","A","4","25","Pinus nigra",NA,23,10,15,30,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",80,90,70,1,"1–4 stems",NA,NA,NA,NA
+359,42.695004,-4.319741,"A","1","A","4","45","Quercus ilex",NA,NA,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,20,2,"5–15 stems",1,"1–4 stems",1,"1–4 stems"
+361,42.683746,-4.50259,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",NA,NA,NA,NA
+362,42.685574,-4.35616,NA,NA,NA,NA,"45","Quercus ilex",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+364,42.68586,-4.331754,"A","4","A","1","25","Pinus nigra",25,42,35,25,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,80,80,0,NA,NA,NA,NA,NA
+366,42.68628,-4.295144,"A","4",NA,NA,"23","Pinus pinea",NA,5,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",NA,NA,NA,NA
+366,42.68628,-4.295144,"A","4",NA,NA,"25","Pinus nigra",2,5,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,50,NA,0,NA,NA,NA,NA,NA
+366,42.68628,-4.295144,"A","4",NA,NA,"36","Cupressus sempervirens",2,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,40,NA,NA,0,NA,NA,NA,NA,NA
+369,42.677277,-4.294957,"A","4","A","1","25","Pinus nigra",NA,19,32,25,0,"3","Polewood",4,"Old growth",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",60,60,60,1,"1–4 stems",NA,NA,NA,NA
+381,42.659957,-4.892451,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+383,42.650956,-4.892178,"A","4",NA,NA,"21","Pinus sylvestris",14,13,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,50,NA,0,NA,NA,NA,NA,NA
+383,42.650956,-4.892178,"A","4",NA,NA,"25","Pinus nigra",10,4,NA,35,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,NA,30,NA,0,NA,NA,NA,NA,NA
+383,42.650956,-4.892178,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+385,42.641955,-4.891905,"A","1","A","4","21","Pinus sylvestris",24,31,13,30,0,"3","Polewood",3,"Polewood",3,"Polewood",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",60,70,50,1,"1–4 stems",NA,NA,NA,NA
+387,42.642356,-4.867522,"A","1",NA,NA,"21","Pinus sylvestris",1,10,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,NA,40,NA,0,NA,NA,NA,NA,NA
+388,42.632955,-4.891632,"A","1","A","4","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,10,NA,NA,3,">15 stems",3,">15 stems"
+389,42.633156,-4.879442,"A","1",NA,NA,"21","Pinus sylvestris",4,28,NA,30,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,70,60,NA,1,"1–4 stems",NA,NA,NA,NA
+389,42.633156,-4.879442,"A","1",NA,NA,"25","Pinus nigra",NA,NA,NA,30,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,40,20,NA,2,"5–15 stems",NA,NA,NA,NA
+389,42.633156,-4.879442,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+391,42.633553,-4.855063,NA,NA,"A","1","21","Pinus sylvestris",2,22,11,10,0,"2","Thicket",2,"Thicket",3,"Polewood",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",60,50,40,NA,NA,1,"1–4 stems",NA,NA
+391,42.633553,-4.855063,NA,NA,"A","1","25","Pinus nigra",1,8,20,10,0,"1","Young growth",2,"Thicket",3,"Polewood",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",40,50,60,1,"1–4 stems",1,"1–4 stems",NA,NA
+392,42.6236709,-4.89115871,NA,NA,"A","1","21","Pinus sylvestris",NA,NA,12,10,0,NA,NA,2,"Thicket",3,"Polewood",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,40,40,NA,NA,1,"1–4 stems",NA,NA
+392,42.6236709,-4.89115871,NA,NA,"A","1","25","Pinus nigra",NA,NA,20,10,0,"1","Young growth",2,"Thicket",3,"Polewood",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",40,50,50,NA,NA,1,"1–4 stems",NA,NA
+392,42.6236709,-4.89115871,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,3,">15 stems",3,">15 stems",3,">15 stems"
+393,42.624155,-4.879171,"A","1",NA,NA,"21","Pinus sylvestris",2,11,NA,25,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,50,40,NA,0,NA,NA,NA,NA,NA
+393,42.624155,-4.879171,"A","1",NA,NA,"25","Pinus nigra",2,13,NA,25,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,40,40,NA,1,"1–4 stems",NA,NA,NA,NA
+393,42.624155,-4.879171,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+394,42.624354,-4.866984,"A","1",NA,NA,"25","Pinus nigra",3,17,NA,30,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,40,40,NA,0,NA,NA,NA,NA,NA
+394,42.624354,-4.866984,"A","1",NA,NA,"25","Pinus nigra",3,17,NA,30,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,40,NA,0,NA,NA,NA,NA,NA
+394,42.624354,-4.866984,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+395,42.614953,-4.891087,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+397,42.615353,-4.866715,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+399,42.605953,-4.890814,"A","1",NA,NA,"25","Pinus nigra",8,17,NA,35,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,40,40,NA,0,NA,NA,NA,NA,NA
+399,42.605953,-4.890814,"A","1",NA,NA,"25","Pinus nigra",8,17,NA,35,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,50,40,NA,0,NA,NA,NA,NA,NA
+399,42.605953,-4.890814,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+400,42.606153,-4.87863,"A","4","A","1","25","Pinus nigra",11,15,15,35,0,"3","Polewood",4,"Old growth",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",50,50,50,0,NA,NA,NA,NA,NA
+400,42.606153,-4.87863,"A","4","A","1","25","Pinus nigra",11,15,15,35,0,"1","Young growth",4,"Old growth",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",40,50,50,0,NA,NA,NA,NA,NA
+400,42.606153,-4.87863,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+401,42.60655,-4.854261,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+406,42.578951,-4.889998,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",3,">15 stems",NA,NA
+409,42.543148,-4.876739,"A","4","A","1","43","Quercus pyrenaica",1,22,30,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,60,60,3,">15 stems",3,">15 stems",3,">15 stems"
+410,42.543346,-4.864567,"A","4","A","1","25","Pinus nigra",19,17,24,25,0,"4","Old growth",4,"Old growth",4,"Old growth",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",50,60,60,1,"1–4 stems",NA,NA,2,"5–15 stems"
+410,42.543346,-4.864567,"A","4","A","1","26","Pinus pinaster",22,9,16,25,0,NA,NA,4,"Old growth",4,"Old growth",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",NA,40,40,1,"1–4 stems",NA,NA,2,"5–15 stems"
+413,42.524946,-4.888369,"A","1",NA,NA,"25","Pinus nigra",2,36,NA,10,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,90,NA,2,"5–15 stems",NA,NA,NA,NA
+413,42.524946,-4.888369,"A","1",NA,NA,"25","Pinus nigra",2,36,NA,10,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,90,90,NA,2,"5–15 stems",NA,NA,NA,NA
+413,42.524946,-4.888369,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,3,">15 stems",2,"5–15 stems",NA,NA
+414,42.525344,-4.864031,"A","1",NA,NA,"25","Pinus nigra",9,28,NA,25,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,30,90,NA,0,NA,NA,NA,NA,NA
+414,42.525344,-4.864031,"A","1",NA,NA,"25","Pinus nigra",9,28,NA,25,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,40,90,NA,0,NA,NA,NA,NA,NA
+414,42.525344,-4.864031,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,3,">15 stems",1,"1–4 stems",NA,NA
+415,42.515945,-4.888098,"A","1",NA,NA,"25","Pinus nigra",1,25,NA,20,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,90,NA,2,"5–15 stems",NA,NA,NA,NA
+415,42.515945,-4.888098,"A","1",NA,NA,"25","Pinus nigra",1,25,NA,20,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,90,90,NA,2,"5–15 stems",NA,NA,NA,NA
+415,42.515945,-4.888098,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,3,">15 stems",1,"1–4 stems",NA,NA
+417,42.507342,-4.863496,"A","4","A","1","25","Pinus nigra",6,35,34,25,0,"2","Thicket",4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",90,80,80,1,"1–4 stems",NA,NA,NA,NA
+417,42.507342,-4.863496,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+419,42.663374,-4.672924,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",2,"5–15 stems",NA,NA
+420,42.663552,-4.660727,"A","3E","A","1","21","Pinus sylvestris",NA,15,11,35,0,NA,NA,4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,60,60,NA,NA,NA,NA,1,"1–4 stems"
+420,42.663552,-4.660727,"A","3E","A","1","43","Quercus pyrenaica",NA,NA,3,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,2,"5–15 stems",3,">15 stems"
+420,42.663552,-4.660727,"A","3E","A","1","58","Populus nigra",5,NA,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,90,NA,NA,3,">15 stems",NA,NA,NA,NA
+422,42.66459,-4.587543,"A","1",NA,NA,"43","Quercus pyrenaica",2,3,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+423,42.664758,-4.575345,"A","1",NA,NA,"21","Pinus sylvestris",20,21,NA,45,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,40,80,NA,3,">15 stems",NA,NA,NA,NA
+423,42.664758,-4.575345,"A","1",NA,NA,"21","Pinus sylvestris",20,21,NA,45,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,90,80,NA,3,">15 stems",NA,NA,NA,NA
+423,42.664758,-4.575345,"A","1",NA,NA,"43","Quercus pyrenaica",2,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,0,NA,1,"1–4 stems",NA,NA
+426,42.65328,-4.745852,"A","3E",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+428,42.65455,-4.660488,"A","1",NA,NA,"37","Juniperus communis",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+429,42.655075,-4.623901,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+430,42.655587,-4.587314,"A","1",NA,NA,"43","Quercus pyrenaica",2,3,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,3,">15 stems",2,"5–15 stems",NA,NA
+432,42.655923,-4.562922,"A","1",NA,NA,"25","Pinus nigra",7,33,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,90,NA,1,"1–4 stems",NA,NA,NA,NA
+434,42.643716,-4.782178,"A","3E","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+435,42.643905,-4.769986,"A","1",NA,NA,"25","Pinus nigra",27,30,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,60,NA,0,NA,NA,NA,NA,NA
+435,42.643905,-4.769986,"A","1",NA,NA,"26","Pinus pinaster",42,12,NA,30,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,70,30,NA,0,NA,NA,NA,NA,NA
+437,42.644279,-4.7456,"A","1",NA,NA,"21","Pinus sylvestris",8,12,NA,30,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,50,NA,0,NA,NA,NA,NA,NA
+437,42.644279,-4.7456,"A","1",NA,NA,"21","Pinus sylvestris",8,12,NA,30,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,70,50,NA,0,NA,NA,NA,NA,NA
+437,42.644279,-4.7456,"A","1",NA,NA,"25","Pinus nigra",10,27,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,NA,50,NA,0,NA,NA,NA,NA,NA
+438,42.644464,-4.733407,"A","1",NA,NA,"21","Pinus sylvestris",15,15,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,70,50,NA,0,NA,NA,NA,NA,NA
+438,42.644464,-4.733407,"A","1",NA,NA,"21","Pinus sylvestris",15,15,NA,35,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,50,50,NA,0,NA,NA,NA,NA,NA
+438,42.644464,-4.733407,"A","1",NA,NA,"25","Pinus nigra",5,9,NA,35,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,40,NA,1,"1–4 stems",NA,NA,NA,NA
+440,42.646585,-4.587085,"A","1",NA,NA,"26","Pinus pinaster",10,11,NA,0,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,30,NA,0,NA,1,"1–4 stems",NA,NA
+440,42.646585,-4.587085,"A","1",NA,NA,"43","Quercus pyrenaica",NA,8,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,2,"5–15 stems",NA,NA
+442,42.634524,-4.794112,NA,NA,"A","1","43","Quercus pyrenaica",3,NA,12,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,3,">15 stems",3,">15 stems",3,">15 stems"
+443,42.634714,-4.781921,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+444,42.635463,-4.733158,"A","4","A","1","21","Pinus sylvestris",3,16,10,30,0,NA,NA,3,"Polewood",3,"Polewood",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",NA,40,40,0,NA,NA,NA,1,"1–4 stems"
+444,42.635463,-4.733158,"A","4","A","1","25","Pinus nigra",10,17,21,30,0,"3","Polewood",3,"Polewood",3,"Polewood",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",50,40,40,NA,NA,NA,NA,1,"1–4 stems"
+444,42.635463,-4.733158,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+445,42.63619,-4.684392,"A","4","A","1","43","Quercus pyrenaica",16,1,3,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,3,">15 stems",2,"5–15 stems",1,"1–4 stems"
+446,42.636722,-4.647817,"A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+447,42.637919,-4.562471,"A","1",NA,NA,"43","Quercus pyrenaica",NA,22,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+448,42.638084,-4.550278,"A","4","A","1","21","Pinus sylvestris",11,15,21,40,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",80,80,80,1,"1–4 stems",NA,NA,NA,NA
+448,42.638084,-4.550278,"A","4","A","1","43","Quercus pyrenaica",4,1,6,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+449,42.625523,-4.793853,"A","4","A","1","25","Pinus nigra",2,36,35,20,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",60,70,80,2,"5–15 stems",NA,NA,1,"1–4 stems"
+449,42.625523,-4.793853,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,20,3,">15 stems",3,">15 stems",3,">15 stems"
+450,42.626461,-4.732908,"A","1",NA,NA,"21","Pinus sylvestris",23,52,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,NA,90,NA,1,"1–4 stems",NA,NA,NA,NA
+451,42.626645,-4.720718,"A","1",NA,NA,"25","Pinus nigra",6,10,NA,35,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+451,42.626645,-4.720718,"A","1",NA,NA,"26","Pinus pinaster",15,18,NA,35,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,30,NA,0,NA,NA,NA,NA,NA
+455,42.628916,-4.562246,"A","4","A","1","26","Pinus pinaster",10,14,18,0,0,"4","Old growth",4,"Old growth",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",50,60,70,2,"5–15 stems",NA,NA,NA,NA
+455,42.628916,-4.562246,"A","4","A","1","43","Quercus pyrenaica",1,NA,3,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,30,3,">15 stems",3,">15 stems",3,">15 stems"
+456,42.629082,-4.550055,"A","4","A","1","43","Quercus pyrenaica",NA,2,3,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+457,42.617089,-4.757033,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+459,42.618893,-4.635154,"A","4","A","1","43","Quercus pyrenaica",1,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,60,3,">15 stems",NA,NA,2,"5–15 stems"
+459,42.618893,-4.635154,"A","4","A","1","44","Quercus faginea",NA,1,2,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,40,NA,NA,3,">15 stems",1,"1–4 stems"
+460,42.619747,-4.57421,"A","1",NA,NA,"43","Quercus pyrenaica",7,10,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+462,42.62008,-4.549832,"A","1",NA,NA,"43","Quercus pyrenaica",7,9,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+464,42.606747,-4.842076,"A","4C","A","4","25","Pinus nigra",NA,15,32,15,0,"2","Thicket",2,"Thicket",3,"Polewood",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",50,90,90,3,">15 stems",NA,NA,NA,NA
+464,42.606747,-4.842076,"A","4C","A","4","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,3,">15 stems",3,">15 stems",2,"5–15 stems"
+466,42.610745,-4.573983,"A","4","A","1","21","Pinus sylvestris",17,25,26,60,0,"4","Old growth",4,"Old growth",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",70,70,80,0,NA,NA,NA,1,"1–4 stems"
+466,42.610745,-4.573983,"A","4","A","1","43","Quercus pyrenaica",2,3,2,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,20,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+467,42.611077,-4.549608,"A","1","A","4","25","Pinus nigra",6,38,31,25,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,80,80,3,">15 stems",NA,NA,1,"1–4 stems"
+467,42.611077,-4.549608,"A","1","A","4","43","Quercus pyrenaica",1,3,1,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+469,42.597746,-4.841811,"A","1",NA,NA,"21","Pinus sylvestris",29,43,NA,30,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,80,70,NA,0,NA,NA,NA,NA,NA
+469,42.597746,-4.841811,"A","1",NA,NA,"21","Pinus sylvestris",29,43,NA,30,NA,"2","Thicket",4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,40,70,NA,0,NA,NA,NA,NA,NA
+469,42.597746,-4.841811,"A","1",NA,NA,"25","Pinus nigra",NA,NA,NA,30,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","I",NA,NA,NA,NA,NA,NA,10,NA,0,NA,NA,NA,NA,NA
+469,42.597746,-4.841811,"A","1",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+471,42.598709,-4.780894,"A","1",NA,NA,"43","Quercus pyrenaica",1,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+474,42.602239,-4.537199,"A","4","A","1","21","Pinus sylvestris",19,5,9,0,0,"3","Polewood",4,"Old growth",4,"Old growth",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",90,50,50,NA,NA,NA,NA,1,"1–4 stems"
+474,42.602239,-4.537199,"A","4","A","1","43","Quercus pyrenaica",NA,9,16,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,50,50,3,">15 stems",3,">15 stems",2,"5–15 stems"
+476,42.590271,-4.744092,"A","1","A","4","21","Pinus sylvestris",11,20,15,40,0,"2","Thicket",4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",50,50,50,NA,NA,NA,NA,2,"5–15 stems"
+476,42.590271,-4.744092,"A","1","A","4","21","Pinus sylvestris",11,20,15,40,0,"3","Polewood",4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",50,50,50,NA,NA,NA,NA,2,"5–15 stems"
+476,42.590271,-4.744092,"A","1","A","4","25","Pinus nigra",13,23,16,40,0,NA,NA,4,"Old growth",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",NA,40,40,NA,NA,NA,NA,1,"1–4 stems"
+477,42.590639,-4.719727,"A","1",NA,NA,"25","Pinus nigra",17,51,NA,30,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,NA,100,NA,0,NA,NA,NA,NA,NA
+480,42.593073,-4.549162,"A","1",NA,NA,"21","Pinus sylvestris",17,24,NA,0,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,80,70,NA,0,NA,NA,NA,NA,NA
+480,42.593073,-4.549162,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+481,42.593237,-4.536978,"A","1",NA,NA,"43","Quercus pyrenaica",1,2,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,60,NA,3,">15 stems",3,">15 stems",NA,NA
+483,42.58407,-4.548939,"A","4",NA,NA,"25","Pinus nigra",4,23,NA,15,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,90,60,NA,3,">15 stems",NA,NA,NA,NA
+484,42.584234,-4.536757,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+485,42.574736,-4.573077,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+488,42.575395,-4.524355,"A","4","A","4","25","Pinus nigra",13,31,28,25,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",80,70,70,1,"1–4 stems",NA,NA,NA,NA
+488,42.575395,-4.524355,"A","4","A","4","43","Quercus pyrenaica",NA,NA,2,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,2,"5–15 stems",NA,NA,1,"1–4 stems"
+488,42.575395,-4.524355,"A","4","A","4","44","Quercus faginea",NA,NA,1,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,2,"5–15 stems",NA,NA,2,"5–15 stems"
+489,42.563634,-4.718985,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+491,42.5659,-4.560672,"A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+492,42.56623,-4.536315,"A","4","A","1","25","Pinus nigra",2,11,16,20,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,60,60,2,"5–15 stems",NA,NA,NA,NA
+492,42.56623,-4.536315,"A","4","A","1","43","Quercus pyrenaica",NA,4,7,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,40,3,">15 stems",3,">15 stems",3,">15 stems"
+493,42.566392,-4.524136,"A","4",NA,NA,"25","Pinus nigra",2,26,NA,40,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,60,NA,1,"1–4 stems",NA,NA,NA,NA
+493,42.566392,-4.524136,"A","4",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,3,">15 stems",3,">15 stems",NA,NA
+496,42.55739,-4.523917,"A","4","A","1","25","Pinus nigra",4,17,26,40,0,"3","Polewood",3,"Polewood",3,"Polewood",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",70,60,60,1,"1–4 stems",NA,NA,2,"5–15 stems"
+496,42.55739,-4.523917,"A","4","A","1","37","Juniperus communis",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",1,"Seed",NA,NA,10,NA,NA,2,"5–15 stems",2,"5–15 stems"
+496,42.55739,-4.523917,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,30,3,">15 stems",2,"5–15 stems",3,">15 stems"
+497,42.545263,-4.742838,"A","4","A","1","21","Pinus sylvestris",19,11,9,0,0,"4","Old growth",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",50,40,40,NA,NA,3,">15 stems",NA,NA
+497,42.545263,-4.742838,"A","4","A","1","43","Quercus pyrenaica",5,9,17,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,50,50,3,">15 stems",3,">15 stems",3,">15 stems"
+498,42.545448,-4.730665,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+500,42.548225,-4.535873,"A","4",NA,NA,"25","Pinus nigra",1,34,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,90,80,NA,1,"1–4 stems",NA,NA,NA,NA
+500,42.548225,-4.535873,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",1,"1–4 stems",NA,NA
+501,42.548387,-4.523698,"A","1",NA,NA,"25","Pinus nigra",3,18,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,70,70,NA,1,"1–4 stems",NA,NA,NA,NA
+501,42.548387,-4.523698,"A","1",NA,NA,"42","Quercus petraea",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",NA,NA,NA,NA
+501,42.548387,-4.523698,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",3,">15 stems",NA,NA
+503,42.539222,-4.535652,"A","4","A","4","25","Pinus nigra",4,28,38,25,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",90,80,80,1,"1–4 stems",NA,NA,NA,NA
+503,42.539222,-4.535652,"A","4","A","4","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",2,"5–15 stems",3,">15 stems"
+507,42.516541,-4.851597,"A","4",NA,NA,"25","Pinus nigra",12,34,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,40,80,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+507,42.516541,-4.851597,"A","4",NA,NA,"25","Pinus nigra",12,34,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,90,80,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+507,42.516541,-4.851597,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,NA,NA,3,">15 stems",NA,NA
+509,42.50754,-4.851331,"A","4","A","1","25","Pinus nigra",9,26,23,20,0,"2","Thicket",4,"Old growth",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,60,70,1,"1–4 stems",NA,NA,2,"5–15 stems"
+509,42.50754,-4.851331,"A","4","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",3,">15 stems",3,">15 stems"
+511,42.509806,-4.705337,NA,NA,NA,NA,"43","Quercus pyrenaica",1,NA,NA,0,NA,"2","Thicket",2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,90,100,NA,3,">15 stems",1,"1–4 stems",NA,NA
+513,42.511213,-4.607999,"A","4","A","1","25","Pinus nigra",15,18,29,15,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",40,40,50,0,NA,NA,NA,NA,NA
+513,42.511213,-4.607999,"A","4","A","1","43","Quercus pyrenaica",NA,1,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,3,">15 stems",NA,NA,1,"1–4 stems"
+515,42.51143902,-4.58340482,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,2,0,0,"2","Thicket",3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",90,90,100,3,">15 stems",1,"1–4 stems",3,">15 stems"
+517,42.502717,-4.57127,"A","1",NA,NA,"25","Pinus nigra",5,16,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,60,NA,0,NA,NA,NA,NA,NA
+517,42.502717,-4.57127,"A","1",NA,NA,"25","Pinus nigra",5,16,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,60,NA,0,NA,NA,NA,NA,NA
+517,42.502717,-4.57127,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",2,"5–15 stems",NA,NA
+518,42.657522,-4.440955,"A","1",NA,NA,"21","Pinus sylvestris",NA,NA,NA,0,NA,NA,NA,4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+518,42.657522,-4.440955,"A","1",NA,NA,"26","Pinus pinaster",33,21,NA,70,NA,"4","Old growth",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,80,70,NA,1,"1–4 stems",NA,NA,NA,NA
+518,42.657522,-4.440955,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",NA,NA,NA,NA
+520,42.657827,-4.416561,"A","4C","A","1","43","Quercus pyrenaica",NA,1,7,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,3,">15 stems",3,">15 stems",3,">15 stems"
+521,42.638734,-4.501507,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",NA,NA,NA,NA
+523,42.63931106,-4.4647083,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,3,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,90,3,">15 stems",2,"5–15 stems",3,">15 stems"
+524,42.630048,-4.476907,"A","3E","A","1","26","Pinus pinaster",40,25,2,NA,NA,"4","Old growth",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,90,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+524,42.630048,-4.476907,"A","3E","A","1","43","Quercus pyrenaica",NA,10,23,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,2,"5–15 stems",3,">15 stems",3,">15 stems"
+526,42.621202,-4.464505,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+531,42.584559,-4.512392,"A","1",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,3,">15 stems",3,">15 stems",NA,NA
+535,42.576033,-4.475632,"A","1",NA,NA,"26","Pinus pinaster",6,20,NA,0,NA,"4","Old growth",4,"Old growth",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,70,80,NA,2,"5–15 stems",NA,NA,NA,NA
+535,42.576033,-4.475632,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,1,"1–4 stems",1,"1–4 stems",NA,NA
+538,42.576801,-4.414725,"A","1",NA,NA,"25","Pinus nigra",26,27,NA,0,NA,"4","Old growth",4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,90,90,NA,1,"1–4 stems",NA,NA,NA,NA
+540,42.56703,-4.475419,"A","4","A","1","26","Pinus pinaster",42,29,33,0,0,"3","Polewood",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",80,60,70,2,"5–15 stems",NA,NA,NA,NA
+540,42.56703,-4.475419,"A","4","A","1","43","Quercus pyrenaica",NA,NA,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,10,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+541,42.567186,-4.46324,"A","4","A","1","26","Pinus pinaster",42,29,15,0,0,"4","Old growth",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",80,80,80,2,"5–15 stems",NA,NA,NA,NA
+541,42.567186,-4.46324,"A","4","A","1","43","Quercus pyrenaica",1,NA,1,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",2,"5–15 stems",3,">15 stems"
+543,42.567647,-4.426701,"A","1",NA,NA,"43","Quercus pyrenaica",2,2,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,3,">15 stems",3,">15 stems",NA,NA
+544,42.567948,-4.402342,"A","1",NA,NA,"25","Pinus nigra",19,12,NA,0,NA,NA,NA,4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,NA,40,NA,1,"1–4 stems",2,"5–15 stems",NA,NA
+545,42.568096,-4.390162,"A","4","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+547,42.557551,-4.51174,"A","4","A","1","43","Quercus pyrenaica",NA,4,5,0,0,"2","Thicket",2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,20,40,3,">15 stems",2,"5–15 stems",3,">15 stems"
+548,42.557711,-4.499562,"A","1",NA,NA,"43","Quercus pyrenaica",1,5,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,30,NA,1,"1–4 stems",NA,NA,NA,NA
+550,42.548549,-4.511522,"A","1",NA,NA,"25","Pinus nigra",6,26,NA,0,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,70,60,NA,0,NA,NA,NA,NA,NA
+550,42.548549,-4.511522,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+552,42.549181,-4.462819,"A","4",NA,NA,"43","Quercus pyrenaica",24,3,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+554,42.530543,-4.511088,"A","1",NA,NA,"25","Pinus nigra",13,22,NA,0,NA,"3","Polewood",3,"Polewood",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,60,70,NA,1,"1–4 stems",NA,NA,NA,NA
+554,42.530543,-4.511088,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",2,"5–15 stems",NA,NA
+558,42.512698,-4.498485,NA,NA,"A","1","25","Pinus nigra",6,NA,4,5,0,NA,NA,2,"Thicket",2,"Thicket",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",NA,90,80,1,"1–4 stems",NA,NA,NA,NA
+558,42.512698,-4.498485,NA,NA,"A","1","26","Pinus pinaster",8,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,50,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+558,42.512698,-4.498485,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,1,"1–4 stems",NA,NA,NA,NA
+558,42.512698,-4.498485,NA,NA,"A","1","45","Quercus ilex",1,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,3,">15 stems",NA,NA,NA,NA
+559,42.512856,-4.486317,"A","1","A","4","43","Quercus pyrenaica",2,4,4,0,0,"3","Polewood",2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",40,30,20,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+559,42.512856,-4.486317,"A","1","A","4","45","Quercus ilex",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,1,"1–4 stems",1,"1–4 stems",NA,NA
+560,42.513014,-4.474148,"A","4C","A","1","25","Pinus nigra",NA,8,17,0,0,NA,NA,3,"Polewood",3,"Polewood",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",NA,50,50,1,"1–4 stems",NA,NA,NA,NA
+560,42.513014,-4.474148,"A","4C","A","1","45","Quercus ilex",NA,7,12,0,0,"3","Polewood",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",50,50,50,NA,NA,1,"1–4 stems",1,"1–4 stems"
+562,42.515217,-4.291605,"A","4","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,NA,NA,1,"1–4 stems"
+562,42.515217,-4.291605,"A","4","A","1","43","Quercus pyrenaica",1,1,12,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,3,">15 stems",3,">15 stems",1,"1–4 stems"
+563,42.503536,-4.510437,NA,NA,NA,NA,"25","Pinus nigra",30,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,80,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+564,42.503695,-4.49827,NA,NA,NA,NA,"25","Pinus nigra",12,NA,NA,5,NA,NA,NA,2,"Thicket",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,60,NA,1,"1–4 stems",2,"5–15 stems",NA,NA
+564,42.503695,-4.49827,NA,NA,NA,NA,"26","Pinus pinaster",13,NA,NA,NA,NA,"3","Polewood",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,40,NA,NA,1,"1–4 stems",NA,NA,NA,NA
+564,42.503695,-4.49827,NA,NA,NA,NA,"43","Quercus pyrenaica",3,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,40,NA,3,">15 stems",2,"5–15 stems",NA,NA
+566,42.480141,-4.874855,"A","4",NA,NA,"25","Pinus nigra",NA,20,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,80,80,NA,0,NA,NA,NA,NA,NA
+566,42.480141,-4.874855,"A","4",NA,NA,"25","Pinus nigra",NA,20,NA,0,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,60,80,NA,0,NA,NA,NA,NA,NA
+566,42.480141,-4.874855,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+567,42.480339,-4.862695,"A","1",NA,NA,"25","Pinus nigra",2,20,NA,20,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,90,90,NA,0,NA,NA,NA,NA,NA
+567,42.480339,-4.862695,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,1,"1–4 stems",2,"5–15 stems",NA,NA
+568,42.47114,-4.874586,"A","1",NA,NA,"25","Pinus nigra",1,28,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,90,80,NA,0,NA,NA,NA,NA,NA
+568,42.47114,-4.874586,"A","1",NA,NA,"25","Pinus nigra",1,28,NA,0,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,80,NA,0,NA,NA,NA,NA,NA
+568,42.47114,-4.874586,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+569,42.462139,-4.874317,"A","4","A","1","25","Pinus nigra",NA,22,28,20,0,"1","Young growth",3,"Polewood",4,"Old growth",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",60,70,60,0,NA,NA,NA,NA,NA
+569,42.462139,-4.874317,"A","4","A","1","25","Pinus nigra",NA,22,28,20,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",80,70,60,0,NA,NA,NA,NA,NA
+569,42.462139,-4.874317,"A","4","A","1","43","Quercus pyrenaica",NA,NA,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,30,40,3,">15 stems",3,">15 stems",3,">15 stems"
+570,42.462337,-4.862161,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+571,42.452939,-4.886203,"A","4","A","1","25","Pinus nigra",3,16,21,0,0,"3","Polewood",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",60,50,60,NA,NA,NA,NA,2,"5–15 stems"
+571,42.452939,-4.886203,"A","4","A","1","26","Pinus pinaster",4,6,3,0,0,NA,NA,4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",3,"Naturalized",5,"Mixed: seed and plantation",NA,30,20,NA,NA,NA,NA,1,"1–4 stems"
+571,42.452939,-4.886203,"A","4","A","1","43","Quercus pyrenaica",NA,NA,3,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,3,">15 stems",2,"5–15 stems",3,">15 stems"
+572,42.453138,-4.874049,"A","4",NA,NA,"25","Pinus nigra",2,16,NA,15,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,70,90,NA,0,NA,NA,NA,NA,NA
+572,42.453138,-4.874049,"A","4",NA,NA,"25","Pinus nigra",2,16,NA,15,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,90,NA,0,NA,NA,NA,NA,NA
+572,42.453138,-4.874049,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,3,">15 stems",2,"5–15 stems",NA,NA
+573,42.453336,-4.861894,"A","1","A","1","215","Crataegus monogyna",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,20,NA,NA,NA,NA,1,"1–4 stems"
+573,42.453336,-4.861894,"A","1","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,3,">15 stems",NA,NA
+573,42.453336,-4.861894,"A","1","A","1","43","Quercus pyrenaica",NA,NA,1,0,0,"2","Thicket",2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",70,50,60,3,">15 stems",3,">15 stems",2,"5–15 stems"
+574,42.44449007,-4.86148878,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,1,0,0,"2","Thicket",2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",70,100,100,3,">15 stems",2,"5–15 stems",3,">15 stems"
+575,42.435136,-4.873512,"A","1","A","1","25","Pinus nigra",NA,8,18,15,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","I",NA,2,"Artificial",2,"Plantation",70,70,70,1,"1–4 stems",NA,NA,NA,NA
+575,42.435136,-4.873512,"A","1","A","1","43","Quercus pyrenaica",NA,NA,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,30,20,3,">15 stems",3,">15 stems",3,">15 stems"
+577,42.408133,-4.872708,"A","1","A","1","25","Pinus nigra",NA,8,18,15,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,90,90,1,"1–4 stems",NA,NA,NA,NA
+577,42.408133,-4.872708,"A","1","A","1","43","Quercus pyrenaica",NA,1,2,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,3,">15 stems",3,">15 stems",2,"5–15 stems"
+579,42.398732,-4.896729,"A","4",NA,NA,"43","Quercus pyrenaica",9,4,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,3,">15 stems",3,">15 stems",NA,NA
+580,42.381129,-4.871905,"A","1","A","4","43","Quercus pyrenaica",1,2,NA,0,0,"3","Polewood",3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",60,60,60,3,">15 stems",2,"5–15 stems",2,"5–15 stems"
+582,42.489538,-4.8508,"A","4",NA,NA,"25","Pinus nigra",34,46,NA,0,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,40,90,NA,0,NA,NA,NA,NA,NA
+584,42.493881,-4.55888,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+585,42.480536,-4.850534,"A","1",NA,NA,"25","Pinus nigra",22,43,NA,25,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,60,80,NA,0,NA,NA,NA,NA,NA
+585,42.480536,-4.850534,"A","1",NA,NA,"25","Pinus nigra",22,43,NA,25,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,90,80,NA,0,NA,NA,NA,NA,NA
+586,42.484713,-4.570819,"A","1","A","1","25","Pinus nigra",NA,11,18,0,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",60,50,70,0,NA,NA,NA,1,"1–4 stems"
+586,42.484713,-4.570819,"A","1","A","1","25","Pinus nigra",NA,11,18,0,0,"2","Thicket",3,"Polewood",3,"Polewood",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",70,50,70,0,NA,NA,NA,1,"1–4 stems"
+586,42.484713,-4.570819,"A","1","A","1","43","Quercus pyrenaica",NA,2,10,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,40,30,3,">15 stems",3,">15 stems",3,">15 stems"
+586,42.484713,-4.570819,"A","1","A","1","44","Quercus faginea",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,NA,NA,NA,NA,2,"5–15 stems"
+587,42.484879,-4.558656,"A","1",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",2,"5–15 stems",NA,NA
+587,42.484879,-4.558656,"A","1",NA,NA,"44","Quercus faginea",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,3,">15 stems",3,">15 stems",NA,NA
+588,42.471535,-4.850269,"A","4",NA,NA,"25","Pinus nigra",NA,29,NA,20,NA,"1","Young growth",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,60,100,NA,0,NA,NA,NA,NA,NA
+588,42.471535,-4.850269,"A","4",NA,NA,"25","Pinus nigra",NA,29,NA,20,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","B",NA,NA,NA,NA,NA,90,100,NA,0,NA,NA,NA,NA,NA
+588,42.471535,-4.850269,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,1,"1–4 stems"
+591,42.462924,-4.82569,"A","1",NA,NA,"25","Pinus nigra",7,10,NA,35,NA,"3","Polewood",4,"Old growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,50,50,NA,1,"1–4 stems",NA,NA,NA,NA
+592,42.453533,-4.849739,"A","4","A","1","25","Pinus nigra",13,25,25,30,0,"2","Thicket",3,"Polewood",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",70,60,60,0,NA,NA,NA,NA,NA
+592,42.453533,-4.849739,"A","4","A","1","25","Pinus nigra",13,25,25,30,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","C",NA,2,"Artificial",2,"Plantation",60,60,60,0,NA,NA,NA,NA,NA
+592,42.453533,-4.849739,"A","4","A","1","43","Quercus pyrenaica",NA,1,2,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,NA,NA,1,"1–4 stems"
+594,42.444532,-4.849474,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+598,42.399526,-4.848151,"A","4",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,60,NA,NA,NA,3,">15 stems",NA,NA
+604,42.363521,-4.847095,"A","4",NA,NA,"25","Pinus nigra",11,37,NA,20,NA,"3","Polewood",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,90,NA,0,NA,NA,NA,NA,NA
+604,42.363521,-4.847095,"A","4",NA,NA,"25","Pinus nigra",11,37,NA,20,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,60,90,NA,0,NA,NA,NA,NA,NA
+604,42.363521,-4.847095,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,3,">15 stems",NA,NA,NA,NA
+605,42.363716,-4.834958,"A","4",NA,NA,"25","Pinus nigra",16,22,NA,0,NA,"2","Thicket",3,"Polewood",NA,NA,2,"Artificial","C",NA,NA,NA,NA,NA,60,80,NA,0,NA,NA,NA,NA,NA
+605,42.363716,-4.834958,"A","4",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,20,NA,3,">15 stems",3,">15 stems",NA,NA
+608,42.354714,-4.834696,"A","1",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,3,">15 stems",3,">15 stems",NA,NA
+611,42.345906,-4.822299,"A","1","A","1","43","Quercus pyrenaica",NA,5,3,0,0,"3","Polewood",3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",40,40,40,3,">15 stems",NA,NA,2,"5–15 stems"
+611,42.345906,-4.822299,"A","1","A","1","44","Quercus faginea",NA,NA,1,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,30,3,">15 stems",2,"5–15 stems",NA,NA
+611,42.345906,-4.822299,"A","1","A","1","45","Quercus ilex",10,11,4,0,0,NA,NA,3,"Polewood",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,30,NA,NA,NA,NA,1,"1–4 stems"
+613,42.495924,-4.400731,NA,NA,NA,NA,"43","Quercus pyrenaica",2,7,NA,NA,NA,"2","Thicket",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,90,NA,NA,3,">15 stems",NA,NA,NA,NA
+616,42.486005,-4.473514,"A","1","A","4","43","Quercus pyrenaica",3,5,3,0,0,"3","Polewood",4,"Old growth",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",40,30,40,3,">15 stems",1,"1–4 stems",3,">15 stems"
+616,42.486005,-4.473514,"A","1","A","4","45","Quercus ilex",1,1,13,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,60,NA,NA,NA,NA,1,"1–4 stems"
+621,42.468765,-4.412289,"A","1",NA,NA,"26","Pinus pinaster",28,21,NA,0,NA,NA,NA,4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,NA,100,NA,0,NA,NA,NA,NA,NA
+624,42.460779,-4.326973,"A","1",NA,NA,"25","Pinus nigra",20,20,NA,0,NA,"3","Polewood",4,"Old growth",NA,NA,3,"Naturalized","5","Mixed: seed and plantation",NA,NA,NA,NA,90,90,NA,0,NA,1,"1–4 stems",NA,NA
+625,42.460919,-4.314813,"A","4","A","1","26","Pinus pinaster",43,18,23,0,0,"4","Old growth",4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",2,"Artificial",2,"Plantation",90,90,90,0,NA,NA,NA,3,">15 stems"
+628,42.451634,-4.33894,"A","4","A","1","25","Pinus nigra",37,24,36,25,0,"3","Polewood",3,"Polewood",4,"Old growth",2,"Artificial","A",NA,2,"Artificial",2,"Plantation",90,90,90,NA,NA,NA,NA,1,"1–4 stems"
+629,42.451776,-4.326783,"A","1","A","1","215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,10,NA,NA,NA,NA,NA,3,">15 stems"
+629,42.451776,-4.326783,"A","1","A","1","25","Pinus nigra",2,30,19,0,0,"2","Thicket",3,"Polewood",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",2,"Artificial",2,"Plantation",40,50,70,0,NA,NA,NA,NA,NA
+629,42.451776,-4.326783,"A","1","A","1","43","Quercus pyrenaica",5,10,7,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,20,3,">15 stems",3,">15 stems",3,">15 stems"
+630,42.442772,-4.326593,"A","4C",NA,NA,"25","Pinus nigra",NA,13,NA,15,NA,NA,NA,3,"Polewood",NA,NA,2,"Artificial","A",NA,NA,NA,NA,NA,NA,100,NA,2,"5–15 stems",NA,NA,NA,NA
+1014,42.91377468,-4.79002978,NA,NA,"A","4","42","Quercus petraea",NA,NA,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1015,42.916811,-4.581752,"N","N","A","4","215","Crataegus monogyna",NA,NA,NA,0,40,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,2,"5–15 stems",3,">15 stems"
+1015,42.916811,-4.581752,"N","N","A","4","43","Quercus pyrenaica",NA,8,25,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1016,42.904163,-4.826411,"N","N","A","1","42","Quercus petraea",NA,3,5,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,1,"1–4 stems",1,"1–4 stems"
+1017,42.908476,-4.532539,"N","N",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",NA,NA
+1018,42.895743,-4.789421,"N","N","A","1","43","Quercus pyrenaica",NA,2,23,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,40,NA,NA,2,"5–15 stems",3,">15 stems"
+1019,42.898467,-4.605779,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,1,"Young growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",NA,NA
+1019,42.898467,-4.605779,"N","N",NA,NA,"43","Quercus pyrenaica",NA,26,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1021,42.877741,-4.7889,"N","N","A","1","71","Fagus sylvatica",NA,7,17,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,50,50,NA,NA,2,"5–15 stems",NA,NA
+1022,42.880635,-4.593072,"N","N","A","1","43","Quercus pyrenaica",NA,NA,1,0,40,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,10,NA,NA,2,"5–15 stems",3,">15 stems"
+1024,42.86877037,-4.78872838,NA,NA,"A","4C","21","Pinus sylvestris",NA,NA,4,5,20,NA,NA,1,"Young growth",2,"Thicket",2,"Artificial","B",NA,2,"Artificial",2,"Plantation",NA,90,90,NA,NA,2,"5–15 stems",NA,NA
+1025,42.850354,-4.812586,"N","N","A","1","42","Quercus petraea",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+1026,42.850739,-4.78812,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1027,42.841929,-4.775629,"N","N","A","1","42","Quercus petraea",NA,2,3,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,NA,NA,1,"1–4 stems"
+1031,42.836296,-4.542989,"N","N","A","1","45","Quercus ilex",NA,29,38,0,50,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,80,NA,NA,1,"1–4 stems",NA,NA
+1036,42.95491,-4.423357,"N","N",NA,NA,"295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+1036,42.95491,-4.423357,"N","N",NA,NA,"43","Quercus pyrenaica",NA,26,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,NA,NA,2,"5–15 stems",NA,NA
+1037,42.945445,-4.459911,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",2,"5–15 stems"
+1037,42.945445,-4.459911,"N","N","A","1","43","Quercus pyrenaica",NA,30,42,0,50,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1038,42.936286,-4.471951,"N","N",NA,NA,"43","Quercus pyrenaica",NA,12,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1039,42.926805,-4.508486,"N","N","A","1","42","Quercus petraea",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,60,NA,NA,NA,3,">15 stems",NA,NA
+1039,42.926805,-4.508486,"N","N","A","1","43","Quercus pyrenaica",NA,37,47,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,100,NA,NA,3,">15 stems",3,">15 stems"
+1040,42.927126,-4.483986,"N","N","A","1","43","Quercus pyrenaica",NA,7,24,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,2,"5–15 stems",2,"5–15 stems"
+1041,42.928205,-4.398234,"N","N","A","1","278","Sorbus aria",NA,1,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,1,"1–4 stems",NA,NA
+1041,42.928205,-4.398234,"N","N","A","1","43","Quercus pyrenaica",NA,51,59,0,0,NA,NA,3,"Polewood",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,3,">15 stems",1,"1–4 stems"
+1042,42.917641,-4.520514,"N","N","A","1","215","Crataegus monogyna",NA,1,1,0,40,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,30,NA,NA,2,"5–15 stems",2,"5–15 stems"
+1042,42.917641,-4.520514,"N","N","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,1,"Young growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,2,"5–15 stems",NA,NA
+1042,42.917641,-4.520514,"N","N","A","1","43","Quercus pyrenaica",NA,29,34,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,NA,NA,3,">15 stems"
+1048,42.902352,-4.299658,"N","N","A","1","43","Quercus pyrenaica",NA,NA,4,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,40,NA,NA,3,">15 stems",2,"5–15 stems"
+1050,42.882115,-4.482907,"N","N",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1051,42.874921,-4.335813,"N","N","A","4","43","Quercus pyrenaica",NA,4,34,0,0,NA,NA,3,"Polewood",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1053,42.865188,-4.396811,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,NA,30,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,2,"5–15 stems",2,"5–15 stems"
+1053,42.865188,-4.396811,"N","N","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,3,">15 stems",NA,NA
+1053,42.865188,-4.396811,"N","N","A","1","43","Quercus pyrenaica",NA,23,23,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,60,90,NA,NA,3,">15 stems",3,">15 stems"
+1054,42.857058,-4.323188,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1055,42.846106,-4.482045,"N","N","A","1","42","Quercus petraea",NA,11,12,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,30,30,NA,NA,2,"5–15 stems",3,">15 stems"
+1055,42.846106,-4.482045,"N","N","A","1","43","Quercus pyrenaica",NA,22,23,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,40,50,NA,NA,2,"5–15 stems",3,">15 stems"
+1055,42.846106,-4.482045,"N","N","A","1","71","Fagus sylvatica",NA,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",2,"5–15 stems"
+1057,42.836785,-4.506294,"N","N","A","1","43","Quercus pyrenaica",NA,6,7,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",1,"1–4 stems"
+1058,42.839332,-4.298336,"N","N",NA,NA,"43","Quercus pyrenaica",NA,23,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1059,42.840654,-4.175996,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,20,NA,NA,3,">15 stems",2,"5–15 stems"
+1059,42.840654,-4.175996,"N","N","A","1","43","Quercus pyrenaica",NA,17,29,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,70,NA,NA,2,"5–15 stems",NA,NA
+1059,42.840654,-4.175996,"N","N","A","1","74","Corylus avellana",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,1,"1–4 stems"
+1060,42.841025,-4.139293,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,2,"5–15 stems",1,"1–4 stems"
+1060,42.841025,-4.139293,"N","N","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,NA,NA,3,">15 stems",3,">15 stems"
+1061,42.822567,-4.860706,"N","N",NA,NA,"43","Quercus pyrenaica",NA,5,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,NA,NA,3,">15 stems",NA,NA
+1062,42.804566,-4.860166,"N","N",NA,NA,"43","Quercus pyrenaica",NA,3,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,2,"5–15 stems",NA,NA
+1064,42.74935,-4.931824,"N","N",NA,NA,"43","Quercus pyrenaica",NA,30,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1065,42.832737,-4.787601,"N","N","A","4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1066,42.82449,-4.73843,"N","N",NA,NA,"43","Quercus pyrenaica",NA,28,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,NA,NA,3,">15 stems",NA,NA
+1067,42.825041,-4.701745,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,3,">15 stems",NA,NA
+1067,42.825041,-4.701745,"N","N",NA,NA,"43","Quercus pyrenaica",NA,20,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,NA,NA,1,"1–4 stems",NA,NA
+1068,42.813962,-4.835985,"N","N","A","4","215","Crataegus monogyna",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1068,42.813962,-4.835985,"N","N","A","4","43","Quercus pyrenaica",NA,7,12,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,3,">15 stems",3,">15 stems"
+1068,42.813962,-4.835985,"N","N","A","4","74","Corylus avellana",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1070,42.814926,-4.774856,"N","N","A","1","43","Quercus pyrenaica",NA,14,23,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1072,42.805156,-4.823495,"N","N","A","1","42","Quercus petraea",NA,51,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,70,NA,NA,NA,3,">15 stems",NA,NA
+1072,42.805156,-4.823495,"N","N","A","1","43","Quercus pyrenaica",NA,NA,57,NA,0,NA,NA,NA,NA,4,"Old growth",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,70,NA,NA,NA,NA,3,">15 stems"
+1072,42.805156,-4.823495,"N","N","A","1","74","Corylus avellana",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,NA,NA,3,">15 stems",3,">15 stems"
+1073,42.806301,-4.75015,"N","N","A","1","42","Quercus petraea",NA,44,2,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1073,42.806301,-4.75015,"N","N","A","1","43","Quercus pyrenaica",NA,NA,48,NA,0,NA,NA,NA,NA,4,"Old growth",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,90,NA,NA,NA,NA,3,">15 stems"
+1074,42.807577,-4.664576,"N","N",NA,NA,"43","Quercus pyrenaica",NA,15,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1076,42.789036,-4.700758,"N","N","A","1","43","Quercus pyrenaica",NA,10,23,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1077,42.790102,-4.627428,"N","N",NA,NA,"43","Quercus pyrenaica",NA,9,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1079,42.778922,-4.773827,"N","N",NA,NA,"43","Quercus pyrenaica",NA,11,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1081,42.770297,-4.749136,"N","N",NA,NA,"43","Quercus pyrenaica",NA,9,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1083,42.763611,-4.59007,"N","N","A","1","26","Pinus pinaster",NA,33,10,40,0,NA,NA,4,"Old growth",4,"Old growth",3,"Naturalized","5","Mixed: seed and plantation",2,"Artificial",2,"Plantation",NA,60,50,NA,NA,NA,NA,2,"5–15 stems"
+1084,42.753211,-4.687559,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,3,">15 stems",1,"1–4 stems"
+1084,42.753211,-4.687559,"N","N","A","1","43","Quercus pyrenaica",NA,26,35,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1085,42.74176,-4.846069,"N","N",NA,NA,"43","Quercus pyrenaica",NA,10,NA,0,NA,NA,NA,4,"Old growth",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,1,"1–4 stems",NA,NA
+1086,42.745093,-4.62625,"N","N","A","1","43","Quercus pyrenaica",NA,11,18,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,100,NA,NA,3,">15 stems",3,">15 stems"
+1087,42.735387,-4.674859,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,2,"5–15 stems",NA,NA
+1087,42.735387,-4.674859,"N","N",NA,NA,"43","Quercus pyrenaica",NA,18,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1088,42.726026,-4.699035,"N","N",NA,NA,"43","Quercus pyrenaica",NA,7,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1089,42.715148,-4.820857,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",NA,NA
+1089,42.715148,-4.820857,"N","N",NA,NA,"43","Quercus pyrenaica",NA,6,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1090,42.717205,-4.686582,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,1,"1–4 stems",NA,NA
+1090,42.717205,-4.686582,"N","N",NA,NA,"43","Quercus pyrenaica",NA,8,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,90,NA,NA,NA,3,">15 stems",NA,NA
+1091,42.70856,-4.661927,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,2,"5–15 stems",1,"1–4 stems"
+1091,42.70856,-4.661927,"N","N","A","1","43","Quercus pyrenaica",NA,23,23,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1093,42.699735,-4.649483,"N","N",NA,NA,"43","Quercus pyrenaica",NA,5,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1098,42.829326,-4.383768,"N","N",NA,NA,"43","Quercus pyrenaica",NA,18,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1099,42.82135558,-4.29804241,NA,NA,"A","4C","43","Quercus pyrenaica",NA,NA,4,0,20,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1100,42.810566,-4.444504,"N","N","A","1","43","Quercus pyrenaica",NA,19,36,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1101,42.811321,-4.383367,"N","N","A","1","44","Quercus faginea",NA,3,3,0,60,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,70,NA,NA,3,">15 stems",3,">15 stems"
+1105,42.784015,-4.40721,"N","N","A","1","44","Quercus faginea",NA,1,2,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,60,70,NA,NA,1,"1–4 stems",1,"1–4 stems"
+1110,42.738078,-4.479469,"N","N",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,1,"1–4 stems",NA,NA
+1112,42.7229867,-4.23492091,NA,NA,"A","1","26","Pinus pinaster",NA,NA,NA,5,NA,NA,NA,1,"Young growth",NA,NA,2,"Artificial","J",NA,NA,NA,NA,NA,NA,100,NA,NA,NA,1,"1–4 stems",NA,NA
+1113,42.723228,-4.210417,"N","N","A","1","44","Quercus faginea",NA,28,35,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",2,"5–15 stems"
+1117,42.692908,-4.490604,"N","N","A","1","43","Quercus pyrenaica",NA,4,8,0,60,NA,NA,3,"Polewood",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1120,42.813769,-4.163255,"N","N",NA,NA,"43","Quercus pyrenaica",NA,4,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1121,42.805487,-4.089721,"N","N",NA,NA,"43","Quercus pyrenaica",NA,2,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,30,NA,NA,NA,2,"5–15 stems",NA,NA
+1122,42.787125,-4.126078,"N","N","A","1","71","Fagus sylvatica",NA,21,33,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,70,NA,NA,3,">15 stems",NA,NA
+1123,42.75063966,-4.17437398,NA,NA,"A","1","25","Pinus nigra",NA,NA,21,5,0,NA,NA,2,"Thicket",3,"Polewood",2,"Artificial","J",NA,2,"Artificial",2,"Plantation",NA,80,90,NA,NA,2,"5–15 stems",NA,NA
+1126,42.656416,-4.526333,"N","N","A","1","43","Quercus pyrenaica",NA,1,4,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,100,NA,NA,3,">15 stems",3,">15 stems"
+1127,42.647251,-4.538308,"N","N","A","1","43","Quercus pyrenaica",NA,2,3,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1130,42.61142266,-4.52531823,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,5,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1132,42.591182,-4.683179,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1133,42.59190542,-4.63453351,NA,NA,"A","1","43","Quercus pyrenaica",NA,NA,5,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1134,42.580707,-4.780382,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,10,20,NA,NA,1,"1–4 stems",3,">15 stems"
+1134,42.580707,-4.780382,"N","N","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+1134,42.580707,-4.780382,"N","N","A","1","43","Quercus pyrenaica",NA,8,12,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,70,80,NA,NA,3,">15 stems",2,"5–15 stems"
+1135,42.573534,-4.658336,"N","N",NA,NA,"43","Quercus pyrenaica",NA,5,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1137,42.563266,-4.743339,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,10,10,NA,NA,1,"1–4 stems",2,"5–15 stems"
+1137,42.563266,-4.743339,"N","N","A","1","43","Quercus pyrenaica",NA,26,27,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1138,42.554815,-4.706563,"N","N",NA,NA,"43","Quercus pyrenaica",NA,3,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,3,">15 stems",NA,NA
+1139,42.546528,-4.657621,"N","N",NA,NA,"43","Quercus pyrenaica",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","3","Coppice (stump or root sprout)",NA,NA,NA,NA,NA,30,NA,NA,NA,3,">15 stems",NA,NA
+1140,42.536811,-4.706072,"N","N","A","1","43","Quercus pyrenaica",NA,7,14,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,90,NA,NA,3,">15 stems",2,"5–15 stems"
+1141,42.53839,-4.596519,"N","N","A","1","37","Juniperus communis",NA,NA,NA,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","1","Seed",1,"Natural",1,"Seed",NA,20,20,NA,NA,2,"5–15 stems",3,">15 stems"
+1141,42.53839,-4.596519,"N","N","A","1","43","Quercus pyrenaica",NA,6,9,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,80,80,NA,NA,3,">15 stems",3,">15 stems"
+1142,42.528347,-4.669316,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1142,42.528347,-4.669316,"N","N","A","1","43","Quercus pyrenaica",NA,10,20,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,90,NA,NA,1,"1–4 stems",2,"5–15 stems"
+1143,42.529046,-4.620632,"N","N",NA,NA,"43","Quercus pyrenaica",NA,2,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,2,"5–15 stems",NA,NA
+1146,42.666215,-4.465561,"N","N","A","1","43","Quercus pyrenaica",NA,1,4,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,100,NA,NA,3,">15 stems",3,">15 stems"
+1148,42.650267,-4.294396,"N","N",NA,NA,"215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","1","Seed",NA,NA,NA,NA,NA,20,NA,NA,NA,3,">15 stems",NA,NA
+1148,42.650267,-4.294396,"N","N",NA,NA,"43","Quercus pyrenaica",NA,8,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,50,NA,NA,NA,3,">15 stems",NA,NA
+1148,42.650267,-4.294396,"N","N",NA,NA,"45","Quercus ilex",NA,NA,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,2,"5–15 stems",NA,NA
+1154,42.540333,-4.450435,"N","N",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,1,"1–4 stems",NA,NA
+1156,42.531635,-4.425881,"N","N",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,1,"1–4 stems",NA,NA
+1157,42.533086,-4.30415,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1158,42.523803,-4.328306,"N","N","A","1","43","Quercus pyrenaica",NA,3,3,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,100,80,NA,NA,3,">15 stems",3,">15 stems"
+1160,42.51363,-4.425472,"N","N","A","1","43","Quercus pyrenaica",NA,1,1,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,3,">15 stems",3,">15 stems"
+1161,42.504475,-4.437435,"N","N","A","1","43","Quercus pyrenaica",NA,NA,NA,0,0,NA,NA,2,"Thicket",3,"Polewood",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,NA,NA,1,"1–4 stems",1,"1–4 stems"
+1162,42.505796,-4.327925,"N","N",NA,NA,"43","Quercus pyrenaica",NA,1,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,100,NA,NA,NA,2,"5–15 stems",NA,NA
+1164,42.479941,-4.887014,"N","N","A","1","215","Crataegus monogyna",NA,NA,1,0,0,NA,NA,2,"Thicket",2,"Thicket",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,20,40,NA,NA,3,">15 stems",3,">15 stems"
+1164,42.479941,-4.887014,"N","N","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,20,NA,NA,NA,3,">15 stems",NA,NA
+1164,42.479941,-4.887014,"N","N","A","1","43","Quercus pyrenaica",NA,14,14,0,0,NA,NA,4,"Old growth",4,"Old growth",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,50,60,NA,NA,NA,NA,2,"5–15 stems"
+1166,42.390328,-4.86003,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1166,42.390328,-4.86003,"N","N","A","1","295","Prunus spinosa",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,3,">15 stems",NA,NA
+1166,42.390328,-4.86003,"N","N","A","1","43","Quercus pyrenaica",NA,3,5,0,0,NA,NA,3,"Polewood",2,"Thicket",1,"Natural","3","Coppice (stump or root sprout)",1,"Natural",4,"Mixed: seed and sprout",NA,20,20,NA,NA,3,">15 stems",3,">15 stems"
+1167,42.466874,-4.558209,"N","N","A","1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1176,42.49721,-4.291234,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1177,42.486921,-4.40053,"N","N","A","1","215","Crataegus monogyna",NA,NA,NA,0,NA,NA,NA,2,"Thicket",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,10,NA,NA,NA,NA,NA,1,"1–4 stems"
+1177,42.486921,-4.40053,"N","N","A","1","43","Quercus pyrenaica",NA,5,17,0,0,NA,NA,3,"Polewood",3,"Polewood",1,"Natural","4","Mixed: seed and sprout",1,"Natural",4,"Mixed: seed and sprout",NA,90,90,NA,NA,1,"1–4 stems",1,"1–4 stems"
+1178,42.479203,-4.290864,"N","N",NA,NA,"43","Quercus pyrenaica",NA,7,NA,0,NA,NA,NA,3,"Polewood",NA,NA,1,"Natural","4","Mixed: seed and sprout",NA,NA,NA,NA,NA,80,NA,NA,NA,3,">15 stems",NA,NA
+1300,42.75858398,-4.91997952,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,35,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,2,"5–15 stems"
+1301,42.71438943,-4.86976921,NA,NA,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1303,42.86819079,-4.82543789,NA,NA,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1304,42.85018931,-4.82490751,NA,NA,"N","N","42","Quercus petraea",NA,NA,16,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,90,NA,NA,NA,NA,1,"1–4 stems"
+1307,42.86896095,-4.77649164,NA,NA,"N","N","42","Quercus petraea",NA,NA,15,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,3,">15 stems"
+1310,42.72550467,-4.73574954,NA,NA,"N","N","21","Pinus sylvestris",NA,NA,5,NA,10,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,2,"Artificial",2,"Plantation",NA,NA,100,NA,NA,NA,NA,1,"1–4 stems"
+1312,42.8518917,-4.71480775,NA,NA,"N","N","42","Quercus petraea",NA,NA,1,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,3,">15 stems"
+1312,42.8518917,-4.71480775,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1315,42.8891492,-4.6301157,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,45,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,70,NA,NA,NA,NA,2,"5–15 stems"
+1315,42.8891492,-4.6301157,NA,NA,"N","N","71","Fagus sylvatica",NA,NA,6,NA,0,NA,NA,NA,NA,4,"Old growth",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,20,NA,NA,NA,NA,2,"5–15 stems"
+1315,42.8891492,-4.6301157,NA,NA,"N","N","74","Corylus avellana",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1318,42.91650037,-4.60633315,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,26,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,80,NA,NA,NA,NA,3,">15 stems"
+1319,42.94384682,-4.58252977,NA,NA,"N","N","42","Quercus petraea",NA,NA,24,NA,0,NA,NA,NA,NA,4,"Old growth",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,1,"1–4 stems"
+1325,42.91750815,-4.53284757,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,6,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,3,">15 stems"
+1326,42.80048097,-4.52995489,NA,NA,"N","N","37","Juniperus communis",NA,NA,NA,NA,20,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",1,"Seed",NA,NA,30,NA,NA,NA,NA,2,"5–15 stems"
+1326,42.80048097,-4.52995489,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,6,NA,20,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,70,NA,NA,NA,NA,3,">15 stems"
+1329,42.73761863,-4.51619173,NA,NA,"N","N",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1331,42.92699649,-4.49632126,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,1,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,90,NA,NA,NA,NA,1,"1–4 stems"
+1332,42.5578875,-4.48746939,NA,NA,"N","N","215","Crataegus monogyna",NA,NA,NA,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,10,NA,NA,NA,NA,2,"5–15 stems"
+1332,42.5578875,-4.48746939,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,1,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,90,NA,NA,NA,NA,3,">15 stems"
+1339,42.96379041,-4.43589464,NA,NA,"N","N","215","Crataegus monogyna",NA,NA,2,NA,30,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,40,NA,NA,NA,NA,3,">15 stems"
+1348,42.78462548,-4.35840368,NA,NA,"N","N","44","Quercus faginea",NA,NA,4,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,2,"5–15 stems"
+1354,42.83922226,-4.31065297,NA,NA,"N","N","43","Quercus pyrenaica",NA,NA,26,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,100,NA,NA,NA,NA,3,">15 stems"
+1370,42.74099354,-4.23527826,NA,NA,"N","N","44","Quercus faginea",NA,NA,3,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,50,NA,NA,NA,NA,3,">15 stems"
+1370,42.74099354,-4.23527826,NA,NA,"N","N","45","Quercus ilex",NA,NA,NA,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,40,NA,NA,NA,NA,1,"1–4 stems"
+1372,42.72311773,-4.22270976,NA,NA,"N","N","37","Juniperus communis",NA,NA,6,NA,0,NA,NA,NA,NA,2,"Thicket",NA,NA,NA,NA,1,"Natural",1,"Seed",NA,NA,40,NA,NA,NA,NA,2,"5–15 stems"
+1372,42.72311773,-4.22270976,NA,NA,"N","N","44","Quercus faginea",NA,NA,3,NA,0,NA,NA,NA,NA,3,"Polewood",NA,NA,NA,NA,1,"Natural",4,"Mixed: seed and sprout",NA,NA,50,NA,NA,NA,NA,2,"5–15 stems"
